@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">PainFlog</p>
+			<p type="attackValue">5000</p>
+			<p type="attackRangeX">33</p>
+			<p type="attackRangeY">40</p>
+			<p type="cd">160</p>
+		</data>
+		<frame>
+			<f>PainFlog_Idle_01</f>
+			<f>PainFlog_Walk_01</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>PainFlog_Walk_01</f>
+			<f>PainFlog_Walk_02</f>
+			<e type="setDelay">10</e>
+			<f>PainFlog_Walk_03</f>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+			<e type="setMove">32</e>
+			<f>PainFlog_KnockDown_01</f>
+
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>PainFlog_KnockDown_01</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>PainFlog_KnockDown_01</f>
+			<f>PainFlog_KnockDown_02</f>
+			<f>PainFlog_KnockDown_03</f>
+			<e type="setDelay">10</e>
+			<f>PainFlog_KnockDown_04</f>
+			<e type="setDelay">60</e>
+			<f>PainFlog_Idle_01</f>
+
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>PainFlog_Float_01</f>
+			<e type="setDelay">10</e>
+			<f>PainFlog_KnockDown_02</f>
+			<e type="setDelay">20</e>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>PainFlog_KnockDown_01</f>
+			<f>PainFlog_KnockDown_02</f>
+			<f>PainFlog_KnockDown_03</f>
+			<f>PainFlog_KnockDown_04</f>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">40</p>
+			<p type="attackRangeX">8</p>
+			<p type="attackRangeY">8</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>PainFlog_NAttack_01</f>
+			<e type="setDelay">10</e>
+			<f>PainFlog_NAttack_02</f>
+			<e type="setDelay">10</e>
+			<f>PainFlog_NAttack_03</f>
+			<f>PainFlog_NAttack_04</f>
+			<e type="setAttackBox">n_hit</e>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+
+</unit>

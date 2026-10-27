@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Lee</p>
+			<p type="attackValue">5500</p>
+			<p type="attackRangeX">63</p>
+			<p type="attackRangeY">72</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Lee_Idle_01</f>
+			<f>Lee_Idle_02</f>
+			<f>Lee_Idle_03</f>
+			<f>Lee_Idle_04</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Lee_Walk_01</f>
+			<f>Lee_Walk_02</f>
+			<f>Lee_Walk_03</f>
+			<f>Lee_Walk_04</f>
+			<f>Lee_Walk_05</f>
+			<f>Lee_Walk_06</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+			<e type="setMove">32</e>
+			<f>Lee_Hurt_01</f>
+			<f>Lee_Hurt_02</f>
+			<e type="setSound">Audio/Lee/Lee_hurt.ogg</e>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>Lee_AirHurt_01</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>Lee_KnockDown_01</f>
+			<f>Lee_KnockDown_02</f>
+			<e type="setDelay">10</e>
+			<f>Lee_KnockDown_03</f>
+			<e type="setDelay">60</e>
+			<f>Lee_KnockDown_04</f>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>Lee_Float_01</f>
+			<e type="setDelay">10</e>
+			<f>Lee_Float_02</f>
+			<e type="setDelay">10</e>
+			<f>Lee_Float_03</f>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Lee_KnockDown_01</f>
+			<f>Lee_KnockDown_02</f>
+			<f>Lee_KnockDown_03</f>
+			<e type="setSound">Audio/Lee/Lee_dead.ogg</e>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">60</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">16</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+
+			<f>Lee_NAttack_01</f>
+			<f>Lee_NAttack_02</f>
+			<f>Lee_NAttack_03</f>
+			<e type="setSound">Audio/Effect/combo1.ogg</e>
+			<e type="setAttackBox">n_hit</e>
+			<f>Lee_NAttack_04</f>
+			<f>Lee_NAttack_05</f>
+			<f>Lee_NAttack_06</f>
+			<e type="setMove">8</e>
+			<f>Lee_NAttack_07</f>
+			<e type="setSound">Audio/Effect/combo2.ogg</e>
+			<e type="setAttackBox">n_hit</e>
+			<f>Lee_NAttack_08</f>
+			<f>Lee_NAttack_09</f>
+			<f>Lee_NAttack_10</f>
+			<f>Lee_NAttack_11</f>
+			<e type="setSound">Audio/Lee/Lee_combo.ogg</e>
+			<e type="setMove">16</e>
+			<f>Lee_NAttack_12</f>
+			<f>Lee_NAttack_13</f>
+			<e type="setSound">Audio/Effect/combo3.ogg</e>
+			<e type="setAttackBox">l_hit</e>
+			<f>Lee_NAttack_14</f>
+			<f>Lee_NAttack_15</f>
+		</frame>
+	</action>
+
+	<action name="skill01">
+
+		<data>
+			<p type="attackType">cBuff</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">15</p>
+			<p type="combatPoint">0</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Lee/Lee_skill1.ogg</e>
+			<f>Lee_Skill03_001</f>
+			<f>Lee_Skill03_002</f>
+			<f>Lee_Skill03_003</f>
+			<e type="setBuff">17</e>
+		</frame>
+
+	</action>
+
+	<action name="skill02">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">560</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">15</p>
+			<p type="combatPoint">1120</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Lee/Lee_skill2.ogg</e>
+			<f>Lee_Skill01_001</f>
+			<f>Lee_Skill01_002</f>
+			<e type="setChargeB">96</e>
+			<f>Lee_Skill01_003</f>
+			<f>Lee_Skill01_004</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDSound">Audio/Effect/damage_l.ogg</e>
+			<f>Lee_Skill01_005</f>
+			<f>Lee_Skill01_002</f>
+			<e type="setChargeB">96</e>
+			<f>Lee_Skill01_003</f>
+			<f>Lee_Skill01_004</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDSound">Audio/Effect/damage_l.ogg</e>
+			<f>Lee_Skill01_006</f>
+			<f>Lee_Skill01_007</f>
+		</frame>
+	</action>
+
+	<action name="skill03">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">360</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">25</p>
+			<p type="combatPoint">2520</p>
+		</data>
+		<frame>
+			<f>Lee_Skill02_001</f>
+			<f>Lee_Skill02_002</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setSound">Audio/Lee/Lee_skill3_2.ogg</e>
+			<f>Lee_Skill02_003</f>
+			<e type="setDSound">Audio/Lee/Lee_skill3_3.ogg</e>
+			<f>Lee_Skill02_004</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>Lee_Skill02_005</f>
+			<f>Lee_Skill02_006</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDSound">Audio/Lee/Lee_skill3_3.ogg</e>
+			<f>Lee_Skill02_007</f>
+			<f>Lee_Skill02_008</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>Lee_Skill02_009</f>
+			<e type="setDSound">Audio/Lee/Lee_skill3_3.ogg</e>
+			<f>Lee_Skill02_010</f>
+			<e type="setAttackBox">f_hit</e>
+			<f>Lee_Skill02_011</f>
+			<e type="setJump">true</e>
+			<f>Lee_Skill02_012</f>
+			<e type="setSound">Audio/Lee/Lee_skill3_1.ogg</e>
+			<e type="setDelay">10</e>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setDSound">Audio/Effect/damage_i.ogg</e>
+			<f>Lee_Skill02_013</f>
+			<e type="setDelay">10</e>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setDSound">Audio/Effect/damage_i.ogg</e>
+			<f>Lee_Skill02_014</f>
+			<f>Lee_Skill02_015</f>
+			<f>Lee_Skill02_016</f>
+			<e type="setDelay">20</e>
+		</frame>
+
+
+	</action>
+
+	<action name="skill04">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">1560</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">1</p>
+			<p type="combatPoint">3120</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<f>Lee_Skill04_01</f>
+			<f>Lee_Skill04_02</f>
+			<e type="setSound">Audio/Lee/Lee_skill4_1.ogg</e>
+			<f>Lee_Skill04_001</f>
+			<e type="setCommand">setInvincible</e>
+			<e type="setAttackBox">ct_hit</e>
+			<f>Lee_Skill04_002</f>
+			<e type="setDelay">10</e>
+			<f>Lee_Skill04_003</f>
+			<f>Lee_Skill04_004</f>
+			<f>Lee_Skill04_005</f>
+			<f>Lee_Skill04_006</f>
+			<f>Lee_Skill04_007</f>
+			<f>Lee_Skill04_008</f>
+			<e type="setSound">Audio/Lee/Lee_skill4_2.ogg</e>
+			<f>Lee_Skill04_009</f>
+			<f>Lee_Skill04_010</f>
+			<e type="setCommand">reInvincible</e>
+			<f>Lee_Skill04_011</f>
+			<f>Lee_Skill04_012</f>
+			<e type="setSound">Audio/Effect/break_sound3.ogg</e>
+			<e type="setAttackBox">f_hit</e>
+			<f>Lee_Skill04_013</f>
+			<f>Lee_Skill04_014</f>
+
+		</frame>
+	</action>
+
+	<action name="skill05">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">1</p>
+			<p type="combatPoint">8000</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<f>Lee_Skill06_001</f>
+			<e type="setCommand">setInvincible</e>
+			<e type="setDSound">Audio/Effect/damage_k.ogg</e>
+			<f>Lee_Skill06_002</f>
+			<e type="setSound">Audio/Lee/Lee_skill5_1.ogg</e>
+			<f>Lee_Skill06_003</f>
+			<f>Lee_Skill06_004</f>
+			<e type="setSound">Audio/Lee/Lee_skill5_2.ogg</e>
+			<e type="setCommand">findTarget</e>
+			<e type="setCommand">setTransport</e>
+			<e type="setAttackBox">f_hit</e>
+			<f>Lee_Skill05_001</f>
+			<e type="setSound">Audio/Lee/Lee_skill10.ogg</e>
+			<e type="setAttackBox">ac_hit</e>
+			<f>Lee_Skill05_002</f>
+			<f>Lee_Skill05_003</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setSound">Audio/Effect/damage_i.ogg</e>
+			<f>Lee_Skill05_004</f>
+			<f>Lee_Skill05_005</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setSound">Audio/Effect/damage_i.ogg</e>
+			<f>Lee_Skill05_006</f>
+			<f>Lee_Skill05_007</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setSound">Audio/Effect/damage_i.ogg</e>
+			<f>Lee_Skill05_008</f>
+			<f>Lee_Skill05_009</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setDSound">Audio/Effect/damage_i.ogg</e>
+			<f>Lee_Skill05_010</f>
+			<f>Lee_Skill05_011</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setSound">Audio/Effect/damage_i.ogg</e>
+			<f>Lee_Skill05_012</f>
+			<f>Lee_Skill05_013</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setSound">Audio/Effect/damage_i.ogg</e>
+			<f>Lee_Skill05_014</f>
+			<f>Lee_Skill05_015</f>
+			<e type="setOugis">10</e>
+			<f>Lee_Skill05_016</f>
+			<f>Lee_Skill05_017</f>
+			<f>Lee_Skill05_018</f>
+			<e type="setSound">Audio/Effect/break_sound3.ogg</e>
+			<e type="setMon">LeeBom</e>
+			<f>Lee_Skill05_019</f>
+			<e type="setDelay">30</e>
+			<f>Lee_Skill05_020</f>
+			<e type="setCommand">reInvincible</e>
+		</frame>
+	</action>
+	<action name="skill06">
+		<frame></frame>
+	</action>
+	<action name="skill07">
+		<frame></frame>
+	</action>
+	<action name="skill08">
+		<frame></frame>
+	</action>
+	<action name="skill09">
+		<frame></frame>
+	</action>
+	<action name="skill10">
+		<frame></frame>
+	</action>
+
+	<action name="skill11">
+		<frame></frame>
+	</action>
+	<action name="skill12">
+		<frame></frame>
+	</action>
+
+</unit>

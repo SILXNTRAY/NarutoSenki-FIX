@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Konan</p>
+			<p type="attackValue">5000</p>
+			<p type="attackRangeX">34</p>
+			<p type="attackRangeY">77</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Konan_Idle_001</f>
+			<f>Konan_Idle_002</f>
+			<f>Konan_Idle_003</f>
+			<f>Konan_Idle_004</f>
+			<f>Konan_Idle_005</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Konan_Walk_01</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+			<e type="setMove">32</e>
+			<f>Konan_Hurt_01</f>
+			<f>Konan_Hurt_02</f>
+			<e type="setSound">Audio/Konan/konan_hurt.ogg</e>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>Konan_AirHurt_01</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>Konan_KnockDown_01</f>
+			<f>Konan_KnockDown_02</f>
+			<e type="setDelay">10</e>
+			<f>Konan_KnockDown_03</f>
+			<e type="setDelay">60</e>
+			<f>Konan_KnockDown_04</f>
+			<f>Konan_KnockDown_05</f>
+			<f>Konan_KnockDown_06</f>
+
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>Konan_Float_01</f>
+			<e type="setDelay">10</e>
+			<f>Konan_Float_02</f>
+			<e type="setDelay">10</e>
+			<f>Konan_Float_03</f>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Konan_KnockDown_01</f>
+			<f>Konan_KnockDown_02</f>
+			<f>Konan_KnockDown_03</f>
+			<e type="setSound">Audio/Konan/konan_dead.ogg</e>
+
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">60</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Konan_NAttack_01</f>
+			<f>Konan_NAttack_02</f>
+			<f>Konan_NAttack_03</f>
+			<f>Konan_NAttack_04</f>
+			<e type="setSound">Audio/Effect/combo1.ogg</e>
+			<e type="setAttackBox">n_hit</e>
+			<f>Konan_NAttack_01</f>
+			<f>Konan_NAttack_05</f>
+			<f>Konan_NAttack_06</f>
+			<f>Konan_NAttack_07</f>
+			<e type="setSound">Audio/Effect/combo2.ogg</e>
+			<e type="setAttackBox">n_hit</e>
+			<f>Konan_NAttack_08</f>
+			<f>Konan_NAttack_09</f>
+			<f>Konan_NAttack_10</f>
+			<e type="setMove">16</e>
+			<e type="setSound">Audio/Konan/konan_combo.ogg</e>
+			<f>Konan_NAttack_11</f>
+			<e type="setAttackBox">bl_hit</e>
+			<f>Konan_NAttack_12</f>
+			<e type="setAttackBox">bl_hit</e>
+			<f>Konan_NAttack_13</f>
+			<f>Konan_NAttack_14</f>
+			<f>Konan_NAttack_15</f>
+		</frame>
+	</action>
+
+	<action name="skill01">
+		<data>
+			<p type="attackType">stBuff</p>
+			<p type="attackValue">260</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">5</p>
+			<p type="cd">10</p>
+			<p type="combatPoint">0</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Konan/konan_skill1.ogg</e>
+			<f>Konan_Skill01_02</f>
+			<f>Konan_Skill01_03</f>
+			<f>Konan_Skill01_04</f>
+			<f>Konan_Skill01_05</f>
+			<e type="setBuff">5</e>
+		</frame>
+	</action>
+
+	<action name="skill02">
+		<data>
+			<p type="attackType">bullet</p>
+			<p type="attackValue">260</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">15</p>
+			<p type="combatPoint">2600</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Konan/konan_skill2.ogg</e>
+			<f>Konan_Skill02_001</f>
+			<f>Konan_Skill02_002</f>
+			<f>Konan_Skill02_003</f>
+			<f>Konan_Skill02_004</f>
+			<e type="setBullet">PaperSpear</e>
+			<f>Konan_Skill02_005</f>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="skill03">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">260</p>
+			<p type="attackRangeX">32</p>
+			<p type="attackRangeY">32</p>
+			<p type="cd">25</p>
+			<p type="combatPoint">4600</p>
+		</data>
+		<frame>
+			<f>Konan_Skill03_001</f>
+			<e type="setSound">Audio/Konan/konan_skill3.ogg</e>
+			<f>Konan_Skill03_002</f>
+			<f>Konan_Skill03_003</f>
+			<e type="setBullet">PaperSrk</e>
+			<f>Konan_Skill03_004</f>
+			<f>Konan_Skill03_005</f>
+			<f>Konan_Skill03_006</f>
+			<f>Konan_Skill03_007</f>
+			<f>Konan_Skill03_008</f>
+			<e type="setSound">Audio/Konan/konan_skill3_1.ogg</e>
+			<e type="setBullet">PaperSrk</e>
+		</frame>
+	</action>
+
+	<action name="skill04">
+		<data>
+			<p type="attackType">cBuff</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">6</p>
+			<p type="cd">1</p>
+			<p type="combatPoint">5040</p>
+		</data>
+		<frame>
+			<e type="setCommand">setInvincible</e>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<e type="setSound">Audio/Konan/konan_skill4.ogg</e>
+			<f>Konan_Skill04_04</f>
+			<f>Konan_Skill04_05</f>
+			<e type="setSkillEffect">smk</e>
+			<f>Konan_Skill04_06</f>
+			<e type="setBuff">17</e>
+			<e type="setCommand">reInvincible</e>
+		</frame>
+	</action>
+	<action name="skill05">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">360</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">1</p>
+			<p type="combatPoint">8400</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<f>Konan_Skill05_02</f>
+			<e type="setSound">Audio/Konan/konan_skill5.ogg</e>
+			<f>Konan_Skill05_03</f>
+			<e type="setCommand">setInvincible</e>
+			<f>Konan_Skill05_04</f>
+			<e type="setAttackBox">f2_hit</e>
+			<f>Konan_Skill05_05</f>
+			<e type="setAttackBox">f2_hit</e>
+			<f>Konan_Skill05_06</f>
+			<e type="setAttackBox">f2_hit</e>
+			<f>Konan_Skill05_07</f>
+			<e type="setAttackBox">f2_hit</e>
+			<f>Konan_Skill05_11</f>
+			<e type="setShadow">10</e>
+			<e type="setChargeB">280</e>
+			<f>Konan_Skill05_12</f>
+			<e type="setShadow">10</e>
+			<e type="setSound">Audio/Effect/blade_damage.ogg</e>
+			<e type="setAttackBox">ac_hit</e>
+			<f>Konan_Skill05_13</f>
+			<e type="setShadow">10</e>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setSound">Audio/Effect/blade_damage.ogg</e>
+			<f>Konan_Skill05_14</f>
+			<e type="setShadow">10</e>
+			<e type="setAttackBox">ac_hit</e>
+			<f>Konan_Skill05_15</f>
+			<e type="setShadow">10</e>
+			<e type="setAttackBox">ac_hit</e>
+			<f>Konan_Skill05_16</f>
+			<e type="setShadow">10</e>
+			<f>Konan_Skill05_17</f>
+			<f>Konan_Skill05_18</f>
+			<f>Konan_Skill05_19</f>
+			<e type="setShadow">10</e>
+			<e type="setOugis">10</e>
+			<f>Konan_Skill05_20</f>
+			<e type="setShadow">10</e>
+			<e type="setJump">true</e>
+			<f>Konan_Skill05_21</f>
+			<e type="setShadow">10</e>
+			<f>Konan_Skill05_22</f>
+			<e type="setShadow">10</e>
+			<f>Konan_Skill05_23</f>
+			<e type="setShadow">10</e>
+			<f>Konan_Skill05_24</f>
+			<e type="setSound">Audio/Konan/konan_skill5_1.ogg</e>
+			<f>Konan_Skill05_25</f>
+			<e type="setMon">PaperRain</e>
+			<e type="stopJump">180</e>
+			<f>Konan_Skill05_26</f>
+			<f>Konan_Skill05_27</f>
+			<f>Konan_Skill05_28</f>
+			<e type="setCommand">reInvincible</e>
+		</frame>
+	</action>
+	<action name="skill06">
+		<frame></frame>
+	</action>
+	<action name="skill07">
+		<frame></frame>
+	</action>
+	<action name="skill08">
+		<frame></frame>
+	</action>
+	<action name="skill09">
+		<frame></frame>
+	</action>
+
+	<action name="skill10">
+		<data>
+			<p type="attackType">Idle</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">1</p>
+		</data>
+		<frame>
+			<f>Konan_Skill10_001</f>
+			<f>Konan_Skill10_002</f>
+			<f>Konan_Skill10_003</f>
+			<f>Konan_Skill10_004</f>
+		</frame>
+	</action>
+
+
+	<action name="skill11">
+
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">360</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">10</p>
+		</data>
+		<frame>
+			<f>Konan_Skill11_001</f>
+			<e type="setAttackBox">s_hit</e>
+			<e type="setDelay">10</e>
+			<f>Konan_Skill11_002</f>
+			<e type="setDelay">10</e>
+			<f>Konan_Skill11_003</f>
+			<e type="setAttackBox">s_hit</e>
+			<e type="setDelay">10</e>
+			<f>Konan_Skill11_004</f>
+			<e type="setDelay">10</e>
+		</frame>
+
+	</action>
+
+	<action name="skill12">
+
+		<data>
+			<p type="attackType">Summon</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">0</p>
+		</data>
+
+		<frame>
+		</frame>
+
+	</action>
+
+</unit>

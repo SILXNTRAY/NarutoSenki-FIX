@@ -1,0 +1,51 @@
+{
+    "files.associations": {
+        ".gitignore": "ignore",
+        "*.tpsheet": "csv (semicolon)",
+        "*.plist": "xml",
+        "*.csv": "csv"
+    },
+    "Lua.diagnostics.globals": [
+        "cocos2d",
+        "log",
+        "GameScene"
+    ],
+    "Lua.diagnostics.disable": [
+        "lowercase-global",
+        "undefined-global"
+    ],
+    "[cpp]": {
+        "editor.detectIndentation": false,
+        "editor.tabSize": 4,
+        "editor.insertSpaces": false
+    },
+    "[h]": {
+        "editor.detectIndentation": false,
+        "editor.tabSize": 4,
+        "editor.insertSpaces": false
+    },
+    "[hpp]": {
+        "editor.detectIndentation": false,
+        "editor.tabSize": 4,
+        "editor.insertSpaces": false
+    },
+    "[lua]": {
+        "editor.detectIndentation": false,
+        "editor.tabSize": 4,
+        "editor.insertSpaces": false
+    },
+    "[xml]": {
+        "editor.detectIndentation": false,
+        "editor.tabSize": 4,
+        "editor.insertSpaces": false
+    },
+    "[toml]": {
+        "editor.detectIndentation": false,
+        "editor.tabSize": 4,
+        "editor.insertSpaces": false
+    },
+    "C_Cpp.autoAddFileAssociations": false,
+    "C_Cpp.autocompleteAddParentheses": true,
+    "C_Cpp.errorSquiggles": "Enabled",
+    "C_Cpp.experimentalFeatures": "Enabled"
+}

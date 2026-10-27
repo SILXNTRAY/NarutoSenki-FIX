@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Karin</p>
+			<p type="attackValue">5500</p>
+			<p type="attackRangeX">34</p>
+			<p type="attackRangeY">74</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Karin_Idle_01</f>
+			<f>Karin_Idle_02</f>
+			<f>Karin_Idle_03</f>
+			<f>Karin_Idle_04</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Karin_Walk_01</f>
+			<f>Karin_Walk_02</f>
+			<f>Karin_Walk_03</f>
+			<f>Karin_Walk_04</f>
+			<f>Karin_Walk_05</f>
+			<f>Karin_Walk_06</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+			<e type="setMove">32</e>
+			<f>Karin_Hurt_01</f>
+			<f>Karin_Hurt_02</f>
+			<e type="setSound">Audio/Karin/Karin_hurt.ogg</e>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>Karin_AirHurt_01</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>Karin_KnockDown_01</f>
+			<e type="setDelay">10</e>
+			<f>Karin_KnockDown_02</f>
+			<e type="setDelay">60</e>
+			<f>Karin_KnockDown_03</f>
+			<f>Karin_KnockDown_04</f>
+			<f>Karin_KnockDown_05</f>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>Karin_Float_01</f>
+			<e type="setDelay">10</e>
+			<f>Karin_Float_02</f>
+			<e type="setDelay">10</e>
+			<f>Karin_Float_03</f>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Karin_KnockDown_01</f>
+			<f>Karin_KnockDown_02</f>
+			<e type="setSound">Audio/Karin/Karin_dead.ogg</e>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">80</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Karin_NAttack_01</f>
+			<f>Karin_NAttack_02</f>
+			<f>Karin_NAttack_03</f>
+			<e type="setSound">Audio/Effect/combo1.ogg</e>
+			<e type="setAttackBox">n_hit</e>
+			<f>Karin_NAttack_04</f>
+			<f>Karin_NAttack_05</f>
+			<f>Karin_NAttack_06</f>
+			<f>Karin_NAttack_07</f>
+			<e type="setMove">8</e>
+			<f>Karin_NAttack_08</f>
+			<e type="setSound">Audio/Effect/combo2.ogg</e>
+			<e type="setAttackBox">n_hit</e>
+			<f>Karin_NAttack_09</f>
+			<f>Karin_NAttack_10</f>
+			<f>Karin_NAttack_11</f>
+			<e type="setSound">Audio/Karin/Karin_combo.ogg</e>
+			<e type="setMove">16</e>
+			<f>Karin_NAttack_12</f>
+			<e type="setAttackBox">l_hit</e>
+			<e type="setSound">Audio/Effect/combo3.ogg</e>
+			<f>Karin_NAttack_13</f>
+		</frame>
+	</action>
+
+	<action name="skill01">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">560</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">10</p>
+			<p type="combatPoint">1120</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Karin/Karin_skill1.ogg</e>
+			<f>Karin_Skill01_02</f>
+			<e type="setChargeB">196</e>
+			<f>Karin_Skill01_03</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDSound">Audio/Effect/damage_i.ogg</e>
+			<f>Karin_Skill01_05</f>
+			<f>Karin_Skill01_06</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDSound">Audio/Effect/damage_i.ogg</e>
+			<f>Karin_Skill01_07</f>
+		</frame>
+	</action>
+
+	<action name="skill02">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">760</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">15</p>
+			<p type="combatPoint">1520</p>
+		</data>
+		<frame>
+			<f>Karin_Skill02_01</f>
+			<e type="setSound">Audio/Karin/Karin_skill2.ogg</e>
+			<f>Karin_Skill02_02</f>
+			<f>Karin_Skill02_04</f>
+			<e type="setSound">Audio/Effect/thunder_effect.ogg</e>
+			<e type="setAttackBox">c_hit</e>
+			<f>Karin_Skill02_05</f>
+			<f>Karin_Skill02_06</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>Karin_Skill02_07</f>
+		</frame>
+	</action>
+
+	<action name="skill03">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">25</p>
+			<p type="combatPoint">2640</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Karin/Karin_skill3.ogg</e>
+			<f>Karin_Skill03_01</f>
+			<e type="setDelay">10</e>
+			<e type="setCharge">280</e>
+			<f>Karin_Skill03_02</f>
+			<f>Karin_Skill03_03</f>
+			<e type="setAttackBox">o_hit</e>
+			<e type="setSound">Audio/Effect/damage_o.ogg</e>
+			<f>Karin_Skill03_04</f>
+			<f>Karin_Skill03_06</f>
+			<e type="setCharge">280</e>
+			<f>Karin_Skill03_07</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDSound">Audio/Effect/damage_i.ogg</e>
+			<f>Karin_Skill03_08</f>
+			<f>Karin_Skill03_08_1</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>Karin_Skill03_09</f>
+			<e type="setMove">8</e>
+			<f>Karin_Skill03_09_1</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDSound">Audio/Effect/damage_i.ogg</e>
+			<f>Karin_Skill03_10</f>
+			<f>Karin_Skill03_14</f>
+
+		</frame>
+	</action>
+
+	<action name="skill04">
+		<data>
+			<p type="attackType">GroupHeal</p>
+			<p type="attackValue">250</p>
+			<p type="attackRangeX">48</p>
+			<p type="attackRangeY">6</p>
+			<p type="cd">1</p>
+			<p type="combatPoint">0</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<f>Karin_Skill04_02</f>
+			<e type="setDelay">20</e>
+			<f>Karin_Skill04_03</f>
+			<e type="setSound">Audio/Karin/Karin_skill4.ogg</e>
+			<f>Karin_Skill04_05</f>
+			<f>Karin_Skill04_06</f>
+			<f>Karin_Skill04_07</f>
+			<e type="setBuff">600</e>
+		</frame>
+	</action>
+
+	<action name="skill05">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">1160</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">1</p>
+			<p type="combatPoint">9080</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<f>Karin_Skill05_01</f>
+			<e type="setDelay">10</e>
+			<e type="setOugis">10</e>
+			<f>Karin_Skill05_01</f>
+			<e type="setCommand">setInvincible</e>
+			<f>Karin_Skill05_02</f>
+			<e type="setAttackBox">o_hit</e>
+			<e type="setDSound">Audio/Effect/damage_o.ogg</e>
+			<e type="setDelay">10</e>
+			<f>Karin_Skill05_03</f>
+			<e type="setSound">Audio/Karin/Karin_skill5_1.ogg</e>
+			<e type="setAttackBox">ab_hit</e>
+			<e type="setDelay">10</e>
+			<f>Karin_Skill05_04</f>
+			<e type="setAttackBox">ab_hit</e>
+			<e type="setDSound">Audio/Effect/damage_i.ogg</e>
+			<e type="setDelay">10</e>
+			<f>Karin_Skill05_05</f>
+			<f>Karin_Skill05_06</f>
+			<e type="setSound">Audio/Karin/Karin_skill5_2.ogg</e>
+			<e type="setAttackBox">b_hit</e>
+			<e type="setDSound">Audio/Effect/damage_o.ogg</e>
+			<f>Karin_Skill05_07</f>
+			<f>Karin_Skill05_08</f>
+			<f>Karin_Skill05_09</f>
+			<f>Karin_Skill05_10</f>
+			<f>Karin_Skill05_11</f>
+			<e type="setAttackBox">b_hit</e>
+			<e type="setDSound">Audio/Effect/damage_i.ogg</e>
+			<e type="setDelay">10</e>
+			<f>Karin_Skill05_12</f>
+			<f>Karin_Skill05_13</f>
+			<e type="setAttackBox">b_hit</e>
+			<e type="setDSound">Audio/Effect/damage_i.ogg</e>
+			<e type="setDelay">10</e>
+			<f>Karin_Skill05_14</f>
+			<e type="setSound">Audio/Karin/Karin_skill5_3.ogg</e>
+			<f>Karin_Skill05_15</f>
+			<e type="setDelay">10</e>
+			<f>Karin_Skill05_16</f>
+			<e type="setTrap">Kusuri</e>
+			<f>Karin_Skill05_17</f>
+			<e type="setDelay">50</e>
+			<e type="setCommand">reInvincible</e>
+		</frame>
+	</action>
+	<action name="skill06">
+		<frame></frame>
+	</action>
+	<action name="skill07">
+		<frame></frame>
+	</action>
+	<action name="skill08">
+		<frame></frame>
+	</action>
+	<action name="skill09">
+		<frame></frame>
+	</action>
+	<action name="skill10">
+
+	</action>
+
+
+</unit>

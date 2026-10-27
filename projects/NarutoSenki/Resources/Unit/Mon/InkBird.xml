@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">InkBird</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">51</p>
+			<p type="attackRangeY">11</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>InkBird_Move_01</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>InkBird_Move_01</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>InkBird_Move_01</f>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">360</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>InkBird_Move_01</f>
+			<f>InkBird_Move_02</f>
+			<f>InkBird_Move_03</f>
+			<f>InkBird_Move_04</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setSound">Audio/Sai/sai_skill4_2.ogg</e>
+			<f>InkBird_Move_05</f>
+			<e type="setDSound">Audio/Effect/stick_damage.ogg</e>
+			<f>InkBird_Move_06</f>
+			<e type="setAttackBox">ac_hit</e>
+			<f>InkBird_Move_04</f>
+			<e type="setDSound">Audio/Effect/stick_damage.ogg</e>
+			<f>InkBird_Move_05</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setSound">Audio/Sai/sai_skill4_2.ogg</e>
+			<f>InkBird_Move_06</f>
+			<e type="setDSound">Audio/Effect/stick_damage.ogg</e>
+			<f>InkBird_Move_04</f>
+			<e type="setAttackBox">ac_hit</e>
+			<f>InkBird_Move_05</f>
+			<e type="setDSound">Audio/Effect/stick_damage.ogg</e>
+			<f>InkBird_Move_06</f>
+			<e type="setSound">Audio/Sai/sai_skill4_2.ogg</e>
+			<e type="setAttackBox">ac_hit</e>
+			<f>InkBird_Move_12</f>
+			<f>InkBird_Move_13</f>
+			<e type="setDetonation">0</e>
+		</frame>
+	</action>
+
+</unit>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Karasu</p>
+			<p type="attackValue">8000</p>
+			<p type="attackRangeX">66</p>
+			<p type="attackRangeY">75</p>
+			<p type="cd">320</p>
+		</data>
+		<frame>
+			<f>Karasu_Idle_01</f>
+			<e type="setDelay">10</e>
+			<f>Karasu_Idle_02</f>
+			<e type="setDelay">10</e>
+			<f>Karasu_Idle_03</f>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Karasu_Walk_01</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+			<e type="setMove">32</e>
+			<f>Karasu_Hurt_01</f>
+			<f>Karasu_Hurt_02</f>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>Karasu_Hurt_02</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>Karasu_KnockDown_01</f>
+			<e type="setDelay">10</e>
+			<f>Karasu_KnockDown_02</f>
+			<f>Karasu_KnockDown_03</f>
+			<e type="setDelay">60</e>
+			<f>Karasu_KnockDown_04</f>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>Karasu_Hurt_02</f>
+			<e type="setDelay">10</e>
+			<f>Karasu_KnockDown_01</f>
+			<e type="setDelay">10</e>
+			<f>Karasu_KnockDown_01</f>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Karasu_KnockDown_01</f>
+			<f>Karasu_KnockDown_02</f>
+			<e type="resumeSkill">1</e>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Karasu_NAttack_01</f>
+			<e type="setAttackBox">n_hit</e>
+			<e type="setDelay">40</e>
+			<f>Karasu_NAttack_02</f>
+			<e type="setAttackBox">n_hit</e>
+			<e type="setDelay">40</e>
+			<f>Karasu_NAttack_03</f>
+			<e type="setAttackBox">n_hit</e>
+			<e type="setDelay">40</e>
+		</frame>
+	</action>
+
+	<action name="skill01">
+		<data>
+			<p type="attackType">Summon</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+		</frame>
+	</action>
+
+	<action name="skill02">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">15</p>
+		</data>
+		<frame>
+			<f>Karasu_Skill02_02</f>
+			<f>Karasu_Skill02_03</f>
+			<e type="setSound">Audio/Effect/kuilei.ogg</e>
+			<e type="setJump">true</e>
+			<e type="setDelay">30</e>
+			<f>Karasu_Skill02_04</f>
+			<e type="setAttackBox">bl_hit</e>
+			<f>Karasu_Skill02_05</f>
+			<e type="setAttackBox">bl_hit</e>
+			<e type="setDelay">10</e>
+			<f>Karasu_Skill02_06</f>
+			<e type="setAttackBox">bl_hit</e>
+			<e type="setDelay">10</e>
+			<f>Karasu_Skill02_02</f>
+			<e type="setDelay">10</e>
+			<f>Karasu_Skill02_02</f>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="skill03">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">300</p>
+			<p type="attackRangeX">32</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">1</p>
+		</data>
+		<frame>
+		</frame>
+	</action>
+
+	<action name="skill04">
+		<data>
+			<p type="attackType">oAttack</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">64</p>
+			<p type="attackRangeY">32</p>
+			<p type="cd">1</p>
+		</data>
+		<frame>
+		</frame>
+	</action>
+
+	<action name="skill05">
+		<data>
+			<p type="attackType">oAttack</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">64</p>
+			<p type="attackRangeY">32</p>
+			<p type="cd">1</p>
+		</data>
+		<frame>
+		</frame>
+	</action>
+
+</unit>

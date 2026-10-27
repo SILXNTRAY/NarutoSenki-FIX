@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Chiyo</p>
+			<p type="attackValue">6000</p>
+			<p type="attackRangeX">45</p>
+			<p type="attackRangeY">65</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Chiyo_Idle_001</f>
+			<e type="setDelay">10</e>
+			<f>Chiyo_Idle_002</f>
+			<e type="setDelay">10</e>
+			<f>Chiyo_Idle_003</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Chiyo_Walk_01</f>
+			<f>Chiyo_Walk_02</f>
+			<f>Chiyo_Walk_03</f>
+			<f>Chiyo_Walk_04</f>
+			<f>Chiyo_Walk_05</f>
+			<f>Chiyo_Walk_06</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+			<e type="setMove">32</e>
+			<f>Chiyo_Hurt_01</f>
+			<f>Chiyo_Hurt_02</f>
+			<!-- <e type="setSound">Audio/Chiyo/Chiyo_hurt.ogg</e> -->
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>Chiyo_AirHurt_01</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>Chiyo_KnockDown_01</f>
+			<e type="setDelay">10</e>
+			<f>Chiyo_KnockDown_02</f>
+			<e type="setDelay">60</e>
+			<f>Chiyo_KnockDown_03</f>
+			<e type="setDelay">60</e>
+			<f>Chiyo_KnockDown_04</f>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>Chiyo_Float_01</f>
+			<e type="setDelay">10</e>
+			<f>Chiyo_Float_02</f>
+			<e type="setDelay">10</e>
+			<f>Chiyo_Float_03</f>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Chiyo_KnockDown_01</f>
+			<f>Chiyo_KnockDown_02</f>
+			<e type="setSound">Audio/Chiyo/Chiyo_dead.ogg</e>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">80</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Chiyo_NAttack_01</f>
+			<f>Chiyo_NAttack_02</f>
+			<e type="setDelay">10</e>
+			<e type="setSound">Audio/Effect/combo1.ogg</e>
+			<e type="setAttackBox">n_hit</e>
+			<f>Chiyo_NAttack_03</f>
+			<e type="setDelay">10</e>
+			<f>Chiyo_NAttack_04</f>
+			<e type="setMove">8</e>
+			<f>Chiyo_NAttack_05</f>
+			<e type="setSound">Audio/Effect/combo2.ogg</e>
+			<e type="setAttackBox">n_hit</e>
+			<e type="setDelay">10</e>
+			<f>Chiyo_NAttack_06</f>
+			<f>Chiyo_NAttack_07</f>
+			<e type="setMove">16</e>
+			<f>Chiyo_NAttack_08</f>
+			<e type="setSound">Audio/Chiyo/Chiyo_combo.ogg</e>
+			<e type="setSound">Audio/Effect/combo3.ogg</e>
+			<e type="setAttackBox">l_hit</e>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="skill01">
+		<data>
+			<p type="attackType">cBuff</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">10</p>
+			<p type="combatPoint">0</p>
+		</data>
+		<frame>
+			<f>Chiyo_Skill01_01</f>
+			<e type="setSound">Audio/Chiyo/Chiyo_skill1.ogg</e>
+			<f>Chiyo_Skill01_02</f>
+			<f>Chiyo_Skill01_03</f>
+			<f>Chiyo_Skill01_04</f>
+			<e type="setClone">0</e>
+			<e type="setBuff">17</e>
+		</frame>
+	</action>
+
+	<action name="skill02">
+		<data>
+			<p type="attackType">cBuff</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">15</p>
+			<p type="cd">15</p>
+			<p type="combatPoint">0</p>
+		</data>
+		<frame>
+
+			<e type="setSound">Audio/Chiyo/Chiyo_skill2.ogg</e>
+			<e type="setMonAttack">1</e>
+			<f>Chiyo_Skill02_01</f>
+			<f>Chiyo_Skill02_02</f>
+			<f>Chiyo_Skill02_03</f>
+			<f>Chiyo_Skill02_01</f>
+			<f>Chiyo_Skill02_02</f>
+		</frame>
+	</action>
+
+	<action name="skill03">
+		<data>
+			<p type="attackType">Summon</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">25</p>
+			<p type="combatPoint">2460</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Chiyo/Chiyo_skill3.ogg</e>
+			<e type="setMonAttack">2</e>
+			<f>Chiyo_Skill03_01</f>
+			<e type="setSound">Audio/Effect/kuilei.ogg</e>
+			<f>Chiyo_Skill03_02</f>
+			<f>Chiyo_Skill03_03</f>
+			<f>Chiyo_Skill03_04</f>
+		</frame>
+	</action>
+
+	<action name="skill04">
+		<data>
+			<p type="attackType">GroupBuff</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">10</p>
+			<p type="cd">0</p>
+			<p type="combatPoint">0</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<e type="setCommand">setInvincible</e>
+			<f>Chiyo_Skill04_001</f>
+			<e type="setSound">Audio/Chiyo/Chiyo_skill4.ogg</e>
+			<e type="setBuff">1000</e>
+			<f>Chiyo_Skill04_002</f>
+			<f>Chiyo_Skill04_003</f>
+			<f>Chiyo_Skill04_004</f>
+			<e type="setCommand">reInvincible</e>
+		</frame>
+	</action>
+
+	<action name="skill05">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+			<p type="combatPoint">0</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<f>Chiyo_Skill05_001</f>
+			<f>Chiyo_Skill05_002</f>
+			<f>Chiyo_Skill05_003</f>
+			<e type="setSound">Audio/Effect/poof.ogg</e>
+			<f>Chiyo_Skill05_004</f>
+			<e type="setOugis">10</e>
+			<f>Chiyo_Skill05_005</f>
+			<e type="setSound">Audio/Chiyo/Chiyo_skill5.ogg</e>
+			<f>Chiyo_Skill05_006</f>
+			<f>Chiyo_Skill05_007</f>
+			<f>Chiyo_Skill05_008</f>
+			<e type="setCommand">setInvincible</e>
+			<e type="setMon">Sanbao</e>
+			<f>Chiyo_Skill05_009</f>
+			<f>Chiyo_Skill05_010</f>
+			<f>Chiyo_Skill05_011</f>
+			<f>Chiyo_Skill05_012</f>
+			<f>Chiyo_Skill05_009</f>
+			<f>Chiyo_Skill05_010</f>
+			<f>Chiyo_Skill05_011</f>
+			<f>Chiyo_Skill05_009</f>
+			<f>Chiyo_Skill05_010</f>
+			<f>Chiyo_Skill05_011</f>
+			<f>Chiyo_Skill05_012</f>
+			<f>Chiyo_Skill05_013</f>
+			<f>Chiyo_Skill05_014</f>
+			<f>Chiyo_Skill05_015</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>Chiyo_Skill05_016</f>
+			<f>Chiyo_Skill05_017</f>
+			<e type="setAttackBox">o2_hit</e>
+			<e type="setDSound">Audio/Effect/damage_h.ogg</e>
+			<f>Chiyo_Skill05_018</f>
+			<f>Chiyo_Skill05_019</f>
+			<e type="setSound">Audio/Effect/poof.ogg</e>
+			<f>Chiyo_Skill05_020</f>
+			<f>Chiyo_Skill05_021</f>
+			<e type="setSound">Audio/Chiyo/Chiyo_skill5_1.ogg</e>
+			<f>Chiyo_Skill05_022</f>
+			<f>Chiyo_Skill05_023</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDSound">Audio/Effect/damage_i.ogg</e>
+			<f>Chiyo_Skill05_024</f>
+			<f>Chiyo_Skill05_025</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDSound">Audio/Effect/damage_i.ogg</e>
+			<f>Chiyo_Skill05_024</f>
+			<f>Chiyo_Skill05_025</f>
+			<e type="setAttackBox">o_hit</e>
+			<e type="setDSound">Audio/Effect/damage_i.ogg</e>
+			<f>Chiyo_Skill05_026</f>
+			<e type="setSound">Audio/Effect/poof.ogg</e>
+			<f>Chiyo_Skill05_027</f>
+			<f>Chiyo_Skill05_028</f>
+			<f>Chiyo_Skill05_029</f>
+			<e type="setAttackBox">f_hit</e>
+			<e type="setDSound">Audio/Effect/damage_o2.ogg</e>
+			<f>Chiyo_Skill05_030</f>
+			<f>Chiyo_Skill05_031</f>
+			<e type="setSound">Audio/Effect/poof.ogg</e>
+			<f>Chiyo_Skill05_032</f>
+			<f>Chiyo_Skill05_033</f>
+			<f>Chiyo_Skill05_034</f>
+			<f>Chiyo_Skill05_035</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setDSound">Audio/Effect/blade_damage.ogg</e>
+			<f>Chiyo_Skill05_036</f>
+			<f>Chiyo_Skill05_037</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setSound">Audio/Effect/poof.ogg</e>
+			<f>Chiyo_Skill05_038</f>
+			<f>Chiyo_Skill05_039</f>
+			<f>Chiyo_Skill05_040</f>
+			<f>Chiyo_Skill05_041</f>
+			<e type="setSound">Audio/Chiyo/Chiyo_skill5_2.ogg</e>
+			<f>Chiyo_Skill05_042</f>
+			<f>Chiyo_Skill05_043</f>
+			<f>Chiyo_Skill05_044</f>
+			<e type="setAttackBox">f_hit</e>
+			<e type="setDSound">Audio/Effect/damage_h.ogg</e>
+			<f>Chiyo_Skill05_045</f>
+			<f>Chiyo_Skill05_046</f>
+			<f>Chiyo_Skill05_047</f>
+			<e type="setSound">Audio/Effect/poof.ogg</e>
+			<f>Chiyo_Skill05_048</f>
+			<e type="setCommand">reInvincible</e>
+		</frame>
+
+	</action>
+	<action name="skill06">
+		<frame></frame>
+	</action>
+	<action name="skill07">
+		<frame></frame>
+	</action>
+	<action name="skill08">
+		<frame></frame>
+	</action>
+	<action name="skill09">
+		<frame></frame>
+	</action>
+	<action name="skill10">
+		<frame></frame>
+	</action>
+
+</unit>

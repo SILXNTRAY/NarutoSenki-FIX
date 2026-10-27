@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">PaperRain</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">51</p>
+			<p type="attackRangeY">11</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>PaperRain_Move_001</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>PaperRain_Move_001</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>PaperRain_Move_001</f>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">460</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>PaperRain_Move_001</f>
+			<f>PaperRain_Move_002</f>
+			<f>PaperRain_Move_003</f>
+			<f>PaperRain_Move_004</f>
+			<e type="setAttackBox">b_hit</e>
+			<f>PaperRain_Move_005</f>
+			<e type="setAttackBox">b_hit</e>
+			<f>PaperRain_Move_006</f>
+			<e type="setAttackBox">b_hit</e>
+			<f>PaperRain_Move_007</f>
+			<e type="setAttackBox">b_hit</e>
+			<f>PaperRain_Move_008</f>
+			<e type="setAttackBox">b_hit</e>
+			<f>PaperRain_Move_009</f>
+			<e type="setAttackBox">b_hit</e>
+			<f>PaperRain_Move_001</f>
+			<f>PaperRain_Move_002</f>
+			<f>PaperRain_Move_003</f>
+			<f>PaperRain_Move_004</f>
+			<e type="setAttackBox">b_hit</e>
+			<f>PaperRain_Move_005</f>
+			<e type="setAttackBox">b_hit</e>
+			<f>PaperRain_Move_006</f>
+			<e type="setAttackBox">b_hit</e>
+			<f>PaperRain_Move_007</f>
+			<e type="setAttackBox">b_hit</e>
+			<f>PaperRain_Move_008</f>
+			<e type="setAttackBox">b_hit</e>
+			<f>PaperRain_Move_009</f>
+			<e type="setAttackBox">b_hit</e>
+			<e type="setDetonation">0</e>
+		</frame>
+	</action>
+
+</unit>

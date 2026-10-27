@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Kaiten</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">51</p>
+			<p type="attackRangeY">11</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Kaiten_Move_01</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Kaiten_Move_01</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Kaiten_Move_01</f>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">760</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Kaiten_Move_01</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setDSound">Audio/Effect/damage_i.ogg</e>
+			<f>Kaiten_Move_02</f>
+			<f>Kaiten_Move_03</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setDSound">Audio/Effect/damage_i.ogg</e>
+			<f>Kaiten_Move_04</f>
+			<f>Kaiten_Move_05</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setDSound">Audio/Effect/damage_i.ogg</e>
+			<f>Kaiten_Move_06</f>
+			<f>Kaiten_Move_07</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setDSound">Audio/Effect/damage_i.ogg</e>
+			<f>Kaiten_Move_08</f>
+			<f>Kaiten_Move_09</f>
+			<f>Kaiten_Move_10</f>
+			<e type="setDetonation">0</e>
+		</frame>
+	</action>
+
+</unit>

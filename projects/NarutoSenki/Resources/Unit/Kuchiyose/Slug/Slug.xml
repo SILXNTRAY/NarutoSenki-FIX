@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Slug</p>
+			<p type="attackValue">5500</p>
+			<p type="attackRangeX">126</p>
+			<p type="attackRangeY">76</p>
+			<p type="cd">112</p>
+		</data>
+		<frame>
+			<f>Slug_Move_01</f>
+
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Slug_Move_01</f>
+			<e type="setDelay">10</e>
+			<f>Slug_Move_02</f>
+			<e type="setDelay">10</e>
+			<f>Slug_Move_03</f>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Slug_Move_01</f>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">60</p>
+			<p type="attackRangeX">32</p>
+			<p type="attackRangeY">16</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Slug_Move_01</f>
+			<e type="setDelay">10</e>
+			<f>Slug_Move_02</f>
+			<e type="setDelay">10</e>
+			<f>Slug_Move_03</f>
+			<e type="setAttackBox">n_hit</e>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="skill01">
+		<data>
+			<p type="attackType">Summon</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">15</p>
+			<p type="cd">5</p>
+		</data>
+		<frame>
+			<f>Slug_Move_01</f>
+			<e type="setMon">SmallSlug</e>
+		</frame>
+	</action>
+
+	<action name="skill02">
+		<data>
+			<p type="attackType">GroupHeal</p>
+			<p type="attackValue">200</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">10</p>
+		</data>
+		<frame>
+			<f>Slug_Move_01</f>
+			<e type="setBuff">200</e>
+		</frame>
+	</action>
+
+	<action name="skill03">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">320</p>
+			<p type="attackRangeX">160</p>
+			<p type="attackRangeY">64</p>
+			<p type="cd">25</p>
+		</data>
+		<frame></frame>
+	</action>
+
+	<action name="skill04">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">320</p>
+			<p type="attackRangeX">160</p>
+			<p type="attackRangeY">64</p>
+			<p type="cd">25</p>
+		</data>
+		<frame></frame>
+	</action>
+
+	<action name="skill05">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">320</p>
+			<p type="attackRangeX">160</p>
+			<p type="attackRangeY">64</p>
+			<p type="cd">25</p>
+		</data>
+		<frame></frame>
+	</action>
+
+
+	<action name="skill06">
+		<frame></frame>
+	</action>
+	<action name="skill07">
+		<frame></frame>
+	</action>
+	<action name="skill08">
+		<frame></frame>
+	</action>
+	<action name="skill09">
+		<frame></frame>
+	</action>
+	<action name="skill10">
+		<frame></frame>
+	</action>
+</unit>

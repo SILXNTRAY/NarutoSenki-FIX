@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Tiger</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">29</p>
+			<p type="attackRangeY">15</p>
+			<p type="cd">320</p>
+		</data>
+		<frame>
+			<f>Tiger_Idle_001</f>
+			<f>Tiger_Idle_002</f>
+			<e type="setDelay">10</e>
+			<f>Tiger_Idle_003</f>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Tiger_Move_001</f>
+			<f>Tiger_Move_002</f>
+			<f>Tiger_Move_003</f>
+			<f>Tiger_Move_004</f>
+			<f>Tiger_Move_005</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">1560</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Tiger_Attack_001</f>
+			<f>ink_boom01</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDSound">Audio/Effect/stick_damage.ogg</e>
+			<f>ink_boom02</f>
+			<e type="setDetonation">0</e>
+		</frame>
+	</action>
+
+</unit>

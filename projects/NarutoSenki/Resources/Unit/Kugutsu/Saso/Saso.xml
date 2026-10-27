@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Saso</p>
+			<p type="attackValue">20000</p>
+			<p type="attackRangeX">66</p>
+			<p type="attackRangeY">75</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Saso_Idle_01</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Saso_Walk_01</f>
+			<f>Saso_Walk_02</f>
+			<f>Saso_Walk_03</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+			<e type="setMove">32</e>
+			<f>Saso_Hurt_01</f>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>Saso_Hurt_01</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>Saso_KnockDown_01</f>
+			<f>Saso_KnockDown_02</f>
+			<f>Saso_KnockDown_03</f>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>Saso_Hurt_01</f>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Saso_KnockDown_01</f>
+			<f>Saso_KnockDown_02</f>
+			<f>Saso_KnockDown_03</f>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">100</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Saso_NAttack_01</f>
+			<e type="setDelay">10</e>
+			<f>Saso_NAttack_02</f>
+			<e type="setAttackBox">n_hit</e>
+			<e type="setDelay">10</e>
+			<f>Saso_NAttack_03</f>
+			<f>Saso_NAttack_04</f>
+			<e type="setDelay">10</e>
+			<f>Saso_NAttack_05</f>
+			<e type="setAttackBox">n_hit</e>
+			<f>Saso_NAttack_06</f>
+			<f>Saso_NAttack_07</f>
+			<e type="setDelay">10</e>
+			<f>Saso_NAttack_08</f>
+			<e type="setDelay">10</e>
+			<f>Saso_NAttack_09</f>
+			<f>Saso_NAttack_10</f>
+			<e type="setAttackBox">n_hit</e>
+			<f>Saso_NAttack_11</f>
+		</frame>
+	</action>
+
+	<action name="skill01">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">760</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">10</p>
+		</data>
+		<frame>
+			<f>Saso_Skill02_01</f>
+			<e type="setSound">Audio/Kankuro/kankuro_skill5_1.ogg</e>
+			<f>Saso_Skill02_02</f>
+			<e type="setAttackBox">o_hit</e>
+			<e type="setSound">Audio/Effect/goukakyu.ogg</e>
+			<e type="setDelay">10</e>
+			<f>Saso_Skill02_03</f>
+			<e type="setAttackBox">o_hit</e>
+			<e type="setDelay">10</e>
+			<f>Saso_Skill02_04</f>
+			<e type="setAttackBox">o_hit</e>
+			<e type="setDelay">10</e>
+			<f>Saso_Skill02_05</f>
+			<e type="setAttackBox">o_hit</e>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="skill02">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">560</p>
+			<p type="attackRangeX">32</p>
+			<p type="attackRangeY">32</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+		</frame>
+	</action>
+
+	<action name="skill03">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">300</p>
+			<p type="attackRangeX">32</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">1</p>
+		</data>
+		<frame>
+		</frame>
+	</action>
+
+	<action name="skill04">
+		<data>
+			<p type="attackType">oAttack</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">64</p>
+			<p type="attackRangeY">32</p>
+			<p type="cd">1</p>
+		</data>
+		<frame>
+		</frame>
+	</action>
+
+	<action name="skill05">
+		<data>
+			<p type="attackType">oAttack</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">64</p>
+			<p type="attackRangeY">32</p>
+			<p type="cd">1</p>
+		</data>
+		<frame>
+		</frame>
+	</action>
+
+</unit>

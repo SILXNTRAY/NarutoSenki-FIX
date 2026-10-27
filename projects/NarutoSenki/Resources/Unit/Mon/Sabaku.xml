@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Sabaku</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">51</p>
+			<p type="attackRangeY">11</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Sabaku_Move_03</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Sabaku_Move_03</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Sabaku_Move_03</f>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<e type="setCommand">findTarget</e>
+			<e type="setCommand">setTransport</e>
+			<f>Sabaku_Move_03</f>
+			<e type="setAttackBox">s_hit</e>
+			<f>Sabaku_Move_04</f>
+			<f>Sabaku_Move_05</f>
+			<e type="setAttackBox">s_hit</e>
+			<f>Sabaku_Move_06</f>
+			<f>Sabaku_Move_07</f>
+			<e type="setAttackBox">s_hit</e>
+			<f>Sabaku_Move_08</f>
+			<f>Sabaku_Move_09</f>
+			<e type="setAttackBox">s_hit</e>
+			<f>Sabaku_Move_10</f>
+			<f>Sabaku_Move_11</f>
+			<e type="setAttackBox">ct_hit</e>
+			<f>Sabaku_Move_12</f>
+			<f>Sabaku_Move_13</f>
+			<f>Sabaku_Move_14</f>
+			<f>Sabaku_Move_15</f>
+			<f>Sabaku_Move_16</f>
+			<e type="setDelay">250</e>
+			<e type="setDetonation">0</e>
+		</frame>
+	</action>
+
+</unit>

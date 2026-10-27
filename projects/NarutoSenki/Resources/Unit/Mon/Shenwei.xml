@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Shenwei</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">51</p>
+			<p type="attackRangeY">11</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Shenwei_Move_001</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Shenwei_Move_001</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Shenwei_Move_001</f>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">196</p>
+			<p type="attackRangeY">128</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Shenwei_Move_001</f>
+			<e type="setAttackBox">s_hit</e>
+			<f>Shenwei_Move_002</f>
+			<f>Shenwei_Move_003</f>
+			<e type="setAttackBox">s_hit</e>
+			<f>Shenwei_Move_004</f>
+			<f>Shenwei_Move_005</f>
+			<e type="setAttackBox">s_hit</e>
+			<f>Shenwei_Move_006</f>
+			<f>Shenwei_Move_001</f>
+			<e type="setAttackBox">s_hit</e>
+			<f>Shenwei_Move_002</f>
+			<f>Shenwei_Move_003</f>
+			<e type="setAttackBox">s_hit</e>
+			<f>Shenwei_Move_004</f>
+			<f>Shenwei_Move_005</f>
+			<e type="setAttackBox">s_hit</e>
+			<f>Shenwei_Move_006</f>
+			<e type="setAttackBox">ct_hit</e>
+			<e type="setDetonation">0</e>
+		</frame>
+	</action>
+
+</unit>

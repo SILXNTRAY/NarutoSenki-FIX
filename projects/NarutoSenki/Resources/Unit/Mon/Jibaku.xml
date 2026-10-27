@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Jibaku</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">51</p>
+			<p type="attackRangeY">11</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Jibaku_Move_01</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Jibaku_Move_01</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Jibaku_Move_01</f>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">300</p>
+			<p type="attackRangeX">192</p>
+			<p type="attackRangeY">64</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Jibaku_Move_01</f>
+			<e type="setAttackBox">ab_hit</e>
+			<e type="setDelay">10</e>
+			<e type="setAttackBox">ab_hit</e>
+			<e type="setDelay">10</e>
+			<f>Jibaku_Move_02</f>
+			<e type="setAttackBox">ab_hit</e>
+			<e type="setDelay">10</e>
+			<e type="setAttackBox">ab_hit</e>
+			<e type="setDelay">10</e>
+			<f>Jibaku_Move_03</f>
+			<e type="setAttackBox">ab_hit</e>
+			<e type="setDelay">10</e>
+			<e type="setAttackBox">ab_hit</e>
+			<e type="setDelay">10</e>
+			<f>Jibaku_Move_04</f>
+			<e type="setAttackBox">ab_hit</e>
+			<e type="setDelay">10</e>
+			<e type="setAttackBox">ab_hit</e>
+			<e type="setDelay">10</e>
+			<f>Jibaku_Move_05</f>
+			<e type="setAttackBox">ab_hit</e>
+			<e type="setDelay">10</e>
+			<e type="setAttackBox">ab_hit</e>
+			<e type="setDelay">10</e>
+			<f>Jibaku_Move_06</f>
+			<e type="setSound">Audio/Effect/bom.ogg</e>
+			<e type="setAttackBox">c_hit</e>
+			<f>Jibaku_Move_07</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>Jibaku_Move_08</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>Jibaku_Move_09</f>
+			<f>Jibaku_Move_10</f>
+			<f>Jibaku_Move_11</f>
+			<f>Jibaku_Move_12</f>
+			<e type="setDetonation">0</e>
+		</frame>
+	</action>
+
+</unit>

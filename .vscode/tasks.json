@@ -1,0 +1,47 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "no-compile",
+            "command": "",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "compile",
+            "command": "./build.sh",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "deploy Linnux",
+            "command": "./deploy.sh",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "compile-win32",
+            "command": "./build-win32.bat",
+            "args": []
+        },
+        {
+            "type": "shell",
+            "label": "compile-win32-debug",
+            "command": "./build-win32-debug.bat",
+            "args": []
+        },
+        {
+            "type": "shell",
+            "label": "deploy Windows",
+            "command": "./deploy.bat",
+            "args": []
+        }
+    ]
+}

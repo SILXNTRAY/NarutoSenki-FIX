@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Ino</p>
+			<p type="attackValue">5000</p>
+			<p type="attackRangeX">63</p>
+			<p type="attackRangeY">76</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Ino_Idle_001</f>
+			<f>Ino_Idle_002</f>
+			<f>Ino_Idle_003</f>
+			<f>Ino_Idle_004</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Ino_Walk_01</f>
+			<f>Ino_Walk_02</f>
+			<f>Ino_Walk_03</f>
+			<f>Ino_Walk_04</f>
+			<f>Ino_Walk_05</f>
+			<f>Ino_Walk_06</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+			<e type="setMove">32</e>
+			<f>Ino_Hurt_01</f>
+			<f>Ino_Hurt_02</f>
+			<e type="setSound">Audio/Ino/Ino_hurt.ogg</e>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>Ino_AirHurt_001</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>Ino_KnockDown_001</f>
+			<e type="setDelay">10</e>
+			<f>Ino_KnockDown_002</f>
+			<e type="setDelay">60</e>
+			<f>Ino_KnockDown_003</f>
+			<f>Ino_KnockDown_004</f>
+			<f>Ino_KnockDown_005</f>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>Ino_Float_001</f>
+			<e type="setDelay">10</e>
+			<f>Ino_Float_002</f>
+			<e type="setDelay">10</e>
+			<f>Ino_Float_003</f>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Ino_KnockDown_001</f>
+			<f>Ino_KnockDown_002</f>
+			<e type="setSound">Audio/Ino/Ino_dead.ogg</e>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">60</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Ino_NAttack_001</f>
+			<f>Ino_NAttack_002</f>
+			<e type="setDelay">10</e>
+			<f>Ino_NAttack_003</f>
+			<e type="setAttackBox">n_hit</e>
+			<f>Ino_NAttack_004</f>
+			<f>Ino_NAttack_005</f>
+			<f>Ino_NAttack_006</f>
+			<e type="setMove">8</e>
+			<f>Ino_NAttack_008</f>
+			<f>Ino_NAttack_009</f>
+			<e type="setAttackBox">n_hit</e>
+			<e type="setSound">Audio/Effect/combo2.ogg</e>
+			<f>Ino_NAttack_010</f>
+			<f>Ino_NAttack_011</f>
+			<e type="setSound">Audio/Ino/Ino_combo.ogg</e>
+			<e type="setMove">16</e>
+			<f>Ino_NAttack_012</f>
+			<f>Ino_NAttack_013</f>
+			<e type="setAttackBox">l_hit</e>
+			<e type="setSound">Audio/Effect/combo3.ogg</e>
+			<f>Ino_NAttack_014</f>
+			<f>Ino_NAttack_015</f>
+		</frame>
+	</action>
+
+	<action name="skill01">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">560</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">10</p>
+			<p type="combatPoint">1120</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Ino/Ino_skill1.ogg</e>
+			<f>Ino_Skill01_001</f>
+			<f>Ino_Skill01_003</f>
+			<f>Ino_Skill01_004</f>
+			<f>Ino_Skill01_006</f>
+			<e type="setChargeB">96</e>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDSound">Audio/Effect/damage_l.ogg</e>
+			<f>Ino_Skill01_007</f>
+			<f>Ino_Skill01_008</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDSound">Audio/Effect/damage_l.ogg</e>
+			<e type="setChargeB">96</e>
+			<f>Ino_Skill01_009</f>
+			<f>Ino_Skill01_011</f>
+			<f>Ino_Skill01_012</f>
+		</frame>
+	</action>
+	<action name="skill02">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">760</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">15</p>
+			<p type="combatPoint">1520</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Ino/ino_skill2.ogg</e>
+			<f>Ino_Skill02_001</f>
+			<e type="setJump">true</e>
+			<f>Ino_Skill02_002</f>
+			<f>Ino_Skill02_003</f>
+			<f>Ino_Skill02_004</f>
+			<f>Ino_Skill02_005</f>
+			<f>Ino_Skill02_006</f>
+			<e type="setDelay">10</e>
+			<f>Ino_Skill02_007</f>
+			<e type="setSound">Audio/Ino/Ino_skill3_1.ogg</e>
+			<e type="setAttackBox">ac_hit</e>
+			<f>Ino_Skill02_008</f>
+			<f>Ino_Skill02_009</f>
+			<e type="setAttackBox">b_hit</e>
+			<e type="setDSound">Audio/Effect/damage_h.ogg</e>
+		</frame>
+	</action>
+	<action name="skill03">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">420</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">25</p>
+			<p type="combatPoint">2100</p>
+		</data>
+		<frame>
+			<f>Ino_Skill03_002</f>
+			<e type="setSound">Audio/Ino/Ino_skill3.ogg</e>
+			<f>Ino_Skill03_003</f>
+			<e type="setChargeB">192</e>
+			<f>Ino_Skill03_004</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDSound">Audio/Effect/damage_i.ogg</e>
+			<f>Ino_Skill03_005</f>
+			<f>Ino_Skill03_006</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>Ino_Skill03_008</f>
+			<f>Ino_Skill03_010</f>
+			<e type="setSound">Audio/Ino/Ino_skill3_1.ogg</e>
+			<e type="setAttackBox">f_hit</e>
+			<e type="setDSound">Audio/Effect/damage_o2.ogg</e>
+			<e type="setDelay">10</e>
+			<f>Ino_Skill03_011</f>
+			<f>Ino_Skill03_012</f>
+			<f>Ino_Skill03_013</f>
+			<f>Ino_Skill03_014</f>
+			<f>Ino_Skill03_015</f>
+			<e type="setJump">true</e>
+			<f>Ino_Skill03_016</f>
+			<e type="setSound">Audio/Ino/Ino_skill3_2.ogg</e>
+			<e type="setAttackBox">ac_hit</e>
+			<f>Ino_Skill03_017</f>
+			<e type="setDelay">10</e>
+			<f>Ino_Skill03_017_1</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setDSound">Audio/Effect/damage_i.ogg</e>
+			<f>Ino_Skill03_018</f>
+			<f>Ino_Skill03_019</f>
+			<f>Ino_Skill03_020</f>
+			<f>Ino_Skill03_021</f>
+			<f>Ino_Skill03_022</f>
+		</frame>
+	</action>
+	<action name="skill04">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">520</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">1</p>
+			<p type="combatPoint">3120</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<f>Ino_Skill04_001</f>
+			<e type="setSound">Audio/Ino/Ino_skill4.ogg</e>
+			<e type="setAttackBox">c_hit</e>
+			<f>Ino_Skill04_002</f>
+			<f>Ino_Skill04_003</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDSound">Audio/Effect/damage_l.ogg</e>
+			<f>Ino_Skill04_004</f>
+			<f>Ino_Skill04_005</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDSound">Audio/Effect/damage_l.ogg</e>
+			<f>Ino_Skill04_006</f>
+			<f>Ino_Skill04_007</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDSound">Audio/Effect/damage_l.ogg</e>
+			<f>Ino_Skill04_009</f>
+			<f>Ino_Skill04_011</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDSound">Audio/Effect/damage_l.ogg</e>
+			<f>Ino_Skill04_012</f>
+			<f>Ino_Skill04_013</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDSound">Audio/Effect/damage_l.ogg</e>
+		</frame>
+	</action>
+	<action name="skill05">
+		<data>
+			<p type="attackType">Summon</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">1</p>
+			<p type="combatPoint">8000</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<f>Ino_Skill05_001</f>
+			<e type="setCommand">setInvincible</e>
+			<f>Ino_Skill05_002</f>
+			<f>Ino_Skill05_003</f>
+			<f>Ino_Skill05_004</f>
+			<f>Ino_Skill05_005</f>
+			<e type="setOugis">10</e>
+			<f>Ino_Skill05_006</f>
+			<e type="setBullet">Shintenshin</e>
+			<e type="setDelay">200</e>
+			<e type="setCommand">reInvincible</e>
+		</frame>
+	</action>
+
+	<action name="skill06">
+		<frame></frame>
+	</action>
+	<action name="skill07">
+		<frame></frame>
+	</action>
+	<action name="skill08">
+		<frame></frame>
+	</action>
+	<action name="skill09">
+		<frame></frame>
+	</action>
+	<action name="skill10">
+		<data>
+			<p type="attackType">idle</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">32</p>
+			<p type="cd">10</p>
+		</data>
+		<frame>
+			<f>Ino_Skill05_007</f>
+			<e type="setDelay">10</e>
+			<f>Ino_Skill05_008</f>
+		</frame>
+	</action>
+	<action name="skill11">
+		<data>
+			<p type="attackType">summon</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">15</p>
+		</data>
+		<frame>
+
+		</frame>
+
+	</action>
+	<action name="skill12">
+		<data>
+			<p type="attackType">idle</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+
+		</frame>
+
+	</action>
+</unit>

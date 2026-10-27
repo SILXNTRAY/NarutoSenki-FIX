@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Choji</p>
+			<p type="attackValue">6000</p>
+			<p type="attackRangeX">51</p>
+			<p type="attackRangeY">78</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Choji_Idle_01</f>
+			<e type="setDelay">10</e>
+			<f>Choji_Idle_02</f>
+			<e type="setDelay">10</e>
+			<f>Choji_Idle_03</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Choji_Walk_01</f>
+			<f>Choji_Walk_02</f>
+			<f>Choji_Walk_03</f>
+			<f>Choji_Walk_04</f>
+			<f>Choji_Walk_05</f>
+			<f>Choji_Walk_06</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+			<e type="setMove">32</e>
+			<f>Choji_Hurt_01</f>
+			<f>Choji_Hurt_02</f>
+			<e type="setSound">Audio/Choji/Choji_hurt.ogg</e>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>Choji_AirHurt_01</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>Choji_KnockDown_01</f>
+			<e type="setDelay">10</e>
+			<f>Choji_KnockDown_02</f>
+			<f>Choji_KnockDown_03</f>
+			<e type="setDelay">60</e>
+			<f>Choji_KnockDown_04</f>
+			<f>Choji_KnockDown_05</f>
+			<f>Choji_KnockDown_06</f>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>Choji_Float_01</f>
+			<f>Choji_Float_02</f>
+			<f>Choji_Float_03</f>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Choji_KnockDown_01</f>
+			<f>Choji_KnockDown_02</f>
+			<f>Choji_KnockDown_03</f>
+			<e type="setSound">Audio/Choji/Choji_dead.ogg</e>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">80</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Choji_NAttack_01</f>
+			<e type="setDelay">10</e>
+			<f>Choji_NAttack_02</f>
+			<e type="setDelay">10</e>
+			<f>Choji_NAttack_03</f>
+			<e type="setSound">Audio/Effect/combo1.ogg</e>
+			<e type="setAttackBox">n_hit</e>
+			<f>Choji_NAttack_04</f>
+			<e type="setDelay">10</e>
+			<f>Choji_NAttack_05</f>
+			<e type="setMove">8</e>
+			<f>Choji_NAttack_06</f>
+			<e type="setAttackBox">n_hit</e>
+			<e type="setSound">Audio/Effect/combo2.ogg</e>
+			<e type="setDelay">10</e>
+			<f>Choji_NAttack_07</f>
+			<f>Choji_NAttack_08</f>
+			<e type="setDelay">10</e>
+			<f>Choji_NAttack_09</f>
+			<e type="setMove">16</e>
+			<e type="setSound">Audio/Choji/Choji_combo.ogg</e>
+			<f>Choji_NAttack_10</f>
+			<e type="setSound">Audio/Effect/combo3.ogg</e>
+			<e type="setAttackBox">l_hit</e>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="skill01">
+		<data>
+			<p type="attackType">dcBuff</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">15</p>
+			<p type="cd">20</p>
+			<p type="combatPoint">0</p>
+		</data>
+		<frame>
+			<f>Choji_Skill01_02</f>
+			<e type="setSound">Audio/Choji/Choji_skill1.ogg</e>
+			<e type="setDelay">10</e>
+			<f>Choji_Skill01_03</f>
+			<e type="setDelay">30</e>
+			<e type="setBuff">200</e>
+		</frame>
+	</action>
+
+	<action name="skill02">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">360</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">15</p>
+			<p type="combatPoint">1440</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Choji/Choji_skill2.ogg</e>
+			<f>Choji_Skill02_04</f>
+			<f>Choji_Skill02_05</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDSound">Audio/Effect/damage_l.ogg</e>
+			<f>Choji_Skill02_06</f>
+			<f>Choji_Skill02_08</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>Choji_Skill02_09</f>
+			<f>Choji_Skill02_05</f>
+			<e type="setChargeB">196</e>
+			<f>Choji_Skill02_06</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDSound">Audio/Effect/damage_l.ogg</e>
+			<f>Choji_Skill02_07</f>
+			<f>Choji_Skill02_08</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>Choji_Skill02_09</f>
+			<f>Choji_Skill02_10</f>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="skill03">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">960</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">25</p>
+			<p type="combatPoint">1920</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Choji/Choji_skill3.ogg</e>
+			<f>Choji_Skill03_01</f>
+			<f>Choji_Skill03_02</f>
+			<e type="setJump">true</e>
+			<e type="setDelay">30</e>
+			<e type="setSkillEffect">smk</e>
+			<f>Choji_Skill03_03</f>
+			<e type="setDelay">30</e>
+			<f>Choji_Skill03_04</f>
+			<f>Choji_Skill03_05</f>
+			<e type="setAttackBox">b_hit</e>
+			<e type="setDSound">Audio/Effect/damage_h.ogg</e>
+			<f>Choji_Skill03_06</f>
+			<f>Choji_Skill03_07</f>
+			<e type="setAttackBox">b_hit</e>
+			<f>Choji_Skill03_08</f>
+			<e type="setSkillEffect">smk</e>
+		</frame>
+	</action>
+
+	<action name="skill04">
+		<data>
+			<p type="attackType">Summon</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">1</p>
+			<p type="combatPoint">3480</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<f>Choji_Skill04_02</f>
+			<e type="setSound">Audio/Choji/Choji_skill4.ogg</e>
+			<e type="setSkillEffect">smk</e>
+			<f>Choji_Skill04_03</f>
+			<e type="setDelay">20</e>
+			<f>Choji_Skill04_04</f>
+			<f>Choji_Skill04_05</f>
+			<e type="setDelay">10</e>
+			<f>Choji_Skill04_06</f>
+			<e type="setDelay">10</e>
+			<f>Choji_Skill04_07</f>
+			<e type="setDelay">10</e>
+			<f>Choji_Skill04_08</f>
+			<e type="setMon">ChuiDi</e>
+			<e type="setDelay">60</e>
+			<e type="setSkillEffect">smk</e>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="skill05">
+		<data>
+			<p type="attackType">cBuff</p>
+			<p type="attackValue">460</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">15</p>
+			<p type="cd">0</p>
+			<p type="combatPoint">8000</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<e type="setCommand">setInvincible</e>
+			<f>Choji_Skill05_01</f>
+			<e type="setOugis">10</e>
+			<f>Choji_Skill05_02</f>
+			<e type="setDelay">20</e>
+			<e type="setSkillEffect">smk</e>
+			<e type="setBuff">18</e>
+			<e type="setCommand">reInvincible</e>
+		</frame>
+	</action>
+
+
+	<action name="skill06">
+		<frame></frame>
+	</action>
+	<action name="skill07">
+		<frame></frame>
+	</action>
+	<action name="skill08">
+		<frame></frame>
+	</action>
+	<action name="skill09">
+		<data>
+			<p type="attackType">Idle</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">1</p>
+		</data>
+		<frame>
+			<f>Choji_Skill09_001</f>
+			<f>Choji_Skill09_002</f>
+			<f>Choji_Skill09_003</f>
+			<f>Choji_Skill09_004</f>
+		</frame>
+	</action>
+
+	<action name="skill10">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">100</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">16</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Choji_Skill10_001</f>
+			<e type="setDelay">10</e>
+			<f>Choji_Skill10_002</f>
+			<e type="setDelay">10</e>
+			<f>Choji_Skill10_003</f>
+			<e type="setSound">Audio/Effect/combo1.ogg</e>
+			<e type="setAttackBox">l_hit</e>
+			<f>Choji_Skill10_004</f>
+			<e type="setDelay">10</e>
+			<f>Choji_Skill10_005</f>
+			<e type="setMove">16</e>
+			<f>Choji_Skill10_006</f>
+			<e type="setSound">Audio/Choji/Choji_combo.ogg</e>
+			<f>Choji_Skill10_007</f>
+			<e type="setDelay">10</e>
+			<f>Choji_Skill10_008</f>
+			<e type="setSound">Audio/Effect/combo3.ogg</e>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+
+	<action name="skill11">
+		<data>
+			<p type="attackType">Walk</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Choji_Skill11_001</f>
+			<f>Choji_Skill11_002</f>
+			<f>Choji_Skill11_003</f>
+			<f>Choji_Skill11_004</f>
+			<f>Choji_Skill11_005</f>
+			<f>Choji_Skill11_006</f>
+		</frame>
+	</action>
+
+	<action name="skill12">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">100</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Choji_Skill10_001</f>
+			<e type="setDelay">10</e>
+			<f>Choji_Skill10_002</f>
+			<f>Choji_Skill10_003</f>
+			<e type="setSound">Audio/Effect/combo1.ogg</e>
+			<e type="setAttackBox">l_hit</e>
+			<e type="setDelay">10</e>
+			<f>Choji_Skill10_004</f>
+			<f>Choji_Skill10_005</f>
+			<e type="setSound">Audio/Choji/Choji_skill10.ogg</e>
+			<e type="setMove">16</e>
+			<f>Choji_Skill10_006</f>
+			<f>Choji_Skill10_007</f>
+			<e type="setAttackBox">l_hit</e>
+			<f>Choji_Skill10_008</f>
+			<e type="setSound">Audio/Effect/combo3.ogg</e>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+
+</unit>

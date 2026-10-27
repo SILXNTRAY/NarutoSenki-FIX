@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Tenten</p>
+			<p type="attackValue">5000</p>
+			<p type="attackRangeX">51</p>
+			<p type="attackRangeY">71</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Tenten_Idle_01</f>
+			<f>Tenten_Idle_02</f>
+			<f>Tenten_Idle_03</f>
+			<f>Tenten_Idle_04</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Tenten_Walk_01</f>
+			<f>Tenten_Walk_02</f>
+			<f>Tenten_Walk_03</f>
+			<f>Tenten_Walk_04</f>
+			<f>Tenten_Walk_05</f>
+			<f>Tenten_Walk_06</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+			<e type="setMove">32</e>
+			<f>Tenten_Hurt_01</f>
+			<f>Tenten_Hurt_02</f>
+			<e type="setSound">Audio/Tenten/tenten_hurt.ogg</e>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>Tenten_AirHurt_01</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>Tenten_KnockDown_01</f>
+			<e type="setDelay">10</e>
+			<f>Tenten_KnockDown_02</f>
+			<e type="setDelay">60</e>
+			<f>Tenten_KnockDown_03</f>
+			<f>Tenten_KnockDown_04</f>
+			<f>Tenten_KnockDown_05</f>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>Tenten_Float_01</f>
+			<e type="setDelay">10</e>
+			<f>Tenten_Float_02</f>
+			<e type="setDelay">10</e>
+			<f>Tenten_Float_03</f>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Tenten_KnockDown_01</f>
+			<f>Tenten_KnockDown_02</f>
+			<e type="setSound">Audio/Tenten/tenten_dead.ogg</e>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">60</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Tenten_NAttack_01</f>
+			<f>Tenten_NAttack_02</f>
+			<e type="setSound">Audio/Effect/combo1.ogg</e>
+			<f>Tenten_NAttack_03</f>
+			<e type="setAttackBox">n_hit</e>
+			<f>Tenten_NAttack_04</f>
+			<f>Tenten_NAttack_05</f>
+			<e type="setMove">8</e>
+			<f>Tenten_NAttack_06</f>
+			<e type="setDelay">10</e>
+			<e type="setSound">Audio/Effect/combo2.ogg</e>
+			<e type="setAttackBox">n_hit</e>
+			<f>Tenten_NAttack_07</f>
+			<f>Tenten_NAttack_08</f>
+			<e type="setSound">Audio/Tenten/tenten_combo.ogg</e>
+			<f>Tenten_NAttack_09</f>
+			<f>Tenten_NAttack_10</f>
+			<e type="setSound">Audio/Effect/kong.ogg</e>
+			<e type="setAttackBox">bl_hit</e>
+			<e type="setMove">16</e>
+			<f>Tenten_NAttack_11</f>
+			<f>Tenten_NAttack_12</f>
+			<f>Tenten_NAttack_13</f>
+			<f>Tenten_NAttack_14</f>
+		</frame>
+	</action>
+
+	<action name="skill01">
+		<data>
+			<p type="attackType">Summon</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">10</p>
+			<p type="cd">10</p>
+			<p type="combatPoint">1260</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Tenten/tenten_skill1.ogg</e>
+			<f>Tenten_Skill01_02</f>
+			<f>Tenten_Skill01_04</f>
+			<e type="setMon">Mine</e>
+			<e type="setDelay">10</e>
+			<f>Tenten_Skill01_05</f>
+		</frame>
+	</action>
+
+	<action name="skill02">
+		<data>
+			<p type="attackType">Bullet</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">15</p>
+			<p type="combatPoint">2080</p>
+		</data>
+		<frame>
+			<f>Tenten_Skill02_01</f>
+			<e type="setDelay">10</e>
+			<f>Tenten_Skill02_02</f>
+			<e type="setSound">Audio/Tenten/tenten_skill2.ogg</e>
+			<e type="setBullet">FlyKnife</e>
+			<f>Tenten_Skill02_03</f>
+			<f>Tenten_Skill02_05</f>
+			<f>Tenten_Skill02_06</f>
+			<e type="setMove">8</e>
+			<f>Tenten_Skill02_07</f>
+			<e type="setSound">Audio/Tenten/tenten_skill2_1.ogg</e>
+			<e type="setBullet">FlyKnife</e>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="skill03">
+		<data>
+			<p type="attackType">cBuff</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">8</p>
+			<p type="cd">25</p>
+			<p type="combatPoint">5600</p>
+		</data>
+		<frame>
+			<f>Tenten_Skill03_01</f>
+			<e type="setSound">Audio/Tenten/tenten_skill3.ogg</e>
+			<f>Tenten_Skill03_02</f>
+			<e type="setDelay">10</e>
+			<f>Tenten_Skill03_03</f>
+			<e type="setDelay">10</e>
+			<e type="setBuff">17</e>
+		</frame>
+	</action>
+
+	<action name="skill04">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">400</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">1</p>
+			<p type="combatPoint">3200</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<e type="setSound">Audio/Tenten/tenten_skill4.ogg</e>
+			<f>Tenten_Skill04_07</f>
+			<e type="setShadow">10</e>
+			<f>Tenten_Skill04_08</f>
+			<e type="setChargeB">96</e>
+			<f>Tenten_Skill04_09</f>
+			<e type="setShadow">10</e>
+			<e type="setAttackBox">o_hit</e>
+			<e type="setDSound">Audio/Effect/blade_damage.ogg</e>
+			<f>Tenten_Skill04_10</f>
+			<e type="setChargeB">96</e>
+			<f>Tenten_Skill04_11</f>
+			<e type="setShadow">10</e>
+			<e type="setAttackBox">o_hit</e>
+			<e type="setDSound">Audio/Effect/blade_damage.ogg</e>
+			<f>Tenten_Skill04_12</f>
+			<e type="setChargeB">96</e>
+			<f>Tenten_Skill04_13</f>
+			<e type="setShadow">10</e>
+			<e type="setAttackBox">c_hit</e>
+			<f>Tenten_Skill04_14</f>
+			<f>Tenten_Skill04_15</f>
+			<e type="setShadow">10</e>
+			<e type="setAttackBox">bf_hit</e>
+			<e type="setDSound">Audio/Effect/blade_damage.ogg</e>
+			<f>Tenten_Skill04_10</f>
+			<f>Tenten_Skill04_11</f>
+			<e type="setShadow">10</e>
+			<e type="setJump">true</e>
+			<f>Tenten_Skill04_12</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setDSound">Audio/Effect/blade_damage.ogg</e>
+			<f>Tenten_Skill04_13</f>
+			<e type="setShadow">10</e>
+			<f>Tenten_Skill04_14</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDSound">Audio/Effect/blade_damage.ogg</e>
+			<f>Tenten_Skill04_15</f>
+			<e type="setShadow">10</e>
+			<e type="setSound">Audio/Tenten/tenten_skill4_1.ogg</e>
+			<f>Tenten_Skill04_16</f>
+			<f>Tenten_Skill04_17</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>Tenten_Skill04_18</f>
+			<f>Tenten_Skill04_19</f>
+			<e type="setDSound">Audio/Effect/damage_o2.ogg</e>
+			<f>Tenten_Skill04_20</f>
+			<e type="setAttackBox">b_hit</e>
+			<f>Tenten_Skill04_21</f>
+		</frame>
+	</action>
+
+	<action name="skill05">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">1060</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">1</p>
+			<p type="combatPoint">8760</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<f>Tenten_Skill05_10</f>
+			<e type="setCommand">setInvincible</e>
+			<f>Tenten_Skill06_001</f>
+			<f>Tenten_Skill06_002</f>
+			<f>Tenten_Skill06_001</f>
+			<f>Tenten_Skill06_002</f>
+			<f>Tenten_Skill06_001</f>
+			<f>Tenten_Skill06_002</f>
+			<e type="setOugis">10</e>
+			<f>Tenten_Skill06_002</f>
+			<f>Tenten_Skill06_003</f>
+			<f>Tenten_Skill06_004</f>
+			<e type="setAttackBox">ab_hit</e>
+			<f>Tenten_Skill06_005</f>
+			<f>Tenten_Skill06_006</f>
+			<e type="setAttackBox">o2_hit</e>
+			<f>Tenten_Skill05_01</f>
+			<e type="setDelay">10</e>
+			<e type="setJump">true</e>
+			<e type="setSound">Audio/Tenten/Tenten_skill5_2.ogg</e>
+			<f>Tenten_Skill05_02</f>
+			<e type="setShadow">10</e>
+			<e type="setDelay">10</e>
+			<f>Tenten_Skill05_03</f>
+			<e type="setShadow">10</e>
+			<f>Tenten_Skill05_04</f>
+			<e type="setSound">Audio/Tenten/Tenten_skill5_3.ogg</e>
+			<e type="stopJump">90</e>
+			<e type="setCommand">addExtern</e>
+			<e type="setMon">Shoryu</e>
+			<f>Tenten_Skill05_05</f>
+			<f>Tenten_Skill05_06</f>
+			<e type="setDelay">10</e>
+			<f>Tenten_Skill05_07</f>
+			<e type="setDelay">10</e>
+			<e type="setCommand">reInvincible</e>
+		</frame>
+	</action>
+	<action name="skill06">
+		<frame></frame>
+	</action>
+	<action name="skill07">
+		<frame></frame>
+	</action>
+	<action name="skill08">
+		<frame></frame>
+	</action>
+	<action name="skill09">
+		<frame></frame>
+	</action>
+	<action name="skill10">
+		<data>
+			<p type="attackType">Bullet</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Tenten_Skill10_01</f>
+			<f>Tenten_Skill10_02</f>
+			<f>Tenten_Skill10_03</f>
+			<f>Tenten_Skill10_04</f>
+			<e type="setBullet">TentenSRK</e>
+		</frame>
+	</action>
+
+
+</unit>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Deidara</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">51</p>
+			<p type="attackRangeY">11</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Deidara_Skill03_02</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Deidara_Skill03_02</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">2260</p>
+			<p type="attackRangeX">96</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Deidara/deidara_skill3.ogg</e>
+			<f>Deidara_Skill03_02</f>
+			<f>Deidara_Skill03_04</f>
+			<f>Deidara_Skill03_05</f>
+			<f>Deidara_Skill03_06</f>
+			<f>Deidara_Skill03_07</f>
+			<e type="setSound">Audio/Effect/bom.ogg</e>
+			<e type="setAttackBox">a_hit</e>
+			<f>Deidara_Skill03_08</f>
+			<f>Deidara_Skill03_09</f>
+			<f>Deidara_Skill03_10</f>
+			<f>Deidara_Skill03_11</f>
+			<f>Deidara_Skill03_12</f>
+			<f>Deidara_Skill03_13</f>
+			<f>Deidara_Skill03_14</f>
+			<f>Deidara_Skill03_15</f>
+			<e type="setDetonation">0</e>
+		</frame>
+	</action>
+
+</unit>

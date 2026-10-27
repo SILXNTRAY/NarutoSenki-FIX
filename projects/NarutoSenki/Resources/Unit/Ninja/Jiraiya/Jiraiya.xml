@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Jiraiya</p>
+			<p type="attackValue">6000</p>
+			<p type="attackRangeX">70</p>
+			<p type="attackRangeY">80</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Jiraiya_Idle_001</f>
+			<f>Jiraiya_Idle_002</f>
+			<f>Jiraiya_Idle_003</f>
+			<f>Jiraiya_Idle_004</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Jiraiya_Walk_01</f>
+			<f>Jiraiya_Walk_02</f>
+			<f>Jiraiya_Walk_03</f>
+			<f>Jiraiya_Walk_04</f>
+			<f>Jiraiya_Walk_05</f>
+			<f>Jiraiya_Walk_06</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+			<e type="setMove">32</e>
+			<f>Jiraiya_Hurt_01</f>
+			<f>Jiraiya_Hurt_02</f>
+			<f>Jiraiya_Hurt_03</f>
+			<e type="setSound">Audio/Jiraiya/jiraiya_hurt.ogg</e>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>Jiraiya_AirHurt_01</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>Jiraiya_KnockDown_01</f>
+			<f>Jiraiya_KnockDown_02</f>
+			<e type="setDelay">10</e>
+			<f>Jiraiya_KnockDown_03</f>
+			<e type="setDelay">60</e>
+			<f>Jiraiya_KnockDown_04</f>
+			<f>Jiraiya_KnockDown_05</f>
+			<f>Jiraiya_KnockDown_06</f>
+
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>Jiraiya_Float_01</f>
+			<e type="setDelay">10</e>
+			<f>Jiraiya_Float_02</f>
+			<e type="setDelay">10</e>
+			<f>Jiraiya_Float_03</f>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Jiraiya_KnockDown_01</f>
+			<f>Jiraiya_KnockDown_02</f>
+			<f>Jiraiya_KnockDown_03</f>
+			<e type="setSound">Audio/Jiraiya/jiraiya_dead.ogg</e>
+
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">80</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Jiraiya_NAttack_12</f>
+			<f>Jiraiya_NAttack_13</f>
+			<e type="setDelay">10</e>
+			<f>Jiraiya_NAttack_14</f>
+			<e type="setSound">Audio/Effect/combo1.ogg</e>
+			<e type="setAttackBox">n_hit</e>
+			<f>Jiraiya_NAttack_01</f>
+			<f>Jiraiya_NAttack_02</f>
+			<e type="setMove">8</e>
+			<e type="setDelay">10</e>
+			<f>Jiraiya_NAttack_03</f>
+			<e type="setSound">Audio/Effect/combo2.ogg</e>
+			<e type="setAttackBox">n_hit</e>
+			<f>Jiraiya_NAttack_04</f>
+			<f>Jiraiya_NAttack_05</f>
+			<f>Jiraiya_NAttack_06</f>
+			<f>Jiraiya_NAttack_07</f>
+			<e type="setMove">16</e>
+			<f>Jiraiya_NAttack_08</f>
+			<e type="setSound">Audio/Jiraiya/jiraiya_combo.ogg</e>
+			<e type="setSound">Audio/Effect/combo3.ogg</e>
+			<e type="setAttackBox">l_hit</e>
+			<f>Jiraiya_NAttack_09</f>
+			<f>Jiraiya_NAttack_10</f>
+			<f>Jiraiya_NAttack_11</f>
+		</frame>
+	</action>
+
+	<action name="skill01">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">460</p>
+			<p type="attackRangeX">32</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">10</p>
+			<p type="combatPoint">920</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Jiraiya/jiraiya_skill1.ogg</e>
+			<f>Jiraiya_Skill01_02</f>
+			<f>Jiraiya_Skill01_03</f>
+			<f>Jiraiya_Skill01_04</f>
+			<e type="setAttackBox">bl_hit</e>
+			<f>Jiraiya_Skill01_05</f>
+			<f>Jiraiya_Skill01_06</f>
+			<e type="setAttackBox">bl_hit</e>
+			<f>Jiraiya_Skill01_07</f>
+		</frame>
+	</action>
+
+	<action name="skill02">
+		<data>
+			<p type="attackType">Summon</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">10</p>
+			<p type="cd">15</p>
+			<p type="combatPoint">1460</p>
+		</data>
+		<frame>
+			<f>Jiraiya_Skill02_01</f>
+			<e type="setSound">Audio/Jiraiya/jiraiya_skill2.ogg</e>
+			<e type="setDelay">10</e>
+			<f>Jiraiya_Skill02_02</f>
+			<e type="setDelay">10</e>
+			<f>Jiraiya_Skill02_03</f>
+			<e type="setMon">Yataikuzu</e>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="skill03">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">25</p>
+			<p type="combatPoint">1980</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Jiraiya/jiraiya_skill3.ogg</e>
+			<f>Jiraiya_Skill03_001</f>
+			<f>Jiraiya_Skill03_002</f>
+			<e type="setSound">Audio/Effect/goukakyu.ogg</e>
+			<f>Jiraiya_Skill03_003</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>Jiraiya_Skill03_004</f>
+			<f>Jiraiya_Skill03_005</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>Jiraiya_Skill03_006</f>
+			<f>Jiraiya_Skill03_007</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>Jiraiya_Skill03_008</f>
+		</frame>
+	</action>
+
+	<action name="skill04">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">460</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">25</p>
+			<p type="combatPoint">2760</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<f>Jiraiya_Skill04_01</f>
+			<e type="setSound">Audio/Jiraiya/jiraiya_skill4.ogg</e>
+			<e type="setDelay">10</e>
+			<f>Jiraiya_Skill04_02</f>
+			<f>Jiraiya_Skill04_03</f>
+			<f>Jiraiya_Skill04_04</f>
+			<e type="setCharge">280</e>
+			<e type="setDelay">10</e>
+			<f>Jiraiya_Skill04_05</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDSound">Audio/Effect/damage_rasen.ogg</e>
+			<e type="setDelay">10</e>
+			<f>Jiraiya_Skill04_06</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDSound">Audio/Effect/damage_rasen.ogg</e>
+			<e type="setDelay">10</e>
+			<f>Jiraiya_Skill04_07</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>Jiraiya_Skill04_08</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDSound">Audio/Effect/damage_rasen.ogg</e>
+			<e type="setDelay">10</e>
+			<f>Jiraiya_Skill04_09</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDSound">Audio/Effect/damage_rasen.ogg</e>
+			<e type="setDelay">10</e>
+			<f>Jiraiya_Skill04_10</f>
+			<e type="setAttackBox">b_hit</e>
+		</frame>
+	</action>
+	<action name="skill05">
+		<data>
+			<p type="attackType">Transform</p>
+			<p type="attackValue">1160</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">1</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<f>Jiraiya_Skill05_02</f>
+			<e type="setCommand">setInvincible</e>
+			<e type="setOugis">10</e>
+			<f>Jiraiya_Skill05_17</f>
+			<e type="setDelay">10</e>
+			<f>Jiraiya_Skill05_18</f>
+			<e type="setSound">Audio/Jiraiya/jiraiya_skill5_1.ogg</e>
+			<e type="setDelay">10</e>
+			<f>Jiraiya_Skill05_19</f>
+			<e type="setDelay">10</e>
+			<f>Jiraiya_Skill05_20</f>
+			<e type="setDelay">20</e>
+			<f>Jiraiya_Skill05_21</f>
+			<e type="setDelay">20</e>
+			<f>Jiraiya_Skill05_22</f>
+			<e type="setDelay">10</e>
+			<e type="setSound">Audio/Jiraiya/jiraiya_skill5_2.ogg</e>
+			<f>Jiraiya_Skill05_23</f>
+			<e type="setDelay">10</e>
+			<f>Jiraiya_Skill05_24</f>
+			<e type="setDelay">30</e>
+			<e type="setSkillEffect">smk</e>
+			<e type="setTransform">40</e>
+			<e type="setCommand">reInvincible</e>
+		</frame>
+	</action>
+
+
+</unit>

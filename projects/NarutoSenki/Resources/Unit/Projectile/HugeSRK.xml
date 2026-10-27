@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">HugeSRK</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">49</p>
+			<p type="attackRangeY">47</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>HugeSRK_Move_002</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">360</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>HugeSRK_Move_002</f>
+			<e type="setAttackBox">bl_hit</e>
+			<f>HugeSRK_Move_003</f>
+			<e type="setAttackBox">bl_hit</e>
+		</frame>
+	</action>
+
+</unit>

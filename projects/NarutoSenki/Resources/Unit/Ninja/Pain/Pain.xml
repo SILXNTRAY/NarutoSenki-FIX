@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Pain</p>
+			<p type="attackValue">6000</p>
+			<p type="attackRangeX">24</p>
+			<p type="attackRangeY">83</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Pain_Idle_01</f>
+			<f>Pain_Idle_02</f>
+			<f>Pain_Idle_03</f>
+			<f>Pain_Idle_04</f>
+			<f>Pain_Idle_05</f>
+			<f>Pain_Idle_06</f>
+			<f>Pain_Idle_07</f>
+			<f>Pain_Idle_08</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Pain_Walk_01</f>
+			<f>Pain_Walk_02</f>
+			<f>Pain_Walk_03</f>
+			<f>Pain_Walk_04</f>
+			<f>Pain_Walk_05</f>
+			<f>Pain_Walk_06</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+			<e type="setMove">32</e>
+			<f>Pain_Hurt_01</f>
+			<f>Pain_Hurt_02</f>
+			<f>Pain_Hurt_03</f>
+			<e type="setSound">Audio/Pain/pain_hurt.ogg</e>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>Pain_AirHurt_01</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>Pain_KnockDown_01</f>
+			<e type="setDelay">10</e>
+			<f>Pain_KnockDown_02</f>
+			<e type="setDelay">60</e>
+			<f>Pain_KnockDown_03</f>
+			<f>Pain_KnockDown_04</f>
+			<f>Pain_KnockDown_05</f>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>Pain_Float_01</f>
+			<e type="setDelay">10</e>
+			<f>Pain_Float_02</f>
+			<e type="setDelay">10</e>
+			<f>Pain_Float_03</f>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Pain_KnockDown_01</f>
+			<f>Pain_KnockDown_02</f>
+			<e type="setSound">Audio/Pain/pain_dead.ogg</e>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">100</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">16</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Pain_NAttack_01</f>
+			<f>Pain_NAttack_02</f>
+			<f>Pain_NAttack_03</f>
+			<e type="setSound">Audio/Effect/combo1.ogg</e>
+			<e type="setAttackBox">n_hit</e>
+			<f>Pain_NAttack_04</f>
+			<f>Pain_NAttack_05</f>
+			<f>Pain_NAttack_06</f>
+			<f>Pain_NAttack_07</f>
+			<e type="setMove">8</e>
+			<f>Pain_NAttack_08</f>
+			<f>Pain_NAttack_09</f>
+			<e type="setSound">Audio/Effect/combo2.ogg</e>
+			<e type="setAttackBox">n_hit</e>
+			<f>Pain_NAttack_10</f>
+			<f>Pain_NAttack_11</f>
+			<f>Pain_NAttack_12</f>
+			<e type="setSound">Audio/Pain/pain_combo.ogg</e>
+			<e type="setMove">16</e>
+			<f>Pain_NAttack_13</f>
+			<e type="setAttackBox">l_hit</e>
+			<e type="setSound">Audio/Effect/combo3.ogg</e>
+			<f>Pain_NAttack_14</f>
+			<f>Pain_NAttack_15</f>
+		</frame>
+	</action>
+
+	<action name="skill01">
+		<data>
+			<p type="attackType">sBuff</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">15</p>
+			<p type="cd">25</p>
+		</data>
+		<frame>
+			<f>Pain_Skill01_01</f>
+			<e type="setSound">Audio/Pain/pain_skill1.ogg</e>
+			<f>Pain_Skill01_02</f>
+			<e type="setDelay">10</e>
+			<f>Pain_Skill01_03</f>
+			<e type="setDelay">40</e>
+			<f>Pain_Skill01_04</f>
+			<e type="setDelay">10</e>
+			<e type="setBuff">500</e>
+		</frame>
+	</action>
+
+	<action name="skill02">
+		<data>
+			<p type="attackType">abAttack</p>
+			<p type="attackValue">900</p>
+			<p type="attackRangeX">192</p>
+			<p type="attackRangeY">64</p>
+			<p type="cd">15</p>
+		</data>
+		<frame>
+			<f>Pain_Skill02_01</f>
+			<e type="setSound">Audio/Pain/pain_skill2.ogg</e>
+			<e type="setDelay">10</e>
+			<f>Pain_Skill02_02</f>
+			<e type="setDelay">10</e>
+			<f>Pain_Skill02_03</f>
+			<e type="setAttackBox">ab_hit</e>
+			<f>Pain_Skill02_04</f>
+			<f>Pain_Skill02_05</f>
+			<f>Pain_Skill02_06</f>
+		</frame>
+	</action>
+
+	<action name="skill03">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">320</p>
+			<p type="attackRangeX">160</p>
+			<p type="attackRangeY">64</p>
+			<p type="cd">25</p>
+		</data>
+		<frame>
+			<f>Pain_Skill03_01</f>
+			<e type="setSound">Audio/Pain/pain_skill3.ogg</e>
+			<f>Pain_Skill03_02</f>
+			<f>Pain_Skill03_03</f>
+			<f>Pain_Skill03_04</f>
+			<e type="setAttackBox">n_hit</e>
+			<e type="setDelay">10</e>
+			<f>Pain_Skill03_05</f>
+			<e type="setAttackBox">n_hit</e>
+			<e type="setDelay">10</e>
+			<f>Pain_Skill03_06</f>
+			<e type="setAttackBox">n_hit</e>
+			<e type="setDelay">10</e>
+			<f>Pain_Skill03_07</f>
+			<e type="setAttackBox">n_hit</e>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="skill04">
+		<data>
+			<p type="attackType">oAttack</p>
+			<p type="attackValue">250</p>
+			<p type="attackRangeX">48</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">1</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<f>Pain_Skill04_01</f>
+			<e type="setFont">dbtx</e>
+			<e type="setDelay">20</e>
+			<e type="setSound">Audio/Pain/pain_skill4.ogg</e>
+			<e type="setMon">Jibaku</e>
+			<e type="setDelay">30</e>
+			<f>Pain_Skill04_02</f>
+			<e type="setFont">ka</e>
+			<e type="setDelay">10</e>
+			<f>Pain_Skill04_03</f>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="skill05">
+		<data>
+			<p type="attackType">oAttack</p>
+			<p type="attackValue">250</p>
+			<p type="attackRangeX">48</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">1</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<f>Pain_Skill05_01</f>
+			<e type="setCommand">setInvincible</e>
+			<e type="setSkillEffect">Kujiyose</e>
+			<e type="setDelay">10</e>
+			<f>Pain_Skill05_02</f>
+			<e type="setOugis">10</e>
+			<f>Pain_Skill05_03</f>
+			<f>Pain_Skill05_04</f>
+			<f>Pain_Skill05_05</f>
+			<f>Pain_Skill05_12</f>
+			<e type="setDelay">10</e>
+			<f>Pain_Skill05_06</f>
+			<f>Pain_Skill05_07</f>
+			<f>Pain_Skill05_08</f>
+			<f>Pain_Skill05_09</f>
+			<f>Pain_Skill05_10</f>
+			<e type="setDelay">10</e>
+			<f>Pain_Skill05_11</f>
+			<e type="setDelay">10</e>
+			<e type="setTransform">40</e>
+			<e type="setCommand">reInvincible</e>
+		</frame>
+	</action>
+	<action name="skill06">
+		<frame></frame>
+	</action>
+	<action name="skill07">
+		<frame></frame>
+	</action>
+	<action name="skill08">
+		<frame></frame>
+	</action>
+	<action name="skill09">
+		<frame></frame>
+	</action>
+	<action name="skill10">
+
+	</action>
+
+
+</unit>

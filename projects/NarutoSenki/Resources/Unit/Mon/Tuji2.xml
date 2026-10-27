@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Tuji</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">51</p>
+			<p type="attackRangeY">11</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Tuji2_Move_001</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Tuji2_Move_001</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Tuji2_Move_001</f>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">460</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Tuji2_Move_001</f>
+			<e type="setAttackBox">b_hit</e>
+			<e type="setDSound">Audio/Effect/stick_damage.ogg</e>
+			<e type="setDelay">10</e>
+			<f>Tuji2_Move_002</f>
+			<e type="setAttackBox">b_hit</e>
+			<e type="setDSound">Audio/Effect/stick_damage.ogg</e>
+			<e type="setDelay">10</e>
+			<f>Tuji2_Move_003</f>
+			<e type="setAttackBox">b_hit</e>
+			<f>Tuji2_Move_004</f>
+			<e type="setDetonation">0</e>
+		</frame>
+	</action>
+
+</unit>

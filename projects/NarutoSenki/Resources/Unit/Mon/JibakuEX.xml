@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">JibakuEX</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">51</p>
+			<p type="attackRangeY">11</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>JibakuEX_Move_001</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>JibakuEX_Move_001</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>JibakuEX_Move_001</f>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">400</p>
+			<p type="attackRangeX">280</p>
+			<p type="attackRangeY">128</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>JibakuEX_Move_001</f>
+			<e type="setAttackBox">ab_hit</e>
+			<f>JibakuEX_Move_002</f>
+			<e type="setAttackBox">ab_hit</e>
+			<f>JibakuEX_Move_003</f>
+			<e type="setAttackBox">ab_hit</e>
+			<f>JibakuEX_Move_004</f>
+			<e type="setAttackBox">ab_hit</e>
+			<f>JibakuEX_Move_005</f>
+			<e type="setAttackBox">ab_hit</e>
+			<f>JibakuEX_Move_006</f>
+			<e type="setSound">Audio/Effect/bom.ogg</e>
+			<e type="setAttackBox">ab_hit</e>
+			<f>JibakuEX_Move_007</f>
+			<e type="setAttackBox">ab_hit</e>
+			<f>JibakuEX_Move_008</f>
+			<e type="setAttackBox">ab_hit</e>
+			<f>JibakuEX_Move_009</f>
+			<f>JibakuEX_Move_010</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>JibakuEX_Move_011</f>
+			<f>JibakuEX_Move_012</f>
+			<f>JibakuEX_Move_013</f>
+			<e type="setDetonation">0</e>
+		</frame>
+	</action>
+
+</unit>

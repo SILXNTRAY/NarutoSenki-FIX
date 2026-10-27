@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Roshi</p>
+			<p type="attackValue">120000</p>
+			<p type="attackRangeX">63</p>
+			<p type="attackRangeY">78</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Roshi_Idle_001</f>
+			<f>Roshi_Idle_002</f>
+			<f>Roshi_Idle_003</f>
+			<f>Roshi_Idle_004</f>
+			<f>Roshi_Idle_005</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Roshi_Walk_01</f>
+			<e type="setShadow">10</e>
+			<f>Roshi_Walk_02</f>
+			<f>Roshi_Walk_03</f>
+			<e type="setShadow">10</e>
+			<f>Roshi_Walk_04</f>
+			<f>Roshi_Walk_05</f>
+			<e type="setShadow">10</e>
+			<f>Roshi_Walk_06</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+			<e type="setMove">32</e>
+			<f>Roshi_Hurt_01</f>
+			<f>Roshi_Hurt_02</f>
+			<!-- <e type="setSound">Audio/Roshi/Roshi_hurt.ogg</e> -->
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>Roshi_AirHurt_001</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>Roshi_KnockDown_001</f>
+			<e type="setDelay">10</e>
+			<f>Roshi_KnockDown_002</f>
+			<f>Roshi_KnockDown_003</f>
+			<e type="setDelay">60</e>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>Roshi_Float_001</f>
+			<e type="setDelay">10</e>
+			<f>Roshi_Float_002</f>
+			<e type="setDelay">10</e>
+			<f>Roshi_Float_003</f>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Roshi_KnockDown_001</f>
+			<f>Roshi_KnockDown_002</f>
+			<f>Roshi_KnockDown_003</f>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">460</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Roshi_NAttack_001</f>
+			<e type="setSound">Audio/Roshi/Roshi_combo.ogg</e>
+			<f>Roshi_NAttack_002</f>
+			<e type="setDelay">10</e>
+			<f>Roshi_NAttack_003</f>
+			<f>Roshi_NAttack_004</f>
+			<e type="setSound">Audio/Effect/combo1.ogg</e>
+			<e type="setAttackBox">l_hit</e>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="skill01">
+		<data>
+			<p type="attackType">cBuff</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">5</p>
+			<p type="cd">1</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<e type="setCommand">setInvincible</e>
+			<f>Roshi_Skill01_001</f>
+			<e type="setOugis">10</e>
+			<f>Roshi_Skill01_001</f>
+			<f>Roshi_Skill01_002</f>
+			<f>Roshi_Skill01_003</f>
+			<f>Roshi_Skill01_004</f>
+			<f>Roshi_Skill01_005</f>
+			<f>Roshi_Skill01_006</f>
+			<f>Roshi_Skill01_007</f>
+			<e type="setDelay">10</e>
+			<f>Roshi_Skill01_008</f>
+			<e type="setDelay">10</e>
+			<e type="setBuff">17</e>
+			<e type="setCommand">addHP</e>
+			<e type="setCommand">reInvincible</e>
+			<f>Roshi_Skill01_009</f>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+	<action name="skill02">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">2560</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">10</p>
+		</data>
+		<frame>
+			<f>Roshi_Skill02_001</f>
+			<f>Roshi_Skill02_002</f>
+			<f>Roshi_Skill02_003</f>
+			<e type="setSound">Audio/Effect/weishoupao.ogg</e>
+			<f>Roshi_Skill02_004</f>
+			<e type="setAttackBox">b_hit</e>
+			<f>Roshi_Skill02_005</f>
+			<f>Roshi_Skill02_006</f>
+			<f>Roshi_Skill02_001</f>
+		</frame>
+	</action>
+	<action name="skill03">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">10</p>
+		</data>
+		<frame></frame>
+	</action>
+	<action name="skill04">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">32</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">10</p>
+		</data>
+		<frame></frame>
+	</action>
+	<action name="skill05">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">32</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">10</p>
+		</data>
+		<frame></frame>
+	</action>
+	<action name="skill06">
+		<frame></frame>
+	</action>
+	<action name="skill07">
+		<frame></frame>
+	</action>
+	<action name="skill08">
+		<frame></frame>
+	</action>
+	<action name="skill09">
+		<frame></frame>
+	</action>
+	<action name="skill10">
+		<data>
+			<p type="attackType">Walk</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">32</p>
+			<p type="cd">10</p>
+		</data>
+		<frame>
+			<f>Roshi_Skill10_001</f>
+			<f>Roshi_Skill10_002</f>
+			<f>Roshi_Skill10_003</f>
+			<f>Roshi_Skill10_004</f>
+			<f>Roshi_Skill10_005</f>
+			<f>Roshi_Skill10_006</f>
+		</frame>
+	</action>
+	<action name="skill11">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">200</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">15</p>
+		</data>
+		<frame>
+			<f>Roshi_Skill11_001</f>
+			<e type="setSound">Audio/Roshi/Roshi_combo2.ogg</e>
+			<e type="setDelay">20</e>
+			<f>Roshi_Skill11_002</f>
+			<e type="setMove">8</e>
+			<f>Roshi_Skill11_003</f>
+			<e type="setAttackBox">l_hit</e>
+			<f>Roshi_Skill11_004</f>
+			<e type="setDelay">20</e>
+		</frame>
+
+	</action>
+	<action name="skill12">
+		<data>
+			<p type="attackType">idle</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Roshi_Skill12_001</f>
+			<e type="setDelay">10</e>
+			<f>Roshi_Skill12_002</f>
+			<e type="setDelay">10</e>
+			<f>Roshi_Skill12_003</f>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+</unit>

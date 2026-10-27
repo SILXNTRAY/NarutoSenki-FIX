@@ -1,0 +1,16 @@
+<dict>
+	<key>UpdateNotice</key>
+	<string>公告更新</string>
+	<key>Failed</key>
+	<string>操作失败</string>
+	<key>Successed</key>
+	<string>操作成功</string>
+	<key>ComingSoon</key>
+	<string>即将开放</string>
+	<key>LimitedChar</key>
+	<string>无法选择该角色</string>
+	<key>Notice</key>
+	<string>Naruto Senki has officially returned and is currently being redeveloped by ZxAkito. For more information, please click the news button.</string>
+	<key>ServerMainten</key>
+	<string>服务器维护中，请稍后再试</string>
+</dict>

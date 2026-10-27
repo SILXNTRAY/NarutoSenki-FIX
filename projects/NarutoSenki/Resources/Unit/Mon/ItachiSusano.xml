@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">ItachiSusano</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">51</p>
+			<p type="attackRangeY">11</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>ItachiSusano_Move_01</f>
+			<f>ItachiSusano_Move_02</f>
+			<f>ItachiSusano_Move_03</f>
+			<f>ItachiSusano_Move_04</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>ItachiSusano_Move_01</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>ItachiSusano_Move_01</f>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">860</p>
+			<p type="attackRangeX">280</p>
+			<p type="attackRangeY">128</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>ItachiSusano_Move_05</f>
+			<e type="setDelay">10</e>
+			<f>ItachiSusano_Move_06</f>
+			<e type="setDelay">10</e>
+			<f>ItachiSusano_Move_07</f>
+			<e type="setDelay">20</e>
+		</frame>
+	</action>
+
+</unit>

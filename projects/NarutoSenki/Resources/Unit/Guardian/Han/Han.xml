@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Han</p>
+			<p type="attackValue">120000</p>
+			<p type="attackRangeX">63</p>
+			<p type="attackRangeY">78</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Han_Idle_001</f>
+			<f>Han_Idle_002</f>
+			<f>Han_Idle_003</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Han_Walk_01</f>
+			<e type="setShadow">10</e>
+			<f>Han_Walk_02</f>
+			<f>Han_Walk_03</f>
+			<e type="setShadow">10</e>
+			<f>Han_Walk_04</f>
+			<f>Han_Walk_05</f>
+			<e type="setShadow">10</e>
+			<f>Han_Walk_06</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+			<e type="setMove">32</e>
+			<f>Han_Hurt_01</f>
+			<f>Han_Hurt_02</f>
+			<e type="setSound">Audio/Han/Han_hurt.ogg</e>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>Han_AirHurt_001</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>Han_KnockDown_001</f>
+			<e type="setDelay">10</e>
+			<f>Han_KnockDown_002</f>
+			<f>Han_KnockDown_003</f>
+			<e type="setDelay">60</e>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>Han_Float_001</f>
+			<e type="setDelay">10</e>
+			<f>Han_Float_002</f>
+			<e type="setDelay">10</e>
+			<f>Han_Float_003</f>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Han_KnockDown_001</f>
+			<f>Han_KnockDown_002</f>
+			<f>Han_KnockDown_003</f>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">460</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Han_NAttack_001</f>
+			<e type="setSound">Audio/Han/Han_combo.ogg</e>
+			<f>Han_NAttack_002</f>
+			<e type="setDelay">10</e>
+			<f>Han_NAttack_003</f>
+			<f>Han_NAttack_004</f>
+			<e type="setSound">Audio/Effect/combo1.ogg</e>
+			<e type="setAttackBox">l_hit</e>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="skill01">
+		<data>
+			<p type="attackType">cBuff</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">5</p>
+			<p type="cd">1</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<e type="setCommand">setInvincible</e>
+			<f>Han_Skill01_001</f>
+			<e type="setOugis">10</e>
+			<f>Han_Skill01_001</f>
+			<f>Han_Skill01_002</f>
+			<f>Han_Skill01_003</f>
+			<f>Han_Skill01_004</f>
+			<f>Han_Skill01_005</f>
+			<f>Han_Skill01_006</f>
+			<e type="setDelay">10</e>
+			<f>Han_Skill01_007</f>
+			<e type="setDelay">10</e>
+			<e type="setBuff">17</e>
+			<e type="setCommand">addHP</e>
+			<e type="setCommand">reInvincible</e>
+			<f>Han_Skill01_008</f>
+			<e type="setDelay">10</e>
+
+		</frame>
+	</action>
+	<action name="skill02">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">2560</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">10</p>
+		</data>
+		<frame>
+			<f>Han_Skill02_001</f>
+			<e type="setSound">Audio/Han/Han_combo2.ogg</e>
+			<e type="setJump">true</e>
+			<f>Han_Skill02_002</f>
+			<e type="setAttackBox">f_hit</e>
+			<f>Han_Skill02_003</f>
+			<f>Han_Skill02_004</f>
+			<f>Han_Skill02_005</f>
+			<f>Han_Skill02_006</f>
+			<f>Han_Skill02_007</f>
+			<e type="setDelay">20</e>
+		</frame>
+	</action>
+	<action name="skill03">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">32</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">10</p>
+		</data>
+		<frame></frame>
+	</action>
+	<action name="skill04">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">32</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">10</p>
+		</data>
+		<frame></frame>
+	</action>
+	<action name="skill05">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">32</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">10</p>
+		</data>
+		<frame></frame>
+	</action>
+	<action name="skill06">
+		<frame></frame>
+	</action>
+	<action name="skill07">
+		<frame></frame>
+	</action>
+	<action name="skill08">
+		<frame></frame>
+	</action>
+	<action name="skill09">
+		<frame></frame>
+	</action>
+	<action name="skill10">
+		<data>
+			<p type="attackType">Walk</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">32</p>
+			<p type="cd">10</p>
+		</data>
+		<frame>
+			<f>Han_Skill10_001</f>
+			<f>Han_Skill10_002</f>
+			<f>Han_Skill10_003</f>
+			<f>Han_Skill10_004</f>
+		</frame>
+	</action>
+	<action name="skill11">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">200</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">15</p>
+		</data>
+		<frame>
+			<f>Han_Skill11_001</f>
+			<e type="setSound">Audio/Han/Han_combo2.ogg</e>
+			<e type="setDelay">20</e>
+			<f>Han_Skill11_002</f>
+			<e type="setMove">8</e>
+			<f>Han_Skill11_003</f>
+			<e type="setAttackBox">l_hit</e>
+			<f>Han_Skill11_004</f>
+			<e type="setDelay">20</e>
+		</frame>
+
+	</action>
+	<action name="skill12">
+		<data>
+			<p type="attackType">idle</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Han_Skill12_001</f>
+		</frame>
+	</action>
+</unit>

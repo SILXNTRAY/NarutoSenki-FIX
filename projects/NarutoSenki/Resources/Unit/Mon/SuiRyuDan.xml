@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Tiger</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">29</p>
+			<p type="attackRangeY">15</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>SuiRyuDan_Move_01</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>SuiRyuDan_Move_01</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>SuiRyuDan_Move_10</f>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">860</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">56</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/suiryudan.ogg</e>
+			<f>SuiRyuDan_Move_01</f>
+			<f>SuiRyuDan_Move_02</f>
+			<e type="setChargeB">96</e>
+			<f>SuiRyuDan_Move_03</f>
+			<f>SuiRyuDan_Move_04</f>
+			<e type="setAttackBox">a_hit</e>
+			<f>SuiRyuDan_Move_06</f>
+			<f>SuiRyuDan_Move_07</f>
+			<e type="setAttackBox">a_hit</e>
+			<f>SuiRyuDan_Move_08</f>
+			<f>SuiRyuDan_Move_09</f>
+			<e type="setAttackBox">a_hit</e>
+			<f>SuiRyuDan_Move_10</f>
+			<e type="setDetonation">0</e>
+		</frame>
+	</action>
+
+</unit>

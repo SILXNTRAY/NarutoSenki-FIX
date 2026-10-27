@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Naruto</p>
+			<p type="attackValue">6500</p>
+			<p type="attackRangeX">63</p>
+			<p type="attackRangeY">68</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Naruto_Idle_001</f>
+			<f>Naruto_Idle_002</f>
+			<f>Naruto_Idle_003</f>
+			<f>Naruto_Idle_004</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Naruto_Walk_01</f>
+			<f>Naruto_Walk_02</f>
+			<f>Naruto_Walk_03</f>
+			<f>Naruto_Walk_04</f>
+			<f>Naruto_Walk_05</f>
+			<f>Naruto_Walk_06</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+			<e type="setMove">32</e>
+			<f>Naruto_Hurt_01</f>
+			<f>Naruto_Hurt_02</f>
+			<e type="setSound">Audio/Naruto/naruto_hurt.ogg</e>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>Naruto_AirHurt_01</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>Naruto_KnockDown_01</f>
+			<f>Naruto_KnockDown_02</f>
+			<e type="setDelay">10</e>
+			<f>Naruto_KnockDown_03</f>
+			<e type="setDelay">60</e>
+			<f>Naruto_KnockDown_04</f>
+			<f>Naruto_KnockDown_05</f>
+			<f>Naruto_KnockDown_06</f>
+
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>Naruto_Float_01</f>
+			<e type="setDelay">10</e>
+			<f>Naruto_Float_02</f>
+			<e type="setDelay">10</e>
+			<f>Naruto_Float_03</f>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Naruto_KnockDown_01</f>
+			<f>Naruto_KnockDown_02</f>
+			<f>Naruto_KnockDown_03</f>
+			<e type="setSound">Audio/Naruto/naruto_dead.ogg</e>
+
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">100</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Naruto_NAttack_01</f>
+			<f>Naruto_NAttack_02</f>
+			<f>Naruto_NAttack_03</f>
+			<e type="setSound">Audio/Effect/combo1.ogg</e>
+			<e type="setAttackBox">n_hit</e>
+			<f>Naruto_NAttack_04</f>
+			<f>Naruto_NAttack_05</f>
+			<f>Naruto_NAttack_06</f>
+			<f>Naruto_NAttack_07</f>
+			<e type="setSound">Audio/Effect/combo2.ogg</e>
+			<e type="setAttackBox">n_hit</e>
+			<f>Naruto_NAttack_08</f>
+			<e type="setMove">16</e>
+			<f>Naruto_NAttack_09</f>
+			<f>Naruto_NAttack_10</f>
+			<f>Naruto_NAttack_11</f>
+			<e type="setSound">Audio/Naruto/naruto_combo.ogg</e>
+			<e type="setSound">Audio/Effect/combo3.ogg</e>
+			<e type="setAttackBox">l_hit</e>
+		</frame>
+	</action>
+
+	<action name="skill01">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">10</p>
+			<p type="combatPoint">1320</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/rasen.ogg</e>
+			<f>Naruto_Skill01_02</f>
+			<f>Naruto_Skill01_03</f>
+			<e type="setSkillEffect">smk</e>
+			<f>Naruto_Skill01_05</f>
+			<e type="setCharge">280</e>
+			<f>Naruto_Skill01_06</f>
+			<e type="setDelay">10</e>
+			<e type="setSound">Audio/Naruto/naruto_skill1.ogg</e>
+			<f>Naruto_Skill01_07</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setDSound">Audio/Effect/damage_rasen.ogg</e>
+			<e type="setDelay">10</e>
+			<f>Naruto_Skill01_08</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setDSound">Audio/Effect/damage_rasen.ogg</e>
+			<e type="setDelay">10</e>
+			<f>Naruto_Skill01_09</f>
+		</frame>
+	</action>
+
+	<action name="skill02">
+		<data>
+			<p type="attackType">Summon</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">10</p>
+			<p type="cd">15</p>
+			<p type="combatPoint">0</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Naruto/naruto_skill2.ogg</e>
+			<f>Naruto_Skill02_02</f>
+			<f>Naruto_Skill02_03</f>
+			<f>Naruto_Skill02_04</f>
+			<e type="setDelay">10</e>
+			<e type="setClone">10</e>
+		</frame>
+	</action>
+
+	<action name="skill03">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">25</p>
+			<p type="combatPoint">1980</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Naruto/naruto_skill3.ogg</e>
+			<f>Naruto_Skill03_02</f>
+			<f>Naruto_Skill03_04</f>
+			<f>Naruto_Skill03_05</f>
+			<f>Naruto_Skill03_07</f>
+			<e type="setCharge">280</e>
+			<f>Naruto_Skill03_08</f>
+			<e type="setDelay">10</e>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setDSound">Audio/Effect/damage_l.ogg</e>
+			<f>Naruto_Skill03_09</f>
+			<f>Naruto_Skill03_10</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setDSound">Audio/Effect/damage_l.ogg</e>
+			<f>Naruto_Skill03_11</f>
+			<f>Naruto_Skill03_12</f>
+			<e type="setAttackBox">b_hit</e>
+			<e type="setDSound">Audio/Effect/damage_l.ogg</e>
+
+		</frame>
+	</action>
+
+	<action name="skill04">
+		<data>
+			<p type="attackType">oAttack</p>
+			<p type="attackValue">360</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">1</p>
+			<p type="combatPoint">2880</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<f>Naruto_Skill05_005</f>
+			<e type="setSound">Audio/Effect/poof.ogg</e>
+			<f>Naruto_Skill05_008</f>
+			<e type="setShadow">10</e>
+			<f>Naruto_Skill05_009</f>
+			<e type="setShadow">10</e>
+			<f>Naruto_Skill05_010</f>
+			<e type="setShadow">10</e>
+			<e type="setSound">Audio/Effect/poof.ogg</e>
+			<e type="setSound">Audio/Naruto/naruto_skill4.ogg</e>
+			<f>Naruto_Skill05_011</f>
+			<e type="setShadow">10</e>
+			<e type="setAttackBox">o_hit</e>
+			<e type="setDSound">Audio/Effect/damage_o.ogg</e>
+			<f>Naruto_Skill05_012</f>
+			<e type="setShadow">10</e>
+			<f>Naruto_Skill05_013</f>
+			<e type="setShadow">10</e>
+			<f>Naruto_Skill05_014</f>
+			<e type="setShadow">10</e>
+			<f>Naruto_Skill05_015</f>
+			<e type="setShadow">10</e>
+			<e type="setCommand">setInvincible</e>
+			<f>Naruto_Skill05_016</f>
+			<e type="setShadow">10</e>
+			<e type="setAttackBox">f_hit</e>
+			<e type="setDSound">Audio/Effect/damage_o2.ogg</e>
+			<f>Naruto_Skill05_017</f>
+			<e type="setShadow">10</e>
+			<f>Naruto_Skill05_018</f>
+			<e type="setShadow">10</e>
+			<e type="setSound">Audio/Effect/rasen.ogg</e>
+			<f>Naruto_Skill05_019</f>
+			<e type="setShadow">10</e>
+			<f>Naruto_Skill05_020</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setDSound">Audio/Effect/damage_rasen.ogg</e>
+			<f>Naruto_Skill05_021</f>
+			<e type="setAttackBox">ac_hit</e>
+			<f>Naruto_Skill05_022</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setDSound">Audio/Effect/damage_rasen.ogg</e>
+			<f>Naruto_Skill05_023</f>
+			<e type="setSound">Audio/Naruto/naruto_skill4_1.ogg</e>
+			<e type="setAttackBox">ac_hit</e>
+			<f>Naruto_Skill05_024</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setDSound">Audio/Effect/damage_rasen.ogg</e>
+			<e type="setCommand">reInvincible</e>
+		</frame>
+	</action>
+
+	<action name="skill05">
+		<data>
+			<p type="attackType">cBuff</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">9</p>
+			<p type="cd">1</p>
+			<p type="combatPoint">5000</p>
+		</data>
+		<frame>
+			<e type="setCommand">setInvincible</e>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<f>Naruto_Skill04_001</f>
+			<e type="setDelay">10</e>
+			<f>Naruto_Skill04_002</f>
+			<e type="setOugis">10</e>
+			<f>Naruto_Skill04_003</f>
+			<e type="setBuff">17</e>
+			<e type="setCommand">reInvincible</e>
+		</frame>
+	</action>
+
+	<action name="skill06">
+		<frame></frame>
+	</action>
+	<action name="skill07">
+		<frame></frame>
+	</action>
+	<action name="skill08">
+		<frame></frame>
+	</action>
+	<action name="skill09">
+		<data>
+			<p type="attackType">KnockDown</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<e type="setCommand">setInvincible</e>
+			<f>Naruto_Skill04_001</f>
+			<f>Naruto_Skill13_001</f>
+			<f>Naruto_Skill13_002</f>
+			<e type="setSound">Audio/Naruto/naruto_skill5.ogg</e>
+			<e type="setSkillEffect">smk</e>
+			<e type="setTransform">40</e>
+			<e type="setCommand">reInvincible</e>
+		</frame>
+
+	</action>
+	<action name="skill10">
+		<data>
+			<p type="attackType">Idle</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Naruto_Skill10_001</f>
+			<e type="setDelay">10</e>
+			<f>Naruto_Skill10_002</f>
+			<e type="setDelay">10</e>
+			<f>Naruto_Skill10_003</f>
+		</frame>
+	</action>
+
+	<action name="skill11">
+		<data>
+			<p type="attackType">Walk</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Naruto_Skill11_001</f>
+			<e type="setShadow">10</e>
+			<f>Naruto_Skill11_002</f>
+			<f>Naruto_Skill11_003</f>
+			<e type="setShadow">10</e>
+			<f>Naruto_Skill11_004</f>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="skill12">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Naruto_Skill12_001</f>
+			<e type="setSound">Audio/Naruto/naruto_skill12.ogg</e>
+			<f>Naruto_Skill12_002</f>
+			<f>Naruto_Skill12_003</f>
+			<e type="setChargeB">128</e>
+			<f>Naruto_Skill12_004</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setDSound">Audio/Effect/damage_l.ogg</e>
+			<f>Naruto_Skill12_005</f>
+			<f>Naruto_Skill12_006</f>
+			<f>Naruto_Skill12_007</f>
+		</frame>
+	</action>
+
+</unit>

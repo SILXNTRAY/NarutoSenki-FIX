@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">FutonSRK</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">57</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">480</p>
+		</data>
+		<frame>
+			<f>FutonSRK_Move_01</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>FutonSRK_Move_01</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>FutonSRK_Dead_01</f>
+			<e type="setSound">Audio/Effect/futon_effect.ogg</e>
+			<f>FutonSRK_Dead_02</f>
+			<e type="setAttackBox">ab_hit</e>
+			<f>FutonSRK_Dead_03</f>
+			<f>FutonSRK_Dead_04</f>
+			<e type="setAttackBox">b_hit</e>
+			<f>FutonSRK_Dead_05</f>
+			<f>FutonSRK_Dead_02</f>
+			<e type="setAttackBox">ab_hit</e>
+			<f>FutonSRK_Dead_03</f>
+			<f>FutonSRK_Dead_04</f>
+			<e type="setAttackBox">b_hit</e>
+			<f>FutonSRK_Dead_05</f>
+			<f>FutonSRK_Dead_06</f>
+			<e type="setAttackBox">b_hit</e>
+			<f>FutonSRK_Dead_07</f>
+			<f>FutonSRK_Dead_08</f>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">460</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>FutonSRK_Move_01</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>FutonSRK_Move_02</f>
+			<f>FutonSRK_Move_03</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>FutonSRK_Move_01</f>
+			<f>FutonSRK_Move_02</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>FutonSRK_Move_01</f>
+			<f>FutonSRK_Move_02</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>FutonSRK_Move_03</f>
+			<e type="setDetonation">0</e>
+		</frame>
+	</action>
+
+</unit>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Kubi</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">49</p>
+			<p type="attackRangeY">47</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Kubi_Move_01</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Kubi_Move_01</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Kubi_Move_01</f>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">120</p>
+			<p type="attackRangeX">32</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Kubi_Move_01</f>
+			<e type="setAttackBox">o_hit</e>
+			<f>Kubi_Move_02</f>
+			<f>Kubi_Move_03</f>
+			<e type="setAttackBox">o_hit</e>
+			<f>Kubi_Move_04</f>
+
+
+			<f>Kubi_Move_01</f>
+			<e type="setAttackBox">o_hit</e>
+			<f>Kubi_Move_02</f>
+			<f>Kubi_Move_03</f>
+			<e type="setAttackBox">ab_hit</e>
+			<f>Kubi_Move_04</f>
+			<e type="setAttackBox">ab_hit</e>
+
+			<f>Kubi_Move_01</f>
+			<e type="setAttackBox">ab_hit</e>
+			<f>Kubi_Move_02</f>
+			<e type="setAttackBox">ab_hit</e>
+			<f>Kubi_Move_03</f>
+			<e type="setAttackBox">ab_hit</e>
+			<f>Kubi_Move_04</f>
+			<e type="setAttackBox">ab_hit</e>
+
+			<f>Kubi_Move_01</f>
+			<e type="setAttackBox">ab_hit</e>
+			<f>Kubi_Move_02</f>
+			<e type="setAttackBox">ab_hit</e>
+			<f>Kubi_Move_03</f>
+			<e type="setAttackBox">ab_hit</e>
+			<f>Kubi_Move_04</f>
+			<e type="setAttackBox">ab_hit</e>
+
+		</frame>
+	</action>
+
+</unit>

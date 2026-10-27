@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Orochimaru</p>
+			<p type="attackValue">5000</p>
+			<p type="attackRangeX">55</p>
+			<p type="attackRangeY">70</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Orochimaru_Idle_01</f>
+			<f>Orochimaru_Idle_02</f>
+			<f>Orochimaru_Idle_03</f>
+			<f>Orochimaru_Idle_04</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Orochimaru_Walk_01</f>
+			<f>Orochimaru_Walk_02</f>
+			<f>Orochimaru_Walk_03</f>
+			<f>Orochimaru_Walk_04</f>
+			<f>Orochimaru_Walk_05</f>
+			<f>Orochimaru_Walk_06</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+			<e type="setMove">32</e>
+			<f>Orochimaru_Hurt_01</f>
+			<f>Orochimaru_Hurt_02</f>
+			<e type="setSound">Audio/Orochimaru/Orochimaru_hurt.ogg</e>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>Orochimaru_AirHurt_01</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>Orochimaru_KnockDown_01</f>
+			<e type="setDelay">10</e>
+			<f>Orochimaru_KnockDown_02</f>
+			<f>Orochimaru_KnockDown_03</f>
+			<e type="setDelay">60</e>
+			<f>Orochimaru_KnockDown_03</f>
+			<f>Orochimaru_KnockDown_04</f>
+			<f>Orochimaru_KnockDown_05</f>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>Orochimaru_Float_01</f>
+			<e type="setDelay">10</e>
+			<f>Orochimaru_Float_02</f>
+			<e type="setDelay">10</e>
+			<f>Orochimaru_Float_03</f>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Orochimaru_KnockDown_01</f>
+			<f>Orochimaru_KnockDown_02</f>
+			<f>Orochimaru_KnockDown_03</f>
+			<e type="setSound">Audio/Orochimaru/Orochimaru_dead.ogg</e>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">80</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">16</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Orochimaru_NAttack_01</f>
+			<f>Orochimaru_NAttack_02</f>
+			<f>Orochimaru_NAttack_03</f>
+			<e type="setAttackBox">n_hit</e>
+			<e type="setSound">Audio/Effect/combo1.ogg</e>
+			<f>Orochimaru_NAttack_04</f>
+			<e type="setDelay">10</e>
+			<f>Orochimaru_NAttack_05</f>
+			<e type="setMove">8</e>
+			<e type="setDelay">10</e>
+			<f>Orochimaru_NAttack_06</f>
+			<e type="setAttackBox">n_hit</e>
+			<e type="setSound">Audio/Effect/combo2.ogg</e>
+			<f>Orochimaru_NAttack_07</f>
+			<f>Orochimaru_NAttack_08</f>
+			<f>Orochimaru_NAttack_09</f>
+			<f>Orochimaru_NAttack_10</f>
+			<e type="setMove">16</e>
+			<f>Orochimaru_NAttack_11</f>
+			<e type="setAttackBox">l_hit</e>
+			<e type="setSound">Audio/Orochimaru/Orochimaru_combo.ogg</e>
+			<f>Orochimaru_NAttack_12</f>
+		</frame>
+	</action>
+
+	<action name="skill01">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">360</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">32</p>
+			<p type="cd">10</p>
+		</data>
+		<frame>
+			<f>Orochimaru_Skill01_01</f>
+			<e type="setSound">Audio/Orochimaru/Orochimaru_skill1.ogg</e>
+			<e type="setDelay">10</e>
+			<f>Orochimaru_Skill01_02</f>
+			<f>Orochimaru_Skill01_03</f>
+			<e type="setMove">16</e>
+			<f>Orochimaru_Skill01_04</f>
+			<e type="setAttackBox">bl_hit</e>
+			<e type="setDelay">10</e>
+			<f>Orochimaru_Skill01_05</f>
+			<e type="setAttackBox">bl_hit</e>
+			<e type="setDelay">10</e>
+			<f>Orochimaru_Skill01_06</f>
+			<e type="setAttackBox">bl_hit</e>
+			<f>Orochimaru_Skill01_07</f>
+			<f>Orochimaru_Skill01_08</f>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="skill02">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">460</p>
+			<p type="attackRangeX">32</p>
+			<p type="attackRangeY">32</p>
+			<p type="cd">15</p>
+		</data>
+		<frame>
+			<f>Orochimaru_Skill02_01</f>
+			<e type="setSound">Audio/Orochimaru/Orochimaru_skill2.ogg</e>
+			<e type="setDelay">10</e>
+			<f>Orochimaru_Skill02_02</f>
+			<e type="setChargeB">96</e>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setSound">Audio/Effect/damage_l.ogg</e>
+			<e type="setDelay">10</e>
+			<f>Orochimaru_Skill02_03</f>
+			<e type="setChargeB">96</e>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setSound">Audio/Effect/damage_l.ogg</e>
+			<e type="setDelay">10</e>
+			<f>Orochimaru_Skill02_04</f>
+			<e type="setChargeB">96</e>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setSound">Audio/Effect/damage_l.ogg</e>
+			<e type="setDelay">10</e>
+			<f>Orochimaru_Skill02_05</f>
+			<e type="setChargeB">96</e>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setSound">Audio/Effect/damage_l.ogg</e>
+			<e type="setDelay">10</e>
+			<f>Orochimaru_Skill02_06</f>
+			<e type="setDelay">20</e>
+		</frame>
+	</action>
+
+	<action name="skill03">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">460</p>
+			<p type="attackRangeX">48</p>
+			<p type="attackRangeY">32</p>
+			<p type="cd">25</p>
+		</data>
+		<frame>
+			<f>Orochimaru_Skill03_01</f>
+			<e type="setSound">Audio/Orochimaru/Orochimaru_skill3.ogg</e>
+			<f>Orochimaru_Skill03_02</f>
+			<e type="setDelay">10</e>
+			<f>Orochimaru_Skill03_03</f>
+			<e type="setAttackBox">ab_hit</e>
+			<e type="setDelay">10</e>
+			<f>Orochimaru_Skill03_04</f>
+			<e type="setAttackBox">ab_hit</e>
+			<e type="setDelay">10</e>
+			<f>Orochimaru_Skill03_05</f>
+			<e type="setAttackBox">ab_hit</e>
+			<e type="setDelay">10</e>
+			<f>Orochimaru_Skill03_05</f>
+			<f>Orochimaru_Skill03_06</f>
+			<e type="setDelay">10</e>
+			<f>Orochimaru_Skill03_07</f>
+			<e type="setSound">Audio/Orochimaru/Orochimaru_skill3_1.ogg</e>
+			<e type="setAttackBox">l_hit</e>
+			<e type="setDelay">10</e>
+			<f>Orochimaru_Skill03_08</f>
+			<e type="setAttackBox">l_hit</e>
+			<e type="setDelay">10</e>
+			<f>Orochimaru_Skill03_09</f>
+			<e type="setAttackBox">l_hit</e>
+			<e type="setDelay">10</e>
+			<f>Orochimaru_Skill03_10</f>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="skill04">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">560</p>
+			<p type="attackRangeX">48</p>
+			<p type="attackRangeY">32</p>
+			<p type="cd">1</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<f>Orochimaru_Skill04_01</f>
+			<e type="setSound">Audio/Orochimaru/Orochimaru_skill4.ogg</e>
+			<f>Orochimaru_Skill04_02</f>
+			<f>Orochimaru_Skill04_03</f>
+			<e type="setSkillEffect">smk</e>
+			<f>Orochimaru_Skill04_04</f>
+			<e type="setDelay">10</e>
+			<f>Orochimaru_Skill04_05</f>
+			<e type="setDelay">10</e>
+			<f>Orochimaru_Skill04_06</f>
+			<e type="setAttackBox">a_hit</e>
+			<e type="setDelay">10</e>
+			<f>Orochimaru_Skill04_07</f>
+			<e type="setAttackBox">a_hit</e>
+			<e type="setDelay">10</e>
+			<f>Orochimaru_Skill04_08</f>
+			<e type="setAttackBox">a_hit</e>
+			<e type="setDelay">10</e>
+			<f>Orochimaru_Skill04_09</f>
+			<e type="setAttackBox">a_hit</e>
+			<e type="setDelay">10</e>
+			<f>Orochimaru_Skill04_10</f>
+			<f>Orochimaru_Skill04_11</f>
+			<e type="setAttackBox">f_hit</e>
+			<e type="setSound">Audio/Effect/damage_l.ogg</e>
+			<f>Orochimaru_Skill04_12</f>
+			<f>Orochimaru_Skill04_13</f>
+			<e type="setCommand">addHP</e>
+			<f>Orochimaru_Skill04_14</f>
+			<f>Orochimaru_Skill04_15</f>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="skill05">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">560</p>
+			<p type="attackRangeX">32</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">1</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<f>Orochimaru_Skill05_01</f>
+			<f>Orochimaru_Skill05_02</f>
+			<f>Orochimaru_Skill05_03</f>
+			<e type="setCommand">setInvincible</e>
+			<f>Orochimaru_Skill05_04</f>
+			<e type="setOugis">10</e>
+			<f>Orochimaru_Skill05_05</f>
+			<f>Orochimaru_Skill05_02</f>
+			<f>Orochimaru_Skill04_01</f>
+			<f>Orochimaru_Skill04_02</f>
+			<f>Orochimaru_Skill04_03</f>
+			<e type="setSound">Audio/Orochimaru/Orochimaru_skill5.ogg</e>
+			<e type="setMon">SansyoBlue</e>
+			<e type="setSound">Audio/Effect/poof.ogg</e>
+			<e type="setDelay">50</e>
+			<e type="setMon">SansyoGreen</e>
+			<e type="setSound">Audio/Effect/poof.ogg</e>
+			<e type="setDelay">50</e>
+			<e type="setMon">SansyoRed</e>
+			<e type="setSound">Audio/Effect/poof.ogg</e>
+			<e type="setDelay">20</e>
+			<f>Orochimaru_Skill05_06</f>
+			<e type="setDelay">50</e>
+			<e type="setCommand">reInvincible</e>
+		</frame>
+	</action>
+	<action name="skill06">
+		<frame></frame>
+	</action>
+	<action name="skill07">
+		<frame></frame>
+	</action>
+	<action name="skill08">
+		<frame></frame>
+	</action>
+	<action name="skill09">
+		<frame></frame>
+	</action>
+
+</unit>

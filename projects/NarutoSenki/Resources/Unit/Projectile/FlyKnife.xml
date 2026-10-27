@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">FlyKnife</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">49</p>
+			<p type="attackRangeY">47</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>FlyKnife_Move_01</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">260</p>
+			<p type="attackRangeX">32</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>FlyKnife_Move_01</f>
+			<e type="setAttackBox">bl_hit</e>
+		</frame>
+	</action>
+
+</unit>

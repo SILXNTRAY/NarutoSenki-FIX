@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">MaskKaton</p>
+			<p type="attackValue">20000</p>
+			<p type="attackRangeX">66</p>
+			<p type="attackRangeY">80</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>MaskKaton_Idle_001</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>MaskKaton_Walk_001</f>
+			<e type="setDelay">10</e>
+			<f>MaskKaton_Walk_002</f>
+			<e type="setDelay">10</e>
+			<f>MaskKaton_Walk_003</f>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+			<e type="setMove">32</e>
+			<f>MaskKaton_Idle_001</f>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>MaskKaton_Idle_001</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>MaskKaton_Idle_001</f>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>MaskKaton_Idle_001</f>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>MaskKaton_Idle_001</f>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">100</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>MaskKaton_Walk_001</f>
+			<e type="setDelay">10</e>
+			<f>MaskKaton_Walk_002</f>
+			<e type="setAttackBox">a_hit</e>
+			<e type="setDelay">10</e>
+			<f>MaskKaton_Walk_003</f>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="skill01">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">1160</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">10</p>
+		</data>
+		<frame>
+			<f>MaskKaton_Move_001</f>
+			<f>MaskKaton_Move_002</f>
+			<e type="setSound">Audio/Effect/goukakyu.ogg</e>
+			<f>MaskKaton_Move_003</f>
+			<e type="setAttackBox">a_hit</e>
+			<f>MaskKaton_Move_004</f>
+			<f>MaskKaton_Move_005</f>
+			<e type="setAttackBox">a_hit</e>
+			<f>MaskKaton_Move_006</f>
+		</frame>
+	</action>
+
+	<action name="skill02">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">560</p>
+			<p type="attackRangeX">32</p>
+			<p type="attackRangeY">32</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+		</frame>
+	</action>
+
+	<action name="skill03">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">300</p>
+			<p type="attackRangeX">32</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">1</p>
+		</data>
+		<frame>
+		</frame>
+	</action>
+
+	<action name="skill04">
+		<data>
+			<p type="attackType">oAttack</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">64</p>
+			<p type="attackRangeY">32</p>
+			<p type="cd">1</p>
+		</data>
+		<frame>
+		</frame>
+	</action>
+
+	<action name="skill05">
+		<data>
+			<p type="attackType">oAttack</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">64</p>
+			<p type="attackRangeY">32</p>
+			<p type="cd">1</p>
+		</data>
+		<frame>
+		</frame>
+	</action>
+
+</unit>

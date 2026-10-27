@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Suijin</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">51</p>
+			<p type="attackRangeY">11</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>BugTomado_Move_001</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>BugTomado_Move_001</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>BugTomado_Move_001</f>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">860</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>BugTomado_Move_001</f>
+			<e type="setSound">Audio/Shino/Shino_skill2_1.ogg</e>
+			<f>BugTomado_Move_002</f>
+			<e type="setAttackBox">o_hit</e>
+			<f>BugTomado_Move_003</f>
+			<f>BugTomado_Move_004</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>BugTomado_Move_005</f>
+			<f>BugTomado_Move_006</f>
+			<e type="setAttackBox">o_hit</e>
+			<f>BugTomado_Move_007</f>
+			<f>BugTomado_Move_008</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>BugTomado_Move_009</f>
+			<f>BugTomado_Move_004</f>
+			<e type="setAttackBox">o_hit</e>
+			<f>BugTomado_Move_005</f>
+			<f>BugTomado_Move_006</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>BugTomado_Move_007</f>
+			<f>BugTomado_Move_008</f>
+			<e type="setAttackBox">o_hit</e>
+			<f>BugTomado_Move_009</f>
+			<f>BugTomado_Move_010</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>BugTomado_Move_011</f>
+			<f>BugTomado_Move_012</f>
+			<e type="setAttackBox">o_hit</e>
+			<f>BugTomado_Move_013</f>
+			<f>BugTomado_Move_014</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>BugTomado_Move_015</f>
+			<e type="setDetonation">0</e>
+		</frame>
+	</action>
+
+</unit>

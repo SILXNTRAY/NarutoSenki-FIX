@@ -1,0 +1,86 @@
+plugins {
+    id 'com.android.application'
+}
+
+// CORRECTED: Climbs up exactly 4 levels to match your real directory structure
+def masterRoot = file("../../../../").absolutePath
+
+android {
+    namespace 'com.proj.narsen'
+    compileSdk 34
+    ndkVersion "21.4.7075529"  
+    defaultConfig {
+        applicationId "com.proj.narsen"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        externalNativeBuild {
+            ndkBuild {
+                targets 'cocos2dcpp'
+                arguments '-j' + Runtime.runtime.availableProcessors()
+                
+                // Using double quotes here allows Gradle to read the masterRoot variable
+                arguments "NDK_MODULE_PATH=${masterRoot};${masterRoot}/cocos2dx/platform/third_party/android/prebuilt;${masterRoot}/external"
+            }
+        }
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a'
+        }
+    }
+    sourceSets.main {
+        java.srcDirs = [
+            "src/main/java",
+            "${masterRoot}/cocos2dx/platform/android/java/src"
+        ]
+        res.srcDir "src/main/res"
+        jniLibs.srcDir "src/main/jniLibs"
+        manifest.srcFile "src/main/AndroidManifest.xml"
+        assets.srcDir "src/main/assets"
+    }
+    externalNativeBuild {
+        ndkBuild {
+            path "jni/Android.mk"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            jniDebuggable true
+            debuggable true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            jniDebuggable true
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation fileTree(dir: 'src/main/jniLibs', include: ['*.jar'])
+}
+
+// Copy tasks for assets
+task cleanAssets(type: Delete) {
+    delete 'src/main/assets'
+}
+
+task copyLuaFiles(type: Copy) {
+    from "${masterRoot}/projects/NarutoSenki/lua"
+    into 'src/main/assets/lua'
+}
+
+task copyAssets(type: Copy, dependsOn: copyLuaFiles) {
+    from "${masterRoot}/projects/NarutoSenki/Resources"
+    into 'src/main/assets'
+}
+
+clean.dependsOn cleanAssets
+preBuild.dependsOn copyAssets

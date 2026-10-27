@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Kimimaro</p>
+			<p type="attackValue">5500</p>
+			<p type="attackRangeX">70</p>
+			<p type="attackRangeY">80</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Kimimaro_Idle_01</f>
+			<f>Kimimaro_Idle_02</f>
+			<f>Kimimaro_Idle_03</f>
+			<f>Kimimaro_Idle_04</f>
+			<f>Kimimaro_Idle_05</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Kimimaro_Walk_01</f>
+			<f>Kimimaro_Walk_02</f>
+			<f>Kimimaro_Walk_03</f>
+			<f>Kimimaro_Walk_04</f>
+			<f>Kimimaro_Walk_05</f>
+			<f>Kimimaro_Walk_06</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+			<e type="setMove">32</e>
+			<f>Kimimaro_Hurt_01</f>
+			<f>Kimimaro_Hurt_02</f>
+			<e type="setSound">Audio/Kimimaro/Kimimaro_hurt.ogg</e>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>Kimimaro_AirHurt_01</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>Kimimaro_KnockDown_01</f>
+			<e type="setDelay">10</e>
+			<f>Kimimaro_KnockDown_02</f>
+			<e type="setDelay">60</e>
+			<f>Kimimaro_KnockDown_03</f>
+			<f>Kimimaro_KnockDown_04</f>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>Kimimaro_Float_01</f>
+			<e type="setDelay">10</e>
+			<f>Kimimaro_Float_02</f>
+			<e type="setDelay">10</e>
+			<f>Kimimaro_Float_03</f>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Kimimaro_KnockDown_01</f>
+			<f>Kimimaro_KnockDown_02</f>
+			<e type="setSound">Audio/Kimimaro/Kimimaro_dead.ogg</e>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">60</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">16</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Kimimaro_NAttack_02</f>
+			<e type="setMove">8</e>
+			<f>Kimimaro_NAttack_03</f>
+			<e type="setSound">Audio/Effect/kong.ogg</e>
+			<e type="setAttackBox">n_hit</e>
+			<f>Kimimaro_NAttack_01</f>
+			<f>Kimimaro_NAttack_04</f>
+			<f>Kimimaro_NAttack_05</f>
+			<e type="setSound">Audio/Kimimaro/Kimimaro_combo.ogg</e>
+			<e type="setMove">16</e>
+			<f>Kimimaro_NAttack_06</f>
+			<e type="setSound">Audio/Effect/kong.ogg</e>
+			<e type="setAttackBox">bl_hit</e>
+			<e type="setDelay">10</e>
+			<e type="setAttackBox">bl_hit</e>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="skill01">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">460</p>
+			<p type="attackRangeX">64</p>
+			<p type="attackRangeY">32</p>
+			<p type="cd">10</p>
+		</data>
+		<frame>
+			<f>Kimimaro_Skill01_01</f>
+			<e type="setSound">Audio/Kimimaro/Kimimaro_skill1.ogg</e>
+			<f>Kimimaro_Skill01_02</f>
+			<f>Kimimaro_Skill01_03</f>
+			<f>Kimimaro_Skill01_04</f>
+			<f>Kimimaro_Skill01_05</f>
+			<f>Kimimaro_Skill01_06</f>
+			<e type="setBullet">BoneBullet</e>
+			<e type="setDelay">40</e>
+		</frame>
+	</action>
+
+	<action name="skill02">
+		<data>
+			<p type="attackType">Bullet</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">10</p>
+			<p type="cd">15</p>
+		</data>
+		<frame>
+			<f>Kimimaro_Skill02_01</f>
+			<e type="setSound">Audio/Kimimaro/Kimimaro_skill2.ogg</e>
+			<e type="setDelay">10</e>
+			<f>Kimimaro_Skill02_02</f>
+			<e type="setBullet">Bone</e>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="skill03">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">560</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">32</p>
+			<p type="cd">25</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Kimimaro/Kimimaro_skill3.ogg</e>
+			<f>Kimimaro_Skill03_01</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setSound">Audio/Effect/blade_damage2.ogg</e>
+			<e type="setMove">32</e>
+			<f>Kimimaro_Skill03_02</f>
+			<f>Kimimaro_Skill03_03</f>
+			<e type="setAttackBox">l_hit</e>
+			<e type="setSound">Audio/Effect/blade_damage2.ogg</e>
+			<f>Kimimaro_Skill03_04</f>
+			<e type="setMove">16</e>
+			<f>Kimimaro_Skill03_05</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setSound">Audio/Effect/blade_damage2.ogg</e>
+			<f>Kimimaro_Skill03_06</f>
+			<f>Kimimaro_Skill03_07</f>
+			<e type="setAttackBox">l_hit</e>
+			<e type="setSound">Audio/Effect/blade_damage2.ogg</e>
+			<e type="setMove">16</e>
+			<f>Kimimaro_Skill03_08</f>
+			<f>Kimimaro_Skill03_09</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setSound">Audio/Effect/blade_damage2.ogg</e>
+			<f>Kimimaro_Skill03_10</f>
+			<e type="setMove">16</e>
+			<f>Kimimaro_Skill03_11</f>
+			<e type="setAttackBox">l_hit</e>
+			<e type="setSound">Audio/Effect/blade_damage2.ogg</e>
+			<f>Kimimaro_Skill03_12</f>
+			<f>Kimimaro_Skill03_13</f>
+		</frame>
+	</action>
+
+	<action name="skill04">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">860</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">32</p>
+			<p type="cd">1</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<f>Kimimaro_Skill04_01</f>
+			<e type="setSound">Audio/Kimimaro/Kimimaro_skill4_1.ogg</e>
+			<f>Kimimaro_Skill04_001</f>
+			<f>Kimimaro_Skill04_002</f>
+			<f>Kimimaro_Skill04_02</f>
+			<f>Kimimaro_Skill04_03</f>
+			<f>Kimimaro_Skill04_04</f>
+			<f>Kimimaro_Skill04_05</f>
+			<f>Kimimaro_Skill04_06</f>
+			<e type="setSound">Audio/Kimimaro/Kimimaro_skill4_2.ogg</e>
+			<e type="setAttackBox">o_hit</e>
+			<e type="setChargeB">224</e>
+			<f>Kimimaro_Skill04_07</f>
+			<f>Kimimaro_Skill04_08</f>
+			<e type="setAttackBox">o_hit</e>
+			<e type="setChargeB">224</e>
+			<f>Kimimaro_Skill04_05</f>
+			<f>Kimimaro_Skill04_06</f>
+			<e type="setAttackBox">o_hit</e>
+			<e type="setChargeB">224</e>
+			<f>Kimimaro_Skill04_07</f>
+			<f>Kimimaro_Skill04_08</f>
+			<e type="setAttackBox">o_hit</e>
+			<e type="setChargeB">224</e>
+			<f>Kimimaro_Skill04_09</f>
+			<f>Kimimaro_Skill04_10</f>
+			<f>Kimimaro_Skill04_11</f>
+			<f>Kimimaro_Skill04_12</f>
+			<f>Kimimaro_Skill04_13</f>
+			<f>Kimimaro_Skill04_02</f>
+			<f>Kimimaro_Skill04_002</f>
+			<f>Kimimaro_Skill04_001</f>
+			<f>Kimimaro_Skill04_01</f>
+		</frame>
+	</action>
+	<action name="skill05">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">2200</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">1</p>
+			<p type="combatPoint">8000</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<f>Kimimaro_Skill05_001</f>
+			<e type="setCommand">setInvincible</e>
+			<e type="setOugis">10</e>
+			<f>Kimimaro_Skill05_002</f>
+			<f>Kimimaro_Skill05_01</f>
+			<f>Kimimaro_Skill05_02</f>
+			<f>Kimimaro_Skill05_03</f>
+			<e type="setSound">Audio/Kimimaro/Kimimaro_skill5.ogg</e>
+			<f>Kimimaro_Skill05_04</f>
+			<f>Kimimaro_Skill05_05</f>
+			<f>Kimimaro_Skill05_06</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>Kimimaro_Skill05_07</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>Kimimaro_Skill05_08</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>Kimimaro_Skill05_09</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>Kimimaro_Skill05_04</f>
+			<f>Kimimaro_Skill05_03</f>
+			<f>Kimimaro_Skill05_02</f>
+			<f>Kimimaro_Skill05_01</f>
+			<f>Kimimaro_Skill05_10</f>
+			<!--
+          <f>Jugo_Skill05_15</f>
+          <f>Jugo_Skill05_16</f>
+          <f>Jugo_Skill05_17</f>
+            <e type="setSound">Audio/Jugo/Jugo_skill11.ogg</e>
+          <f>Jugo_Skill05_18</f>
+          <e type="setDelay">20</e>   
+          <f>Jugo_Skill05_14</f>
+          <e type="setTransform">40</e>
+        -->
+			<e type="setCommand">reInvincible</e>
+		</frame>
+	</action>
+
+
+</unit>

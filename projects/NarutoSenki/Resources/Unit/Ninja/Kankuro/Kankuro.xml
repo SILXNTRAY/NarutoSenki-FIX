@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Kankuro</p>
+			<p type="attackValue">5500</p>
+			<p type="attackRangeX">45</p>
+			<p type="attackRangeY">75</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Kankuro_Idle_01</f>
+			<f>Kankuro_Idle_02</f>
+			<f>Kankuro_Idle_03</f>
+			<f>Kankuro_Idle_04</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Kankuro_Walk_01</f>
+			<f>Kankuro_Walk_02</f>
+			<f>Kankuro_Walk_03</f>
+			<f>Kankuro_Walk_04</f>
+			<f>Kankuro_Walk_05</f>
+			<f>Kankuro_Walk_06</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+			<e type="setMove">32</e>
+			<f>Kankuro_Hurt_01</f>
+			<f>Kankuro_Hurt_02</f>
+			<e type="setSound">Audio/Kankuro/kankuro_hurt.ogg</e>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>Kankuro_AirHurt_01</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>Kankuro_KnockDown_01</f>
+			<e type="setDelay">10</e>
+			<f>Kankuro_KnockDown_02</f>
+			<e type="setDelay">60</e>
+			<f>Kankuro_KnockDown_03</f>
+			<f>Kankuro_KnockDown_04</f>
+			<f>Kankuro_KnockDown_05</f>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>Kankuro_Float_01</f>
+			<e type="setDelay">10</e>
+			<f>Kankuro_Float_02</f>
+			<e type="setDelay">10</e>
+			<f>Kankuro_Float_03</f>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Kankuro_KnockDown_01</f>
+			<f>Kankuro_KnockDown_02</f>
+			<e type="setSound">Audio/Kankuro/kankuro_dead.ogg</e>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">60</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Kankuro_NAttack_01</f>
+			<f>Kankuro_NAttack_02</f>
+			<f>Kankuro_NAttack_03</f>
+			<f>Kankuro_NAttack_04</f>
+			<e type="setSound">Audio/Effect/combo1.ogg</e>
+			<e type="setAttackBox">n_hit</e>
+			<f>Kankuro_NAttack_05</f>
+			<e type="setMove">8</e>
+			<f>Kankuro_NAttack_06</f>
+			<e type="setSound">Audio/Effect/combo2.ogg</e>
+			<e type="setAttackBox">n_hit</e>
+			<f>Kankuro_NAttack_07</f>
+			<f>Kankuro_NAttack_08</f>
+			<f>Kankuro_NAttack_09</f>
+			<e type="setMove">16</e>
+			<f>Kankuro_NAttack_10</f>
+			<e type="setSound">Audio/Kankuro/kankuro_combo.ogg</e>
+			<e type="setSound">Audio/Effect/combo3.ogg</e>
+			<e type="setAttackBox">l_hit</e>
+		</frame>
+	</action>
+
+	<action name="skill01">
+		<data>
+			<p type="attackType">cBuff</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">10</p>
+			<p type="combatPoint">0</p>
+		</data>
+		<frame>
+			<f>Kankuro_Skill01_01</f>
+			<e type="setSound">Audio/Kankuro/kankuro_skill1.ogg</e>
+			<f>Kankuro_Skill01_03</f>
+			<f>Kankuro_Skill01_04</f>
+			<f>Kankuro_Skill01_05</f>
+			<e type="setClone">0</e>
+			<e type="setBuff">17</e>
+		</frame>
+	</action>
+
+	<action name="skill02">
+		<data>
+			<p type="attackType">cBuff</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">15</p>
+			<p type="cd">15</p>
+			<p type="combatPoint">1680</p>
+		</data>
+		<frame>
+			<e type="setMonAttack">2</e>
+			<e type="setSound">Audio/Kankuro/kankuro_skill2.ogg</e>
+			<f>Kankuro_Skill02_01</f>
+			<f>Kankuro_Skill02_02</f>
+			<f>Kankuro_Skill02_03</f>
+			<f>Kankuro_Skill02_04</f>
+		</frame>
+	</action>
+
+	<action name="skill03">
+		<data>
+			<p type="attackType">Summon</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">25</p>
+			<p type="combatPoint">2060</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Kankuro/kankuro_skill3.ogg</e>
+			<f>Kankuro_Skill03_01</f>
+			<e type="setMon">Kuroari</e>
+			<f>Kankuro_Skill03_02</f>
+			<f>Kankuro_Skill03_03</f>
+			<f>Kankuro_Skill03_04</f>
+		</frame>
+	</action>
+
+	<action name="skill04">
+		<data>
+			<p type="attackType">cBuff</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">0</p>
+			<p type="combatPoint">0</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<f>Kankuro_Skill04_01</f>
+			<e type="setSound">Audio/Kankuro/kankuro_skill4.ogg</e>
+			<e type="setDelay">20</e>
+			<f>Kankuro_Skill04_02</f>
+			<f>Kankuro_Skill04_03</f>
+			<f>Kankuro_Skill04_04</f>
+			<e type="setDelay">20</e>
+			<e type="setClone">1</e>
+		</frame>
+	</action>
+
+	<action name="skill05">
+		<data>
+			<p type="attackType">Summon</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">0</p>
+			<p type="combatPoint">0</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<f>Kankuro_Skill05_01</f>
+			<e type="setCommand">setInvincible</e>
+			<e type="setDelay">10</e>
+			<f>Kankuro_Skill05_02</f>
+			<e type="setDelay">10</e>
+			<e type="setOugis">10</e>
+			<f>Kankuro_Skill05_03</f>
+			<e type="setDelay">10</e>
+			<e type="setClone">2</e>
+			<e type="setCommand">reInvincible</e>
+		</frame>
+
+	</action>
+	<action name="skill06">
+		<frame></frame>
+	</action>
+	<action name="skill07">
+		<frame></frame>
+	</action>
+	<action name="skill08">
+		<frame></frame>
+	</action>
+	<action name="skill09">
+		<frame></frame>
+	</action>
+	<action name="skill10">
+		<frame></frame>
+	</action>
+
+</unit>

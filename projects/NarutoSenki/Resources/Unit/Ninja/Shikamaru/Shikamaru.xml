@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Shikamaru</p>
+			<p type="attackValue">5000</p>
+			<p type="attackRangeX">40</p>
+			<p type="attackRangeY">78</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Shikamaru_Idle_001</f>
+			<f>Shikamaru_Idle_002</f>
+			<f>Shikamaru_Idle_003</f>
+			<f>Shikamaru_Idle_004</f>
+			<f>Shikamaru_Idle_005</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Shikamaru_Walk_01</f>
+			<f>Shikamaru_Walk_02</f>
+			<f>Shikamaru_Walk_03</f>
+			<f>Shikamaru_Walk_04</f>
+			<f>Shikamaru_Walk_05</f>
+			<f>Shikamaru_Walk_06</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+			<e type="setMove">32</e>
+			<f>Shikamaru_Hurt_01</f>
+			<f>Shikamaru_Hurt_02</f>
+			<f>Shikamaru_Hurt_03</f>
+			<e type="setSound">Audio/Shikamaru/Shikamaru_hurt.ogg</e>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>Shikamaru_AirHurt_01</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>Shikamaru_KnockDown_01</f>
+			<e type="setDelay">10</e>
+			<f>Shikamaru_KnockDown_02</f>
+			<e type="setDelay">60</e>
+			<f>Shikamaru_KnockDown_03</f>
+			<f>Shikamaru_KnockDown_04</f>
+			<f>Shikamaru_KnockDown_05</f>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>Shikamaru_Float_01</f>
+			<e type="setDelay">10</e>
+			<f>Shikamaru_Float_02</f>
+			<e type="setDelay">10</e>
+			<f>Shikamaru_Float_03</f>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Shikamaru_KnockDown_01</f>
+			<f>Shikamaru_KnockDown_02</f>
+			<e type="setSound">Audio/Shikamaru/Shikamaru_dead.ogg</e>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">60</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Shikamaru_NAttack_01</f>
+			<f>Shikamaru_NAttack_02</f>
+			<f>Shikamaru_NAttack_03</f>
+			<f>Shikamaru_NAttack_04</f>
+			<e type="setAttackBox">n_hit</e>
+			<e type="setSound">Audio/Effect/combo1.ogg</e>
+			<f>Shikamaru_NAttack_05</f>
+			<f>Shikamaru_NAttack_06</f>
+			<f>Shikamaru_NAttack_07</f>
+			<e type="setMove">8</e>
+			<f>Shikamaru_NAttack_08</f>
+			<e type="setSound">Audio/Effect/combo2.ogg</e>
+			<e type="setAttackBox">n_hit</e>
+			<f>Shikamaru_NAttack_09</f>
+			<f>Shikamaru_NAttack_10</f>
+			<f>Shikamaru_NAttack_11</f>
+			<f>Shikamaru_NAttack_12</f>
+			<e type="setMove">16</e>
+			<f>Shikamaru_NAttack_13</f>
+			<e type="setSound">Audio/Shikamaru/Shikamaru_combo.ogg</e>
+			<f>Shikamaru_NAttack_14</f>
+			<f>Shikamaru_NAttack_15</f>
+			<e type="setAttackBox">l_hit</e>
+			<e type="setSound">Audio/Effect/combo3.ogg</e>
+			<f>Shikamaru_NAttack_16</f>
+			<f>Shikamaru_NAttack_17</f>
+			<f>Shikamaru_NAttack_18</f>
+		</frame>
+	</action>
+
+	<action name="skill01">
+		<data>
+			<p type="attackType">Command</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">15</p>
+			<p type="cd">10</p>
+			<p type="combatPoint">0</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Shikamaru/Shikamaru_skill01.ogg</e>
+			<f>Shikamaru_Skill01_001</f>
+			<f>Shikamaru_Skill01_002</f>
+			<e type="setDelay">10</e>
+			<f>Shikamaru_Skill01_003</f>
+			<e type="setDelay">100</e>
+			<e type="setCommand">setGainCKR</e>
+		</frame>
+	</action>
+
+	<action name="skill02">
+		<data>
+			<p type="attackType">Summon</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">15</p>
+			<p type="combatPoint">1460</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Shikamaru/Shikamaru_skill02.ogg</e>
+			<f>Shikamaru_Skill02_001</f>
+			<e type="setSound">Audio/Shikamaru/yingzi.ogg</e>
+			<f>Shikamaru_Skill02_002</f>
+			<f>Shikamaru_Skill02_003</f>
+			<e type="setMon">KageFeng</e>
+			<e type="setDelay">20</e>
+			<f>Shikamaru_Skill02_001</f>
+		</frame>
+	</action>
+
+	<action name="skill03">
+		<data>
+			<p type="attackType">Summon</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">25</p>
+			<p type="combatPoint">0</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Shikamaru/Shikamaru_skill03.ogg</e>
+			<f>Shikamaru_Skill03_01</f>
+			<e type="setSound">Audio/Shikamaru/yingzi.ogg</e>
+			<f>Shikamaru_Skill03_02</f>
+			<e type="setMon">Kage</e>
+			<e type="setDelay">20</e>
+		</frame>
+	</action>
+
+	<action name="skill04">
+		<data>
+			<p type="attackType">Summon</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">1</p>
+			<p type="combatPoint">0</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<f>Shikamaru_Skill04_01</f>
+			<e type="setSound">Audio/Shikamaru/Shikamaru_skill04.ogg</e>
+			<e type="setJump">false</e>
+			<f>Shikamaru_Skill04_02</f>
+			<f>Shikamaru_Skill04_03</f>
+			<e type="setDelay">10</e>
+			<f>Shikamaru_Skill04_04</f>
+			<e type="setSound">Audio/Effect/kuwu.ogg</e>
+			<e type="setMon">QuanRen</e>
+			<f>Shikamaru_Skill04_05</f>
+			<f>Shikamaru_Skill04_06</f>
+			<e type="setDelay">30</e>
+			<f>Shikamaru_Skill04_07</f>
+		</frame>
+	</action>
+
+	<action name="skill05">
+		<data>
+			<p type="attackType">Summon</p>
+			<p type="attackValue">200</p>
+			<p type="attackRangeX">48</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">1</p>
+			<p type="combatPoint">0</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<e type="setCommand">setInvincible</e>
+			<f>Shikamaru_Skill05_02</f>
+			<f>Shikamaru_Skill05_03</f>
+			<e type="setOugis">10</e>
+			<f>Shikamaru_Skill05_04</f>
+			<f>Shikamaru_Skill05_05</f>
+			<f>Shikamaru_Skill03_01</f>
+			<f>Shikamaru_Skill03_02</f>
+			<e type="setSound">Audio/Shikamaru/Shikamaru_skill5.ogg</e>
+			<e type="setDelay">10</e>
+			<e type="setTrap">KageBom</e>
+			<e type="setSound">Audio/Shikamaru/yingzi.ogg</e>
+			<e type="setDelay">300</e>
+			<f>Shikamaru_Skill05_05</f>
+			<f>Shikamaru_Skill05_06</f>
+			<f>Shikamaru_Skill05_07</f>
+			<e type="setCommand">reInvincible</e>
+		</frame>
+	</action>
+	<action name="skill06">
+		<frame></frame>
+	</action>
+	<action name="skill07">
+		<frame></frame>
+	</action>
+	<action name="skill08">
+		<frame></frame>
+	</action>
+	<action name="skill09">
+		<frame></frame>
+	</action>
+	<action name="skill10">
+		<frame>
+
+		</frame>
+	</action>
+
+
+</unit>

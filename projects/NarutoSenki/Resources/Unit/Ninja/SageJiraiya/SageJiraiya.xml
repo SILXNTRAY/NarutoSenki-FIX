@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">SageJiraiya</p>
+			<p type="attackValue">6000</p>
+			<p type="attackRangeX">70</p>
+			<p type="attackRangeY">80</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>SageJiraiya_Idle_01</f>
+			<f>SageJiraiya_Idle_02</f>
+			<f>SageJiraiya_Idle_03</f>
+			<f>SageJiraiya_Idle_04</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>SageJiraiya_Walk_01</f>
+			<f>SageJiraiya_Walk_02</f>
+			<f>SageJiraiya_Walk_03</f>
+			<f>SageJiraiya_Walk_04</f>
+			<f>SageJiraiya_Walk_05</f>
+			<f>SageJiraiya_Walk_06</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+			<e type="setMove">32</e>
+			<f>SageJiraiya_Hurt_01</f>
+			<f>SageJiraiya_Hurt_02</f>
+			<e type="setDelay">10</e>
+			<e type="setSound">Audio/Jiraiya/jiraiya_hurt.ogg</e>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>Jiraiya_AirHurt_01</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>Jiraiya_KnockDown_01</f>
+			<f>SageJiraiya_KnockDown_02</f>
+			<e type="setDelay">10</e>
+			<f>SageJiraiya_KnockDown_03</f>
+			<e type="setDelay">60</e>
+			<f>Jiraiya_KnockDown_04</f>
+			<f>Jiraiya_KnockDown_05</f>
+			<f>Jiraiya_KnockDown_06</f>
+
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>SageJiraiya_Float_01</f>
+			<e type="setDelay">10</e>
+			<f>SageJiraiya_Float_02</f>
+			<e type="setDelay">10</e>
+			<f>SageJiraiya_Float_03</f>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Jiraiya_KnockDown_01</f>
+			<f>Jiraiya_KnockDown_02</f>
+			<f>SageJiraiya_KnockDown_03</f>
+			<e type="setSound">Audio/Jiraiya/jiraiya_dead.ogg</e>
+
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">80</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>SageJiraiya_NAttack_01</f>
+			<f>SageJiraiya_NAttack_02</f>
+			<e type="setDelay">10</e>
+			<f>SageJiraiya_NAttack_03</f>
+			<e type="setSound">Audio/Effect/combo1.ogg</e>
+			<e type="setAttackBox">n_hit</e>
+			<f>SageJiraiya_NAttack_04</f>
+			<f>SageJiraiya_NAttack_05</f>
+			<e type="setMove">8</e>
+			<f>SageJiraiya_NAttack_06</f>
+			<e type="setSound">Audio/Effect/combo2.ogg</e>
+			<e type="setAttackBox">n_hit</e>
+			<f>SageJiraiya_NAttack_07</f>
+			<e type="setDelay">10</e>
+			<f>SageJiraiya_NAttack_08</f>
+			<f>SageJiraiya_NAttack_09</f>
+			<e type="setMove">16</e>
+			<f>SageJiraiya_NAttack_11</f>
+			<f>SageJiraiya_NAttack_12</f>
+			<e type="setSound">Audio/SageJiraiya/SageJiraiya_combo.ogg</e>
+			<e type="setSound">Audio/Effect/combo3.ogg</e>
+			<e type="setAttackBox">l_hit</e>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="skill01">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">760</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">10</p>
+			<p type="combatPoint">1520</p>
+		</data>
+		<frame>
+			<f>SageJiraiya_Skill01_01</f>
+			<e type="setSound">Audio/SageJiraiya/SageJiraiya_skill1.ogg</e>
+			<f>SageJiraiya_Skill01_02</f>
+			<f>SageJiraiya_Skill01_04</f>
+			<f>SageJiraiya_Skill01_06</f>
+			<e type="setChargeB">192</e>
+			<f>SageJiraiya_Skill01_07</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDelay">10</e>
+			<f>SageJiraiya_Skill01_08</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDelay">10</e>
+			<f>SageJiraiya_Skill01_09</f>
+		</frame>
+	</action>
+
+	<action name="skill02">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">10</p>
+			<p type="cd">15</p>
+			<p type="combatPoint">2600</p>
+		</data>
+		<frame>
+			<f>SageJiraiya_Skill02_001</f>
+			<e type="setSound">Audio/SageJiraiya/SageJiraiya_skill2.ogg</e>
+			<f>SageJiraiya_Skill02_002</f>
+			<e type="setDelay">10</e>
+			<f>SageJiraiya_Skill02_003</f>
+			<e type="setMon">Yominuma</e>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="skill03">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">460</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">25</p>
+			<p type="combatPoint">3220</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/SageJiraiya/SageJiraiya_skill3.ogg</e>
+			<f>SageJiraiya_Skill03_02</f>
+			<e type="setDelay">10</e>
+			<f>SageJiraiya_Skill03_03</f>
+			<e type="setDelay">10</e>
+			<e type="setAttackBox">c_hit</e>
+			<f>SageJiraiya_Skill03_04</f>
+			<e type="setDelay">10</e>
+			<e type="setAttackBox">c_hit</e>
+			<f>SageJiraiya_Skill03_05</f>
+			<f>SageJiraiya_Skill03_06</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setSound">Audio/SageJiraiya/SageJiraiya_skill3_1.ogg</e>
+			<f>SageJiraiya_Skill03_07</f>
+			<f>SageJiraiya_Skill03_08</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>SageJiraiya_Skill03_09</f>
+			<e type="setSound">Audio/Effect/goukakyu.ogg</e>
+			<f>SageJiraiya_Skill03_10</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>SageJiraiya_Skill03_11</f>
+			<f>SageJiraiya_Skill03_12</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>SageJiraiya_Skill03_13</f>
+			<f>SageJiraiya_Skill03_14</f>
+			<e type="setAttackBox">c_hit</e>
+		</frame>
+	</action>
+
+	<action name="skill04">
+		<data>
+			<p type="attackType">oAttack</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">1</p>
+			<p type="combatPoint">3960</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<f>SageJiraiya_Skill04_01</f>
+			<e type="setSound">Audio/SageJiraiya/SageJiraiya_skill4.ogg</e>
+			<f>SageJiraiya_Skill04_02</f>
+			<e type="setCharge">280</e>
+			<e type="setDelay">10</e>
+			<f>SageJiraiya_Skill04_03</f>
+			<e type="setAttackBox">f_hit</e>
+			<e type="setDSound">Audio/Effect/damage_o2.ogg</e>
+			<e type="setDelay">10</e>
+			<e type="setSound">Audio/SageJiraiya/SageJiraiya_skill4_1.ogg</e>
+			<f>SageJiraiya_Skill04_04</f>
+			<f>SageJiraiya_Skill04_05</f>
+			<e type="setDelay">10</e>
+			<f>SageJiraiya_Skill04_06</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setDSound">Audio/Effect/damage_rasen.ogg</e>
+			<f>SageJiraiya_Skill04_07</f>
+			<f>SageJiraiya_Skill04_08</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setDSound">Audio/Effect/damage_rasen.ogg</e>
+			<f>SageJiraiya_Skill04_09</f>
+			<f>SageJiraiya_Skill04_10</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setDSound">Audio/Effect/damage_rasen.ogg</e>
+			<f>SageJiraiya_Skill04_11</f>
+			<f>SageJiraiya_Skill04_12</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setDSound">Audio/Effect/damage_rasen.ogg</e>
+			<f>SageJiraiya_Skill04_13</f>
+			<f>SageJiraiya_Skill04_14</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setDSound">Audio/Effect/damage_rasen.ogg</e>
+			<f>SageJiraiya_Skill04_15</f>
+			<f>SageJiraiya_Skill04_16</f>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="skill05">
+		<data>
+			<p type="attackType">oAttack</p>
+			<p type="attackValue">560</p>
+			<p type="attackRangeX">64</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">1</p>
+			<p type="combatPoint">4560</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<f>SageJiraiya_Skill05_01</f>
+			<e type="setDelay">10</e>
+			<e type="setOugis">10</e>
+			<f>SageJiraiya_Skill05_02</f>
+			<e type="setCommand">setInvincible</e>
+			<e type="setSound">Audio/SageJiraiya/SageJiraiya_skill5.ogg</e>
+			<e type="setDelay">60</e>
+			<f>SageJiraiya_Skill05_03</f>
+			<f>SageJiraiya_Skill05_04</f>
+			<e type="setSound">Audio/SageJiraiya/SageJiraiya_skill5_1.ogg</e>
+			<f>SageJiraiya_Skill05_05</f>
+			<f>SageJiraiya_Skill05_06</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>SageJiraiya_Skill05_07</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>SageJiraiya_Skill05_08</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>SageJiraiya_Skill05_09</f>
+			<e type="setAttackBox">c_hit</e>s
+			<f>SageJiraiya_Skill05_06</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>SageJiraiya_Skill05_07</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>SageJiraiya_Skill05_08</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>SageJiraiya_Skill05_09</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>SageJiraiya_Skill05_06</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>SageJiraiya_Skill05_07</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>SageJiraiya_Skill05_08</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>SageJiraiya_Skill05_09</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>SageJiraiya_Skill05_06</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>SageJiraiya_Skill05_07</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>SageJiraiya_Skill05_08</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>SageJiraiya_Skill05_09</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>SageJiraiya_Skill05_10</f>
+			<f>SageJiraiya_Skill05_11</f>
+			<f>SageJiraiya_Skill05_12</f>
+			<f>SageJiraiya_Skill05_13</f>
+			<f>SageJiraiya_Skill05_14</f>
+			<e type="setCommand">reInvincible</e>
+		</frame>
+	</action>
+
+</unit>

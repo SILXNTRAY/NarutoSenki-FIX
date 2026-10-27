@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">ClayBird</p>
+			<p type="attackValue">6000</p>
+			<p type="attackRangeX">126</p>
+			<p type="attackRangeY">76</p>
+			<p type="cd">340</p>
+		</data>
+		<frame>
+			<f>ClayBird_Move_001</f>
+			<f>ClayBird_Move_002</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>ClayBird_Move_001</f>
+			<f>ClayBird_Move_002</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>ClayBird_Move_001</f>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">260</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>ClayBird_Move_003</f>
+			<f>ClayBird_Move_004</f>
+			<e type="setAttackBox">n_hit</e>
+			<f>ClayBird_Move_005</f>
+			<e type="setDetonation">0</e>
+		</frame>
+	</action>
+
+</unit>

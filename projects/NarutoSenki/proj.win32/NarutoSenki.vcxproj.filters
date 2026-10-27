@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{f1c9a265-65ff-47aa-a76c-1a7da8e0c109}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Res">
+      <UniqueIdentifier>{5d29f6fa-8b5f-437f-a559-05419af7bc55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{150e898f-1dbf-4a6a-a52f-c59b363a217a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\UI">
+      <UniqueIdentifier>{e6d26c68-f219-4e2c-b594-ab482738c37a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\GameMode">
+      <UniqueIdentifier>{7f7e768f-700b-4946-bb2a-fe17620a38af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\GameMode\Impl">
+      <UniqueIdentifier>{fe64ba08-ff3c-438e-9031-af397eb43115}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\support">
+      <UniqueIdentifier>{6645945a-445f-4ea2-8498-150cf0ed7f79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Systems">
+      <UniqueIdentifier>{fb6815a4-bfd3-43f5-acd1-191a2b07812b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Enums">
+      <UniqueIdentifier>{82bb5e26-27c3-40ed-a08d-93cb1b60ba32}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameScene.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\StartMenu.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CharacterBase.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BGLayer.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HudLayer.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\JoyStick.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MyUtils\KTools.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ActionButton.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Effect.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MyUtils\CCShake.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PauseLayer.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameOver.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LoadLayer.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SelectLayer.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CreditsLayer.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HPBar.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Element.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GearLayer.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameLayer.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MyUtils\CCStrokeLabel.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MyUtils\MD5ChecksumDefines.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MyUtils\CCScrewLayer.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\GameModeLayer.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cocos2dx\support\tinyxml2\tinyxml2.cpp">
+      <Filter>Utils\support</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CharacterBase.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Defines.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BGLayer.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameLayer.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameScene.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HudLayer.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\StartMenu.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\JoyStick.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MyUtils\CMD5Checksum.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MyUtils\KTools.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ActionButton.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Effect.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\classes\Myutils\CCShake.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PauseLayer.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameOver.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LoadLayer.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SelectLayer.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CreditsLayer.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HPBar.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Element.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GearLayer.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MyUtils\CCStrokeLabel.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MyUtils\MD5ChecksumDefines.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MyUtils\CCScrewLayer.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Res</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\GameModeLayer.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\ModeMenuButton.hpp">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameMode\GameModeImpl.hpp">
+      <Filter>Classes\GameMode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameMode\IGameModeHandler.hpp">
+      <Filter>Classes\GameMode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameMode\Impl\1v1.hpp">
+      <Filter>Classes\GameMode\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameMode\Impl\3v3.hpp">
+      <Filter>Classes\GameMode\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameMode\Impl\4v4.hpp">
+      <Filter>Classes\GameMode\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameMode\Impl\Boss.hpp">
+      <Filter>Classes\GameMode\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameMode\Impl\Clone.hpp">
+      <Filter>Classes\GameMode\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameMode\Impl\Deathmatch.hpp">
+      <Filter>Classes\GameMode\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameMode\Impl\HardCore.hpp">
+      <Filter>Classes\GameMode\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameMode\Impl\RandomDeathmatch.hpp">
+      <Filter>Classes\GameMode\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameMode\Impl\Regular.hpp">
+      <Filter>Classes\GameMode\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cocos2dx\support\tinyxml2\tinyxml2.h">
+      <Filter>Utils\support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Systems\Initializer.hpp">
+      <Filter>Classes\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Systems\CommandSystem.hpp">
+      <Filter>Classes\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Enums\Audio.hpp">
+      <Filter>Classes\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Enums\Character.hpp">
+      <Filter>Classes\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Enums\Enums.hpp">
+      <Filter>Classes\Enums</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="logo.ico">
+      <Filter>Res</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NarutoSenki.rc">
+      <Filter>Res</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Deidara</p>
+			<p type="attackValue">5000</p>
+			<p type="attackRangeX">43</p>
+			<p type="attackRangeY">80</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Deidara_Idle_01</f>
+			<f>Deidara_Idle_02</f>
+			<f>Deidara_Idle_03</f>
+			<f>Deidara_Idle_04</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Deidara_Walk_01</f>
+			<f>Deidara_Walk_02</f>
+			<f>Deidara_Walk_03</f>
+			<f>Deidara_Walk_04</f>
+			<f>Deidara_Walk_05</f>
+			<f>Deidara_Walk_06</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+			<e type="setMove">32</e>
+			<f>Deidara_Hurt_01</f>
+			<f>Deidara_Hurt_02</f>
+			<e type="setSound">Audio/Deidara/deidara_hurt.ogg</e>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>Deidara_AirHurt_01</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>Deidara_KnockDown_01</f>
+			<e type="setDelay">10</e>
+			<f>Deidara_KnockDown_02</f>
+			<e type="setDelay">60</e>
+			<f>Deidara_KnockDown_03</f>
+			<f>Deidara_KnockDown_04</f>
+			<f>Deidara_KnockDown_05</f>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>Deidara_Float_01</f>
+			<e type="setDelay">10</e>
+			<f>Deidara_Float_02</f>
+			<e type="setDelay">10</e>
+			<f>Deidara_Float_03</f>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Deidara_KnockDown_01</f>
+			<f>Deidara_KnockDown_02</f>
+			<e type="setSound">Audio/Deidara/deidara_dead.ogg</e>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">60</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Deidara_NAttack_01</f>
+			<f>Deidara_NAttack_02</f>
+			<f>Deidara_NAttack_03</f>
+			<f>Deidara_NAttack_04</f>
+			<e type="setSound">Audio/Effect/combo1.ogg</e>
+			<e type="setAttackBox">n_hit</e>
+			<f>Deidara_NAttack_05</f>
+			<e type="setMove">8</e>
+			<f>Deidara_NAttack_06</f>
+			<f>Deidara_NAttack_07</f>
+			<e type="setSound">Audio/Effect/combo2.ogg</e>
+			<e type="setAttackBox">n_hit</e>
+			<f>Deidara_NAttack_08</f>
+			<e type="setSound">Audio/Deidara/deidara_combo.ogg</e>
+			<f>Deidara_NAttack_09</f>
+			<f>Deidara_NAttack_10</f>
+			<e type="setMove">16</e>
+			<e type="setSound">Audio/Effect/combo3.ogg</e>
+			<e type="setAttackBox">l_hit</e>
+			<f>Deidara_NAttack_11</f>
+			<e type="setDelay">20</e>
+		</frame>
+	</action>
+
+	<action name="skill01">
+		<data>
+			<p type="attackType">cBuff</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">6</p>
+			<p type="cd">15</p>
+			<p type="combatPoint">0</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Deidara/deidara_skill1.ogg</e>
+			<f>Deidara_Skill01_001</f>
+			<e type="setDelay">10</e>
+			<f>Deidara_Skill01_002</f>
+			<e type="setDelay">10</e>
+			<f>Deidara_Skill01_003</f>
+			<e type="setDelay">10</e>
+			<e type="setBuff">17</e>
+		</frame>
+	</action>
+
+	<action name="skill02">
+		<data>
+			<p type="attackType">Summon</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">25</p>
+			<p type="combatPoint">0</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Deidara/deidara_skill2.ogg</e>
+			<f>Deidara_Skill02_02</f>
+			<f>Deidara_Skill02_03</f>
+			<f>Deidara_Skill02_05</f>
+			<f>Deidara_Skill02_06</f>
+			<f>Deidara_Skill02_07</f>
+			<f>Deidara_Skill02_08</f>
+			<e type="setDelay">10</e>
+			<e type="setClone">15</e>
+		</frame>
+	</action>
+
+	<action name="skill03">
+		<data>
+			<p type="attackType">stBuff</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">3</p>
+			<p type="cd">25</p>
+			<p type="combatPoint">2260</p>
+		</data>
+		<frame>
+			<f>Deidara_Skill03_00</f>
+			<e type="setDelay">20</e>
+			<e type="setMon">FakeDeidara</e>
+			<e type="setBuff">3</e>
+		</frame>
+	</action>
+
+	<action name="skill04">
+		<data>
+			<p type="attackType">cBuff</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">8</p>
+			<p type="cd">1</p>
+			<p type="combatPoint">4320</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Deidara/deidara_skill4.ogg</e>
+			<e type="setCommand">setInvincible</e>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<e type="setSkillEffect">smk</e>
+			<f>Deidara_Skill04_01</f>
+			<e type="setBuff">18</e>
+			<e type="setCommand">reInvincible</e>
+		</frame>
+	</action>
+
+	<action name="skill05">
+		<data>
+			<p type="attackType">Summon</p>
+			<p type="attackValue">960</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">1</p>
+			<p type="combatPoint">9840</p>
+		</data>
+		<frame>
+			<f>Deidara_Skill05_13</f>
+			<e type="setSound">Audio/Deidara/deidara_skill5.ogg</e>
+			<e type="setCommand">setInvincible</e>
+			<f>Deidara_Skill05_14</f>
+			<e type="setDelay">10</e>
+			<f>Deidara_Skill05_15</f>
+			<f>Deidara_Skill05_16</f>
+			<f>Deidara_Skill05_19</f>
+			<e type="setOugis">10</e>
+			<f>Deidara_Skill05_20</f>
+			<e type="setDelay">10</e>
+			<f>Deidara_Skill05_22</f>
+			<f>Deidara_Skill05_23</f>
+			<f>Deidara_Skill05_24</f>
+			<f>Deidara_Skill05_25</f>
+			<f>Deidara_Skill05_26</f>
+			<e type="setMon">DeidaraBom</e>
+			<e type="setCommand">setInvisible</e>
+			<e type="setDelay">120</e>
+			<f>Deidara_KnockDown_01</f>
+			<e type="setCommand">reInvisible</e>
+			<e type="setCommand">setDead</e>
+			<e type="setCommand">reInvincible</e>
+		</frame>
+	</action>
+	<action name="skill06">
+		<frame></frame>
+	</action>
+	<action name="skill07">
+		<frame></frame>
+	</action>
+	<action name="skill08">
+		<frame></frame>
+	</action>
+	<action name="skill09">
+		<frame></frame>
+	</action>
+	<action name="skill10">
+		<data>
+			<p type="attackType">Summon</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Deidara_Skill10_001</f>
+			<f>Deidara_Skill10_002</f>
+			<e type="setDelay">10</e>
+			<f>Deidara_Skill10_003</f>
+			<e type="setMon">ClayBird</e>
+		</frame>
+	</action>
+	<action name="skill11">
+		<data>
+			<p type="attackType">Idle</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Deidara_Fly_01</f>
+			<f>Deidara_Fly_02</f>
+			<f>Deidara_Fly_03</f>
+			<f>Deidara_Fly_04</f>
+			<f>Deidara_Fly_05</f>
+			<f>Deidara_Fly_06</f>
+		</frame>
+	</action>
+
+	<action name="skill12">
+		<data>
+			<p type="attackType">Summon</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Deidara_FlyMove_01</f>
+			<f>Deidara_FlyMove_02</f>
+			<f>Deidara_FlyMove_03</f>
+			<f>Deidara_FlyMove_04</f>
+			<f>Deidara_FlyMove_05</f>
+			<f>Deidara_FlyMove_06</f>
+		</frame>
+	</action>
+
+</unit>

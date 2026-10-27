@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Parents</p>
+			<p type="attackValue">8000</p>
+			<p type="attackRangeX">66</p>
+			<p type="attackRangeY">75</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Parents_Idle_01</f>
+			<f>Parents_Idle_02</f>
+			<f>Parents_Idle_03</f>
+			<f>Parents_Idle_04</f>
+
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Parents_Walk_01</f>
+			<e type="setDelay">10</e>
+			<f>Parents_Walk_02</f>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+			<f>Parents_Idle_01</f>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>Parents_Idle_01</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>Parents_Idle_01</f>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>Parents_Idle_01</f>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Parents_Idle_01</f>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Parents_Move_001</f>
+			<f>Parents_Move_002</f>
+			<f>Parents_Move_003</f>
+			<f>Parents_Move_004</f>
+			<e type="setAttackBox">l_hit</e>
+			<f>Parents_Move_005</f>
+		</frame>
+	</action>
+
+	<action name="skill01">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">15</p>
+		</data>
+		<frame>
+			<f>Parents_Skill01_001</f>
+			<e type="setMove">32</e>
+			<f>Parents_Skill01_002</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDSound">Audio/Effect/blade_damage2.ogg</e>
+			<f>Parents_Skill01_003</f>
+			<f>Parents_Skill01_004</f>
+			<f>Parents_Skill01_005</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDSound">Audio/Effect/blade_damage2.ogg</e>
+			<f>Parents_Skill01_006</f>
+			<f>Parents_Skill01_001</f>
+			<e type="setMove">32</e>
+			<f>Parents_Skill01_002</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDSound">Audio/Effect/blade_damage2.ogg</e>
+			<f>Parents_Skill01_003</f>
+		</frame>
+	</action>
+
+	<action name="skill02">
+		<data>
+			<p type="attackType">cBuff</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">25</p>
+		</data>
+		<frame>
+			<f>Parents_Skill02_001</f>
+			<e type="setBuff">18</e>
+		</frame>
+	</action>
+
+	<action name="skill03">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">300</p>
+			<p type="attackRangeX">32</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">25</p>
+		</data>
+		<frame>
+			<f>Parents_Skill03_001</f>
+			<f>Parents_Skill03_002</f>
+		</frame>
+	</action>
+
+	<action name="skill04">
+		<data>
+			<p type="attackType">oAttack</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">64</p>
+			<p type="attackRangeY">32</p>
+			<p type="cd">1</p>
+		</data>
+		<frame>
+		</frame>
+	</action>
+
+	<action name="skill05">
+		<data>
+			<p type="attackType">oAttack</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">64</p>
+			<p type="attackRangeY">32</p>
+			<p type="cd">1</p>
+		</data>
+		<frame>
+		</frame>
+	</action>
+	<action name="skill06">
+		<frame></frame>
+	</action>
+	<action name="skill07">
+		<frame></frame>
+	</action>
+	<action name="skill08">
+		<frame></frame>
+	</action>
+	<action name="skill09">
+		<frame></frame>
+	</action>
+	<action name="skill10">
+		<data>
+			<p type="attackType">Walk</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Parents_Skill10_001</f>
+		</frame>
+	</action>
+	<action name="skill11">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">1960</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Parents_Skill11_001</f>
+			<f>Parents_Skill11_002</f>
+			<f>Parents_Skill11_003</f>
+			<e type="setAttackBox">ct_hit</e>
+			<e type="setDSound">Audio/Effect/blade_damage.ogg</e>
+			<f>Parents_Skill11_004</f>
+			<e type="setDelay">190</e>
+			<e type="setActionResume">20</e>
+		</frame>
+	</action>
+	<action name="skill12">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">1960</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">0</p>
+		</data>
+		<frame></frame>
+	</action>
+
+
+</unit>

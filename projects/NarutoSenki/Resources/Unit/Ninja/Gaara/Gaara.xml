@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Gaara</p>
+			<p type="attackValue">5000</p>
+			<p type="attackRangeX">29</p>
+			<p type="attackRangeY">74</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Gaara_Idle_01</f>
+			<f>Gaara_Idle_02</f>
+			<f>Gaara_Idle_03</f>
+			<f>Gaara_Idle_04</f>
+			<f>Gaara_Idle_05</f>
+			<f>Gaara_Idle_06</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+
+		<frame>
+			<f>Gaara_Walk_01</f>
+			<f>Gaara_Walk_02</f>
+			<f>Gaara_Walk_03</f>
+			<f>Gaara_Walk_04</f>
+			<f>Gaara_Walk_05</f>
+			<f>Gaara_Walk_06</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+			<e type="setMove">32</e>
+			<f>Gaara_Hurt_01</f>
+			<f>Gaara_Hurt_02</f>
+			<e type="setSound">Audio/Gaara/Gaara_hurt.ogg</e>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>Gaara_AirHurt_01</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>Gaara_KnockDown_01</f>
+			<e type="setDelay">10</e>
+			<f>Gaara_KnockDown_02</f>
+			<e type="setDelay">60</e>
+			<f>Gaara_KnockDown_03</f>
+			<e type="setDelay">30</e>
+
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>Gaara_Float_01</f>
+			<e type="setDelay">10</e>
+			<f>Gaara_Float_02</f>
+			<e type="setDelay">10</e>
+			<f>Gaara_Float_03</f>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Gaara_KnockDown_01</f>
+			<f>Gaara_KnockDown_02</f>
+			<e type="setSound">Audio/Gaara/Gaara_dead.ogg</e>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">60</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Gaara_NAttack_01</f>
+			<f>Gaara_NAttack_02</f>
+			<e type="setDelay">10</e>
+			<f>Gaara_NAttack_03</f>
+			<e type="setSound">Audio/Effect/combo1.ogg</e>
+			<e type="setAttackBox">n_hit</e>
+			<f>Gaara_NAttack_04</f>
+			<f>Gaara_NAttack_05</f>
+			<e type="setDelay">10</e>
+			<f>Gaara_NAttack_06</f>
+			<e type="setMove">8</e>
+			<f>Gaara_NAttack_07</f>
+			<e type="setAttackBox">n_hit</e>
+			<f>Gaara_NAttack_08</f>
+			<f>Gaara_NAttack_09</f>
+			<e type="setSound">Audio/Gaara/Gaara_combo.ogg</e>
+			<e type="setAttackBox">n_hit</e>
+			<f>Gaara_NAttack_10</f>
+			<f>Gaara_NAttack_11</f>
+			<f>Gaara_NAttack_12</f>
+			<f>Gaara_NAttack_13</f>
+			<e type="setAttackBox">l_hit</e>
+			<f>Gaara_NAttack_14</f>
+		</frame>
+	</action>
+
+	<action name="skill01">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">460</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">10</p>
+			<p type="combatPoint">1380</p>
+		</data>
+		<frame>
+			<f>Gaara_Skill01_01</f>
+			<e type="setSound">Audio/Gaara/Gaara_skill0.ogg</e>
+			<e type="setMove">8</e>
+			<f>Gaara_Skill01_02</f>
+			<f>Gaara_Skill01_03</f>
+			<e type="setSound">Audio/Gaara/Gaara_skill0_1.ogg</e>
+			<f>Gaara_Skill01_04</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>Gaara_Skill01_05</f>
+			<f>Gaara_Skill01_06</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>Gaara_Skill01_05</f>
+			<f>Gaara_Skill01_04</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>Gaara_Skill01_03</f>
+		</frame>
+	</action>
+
+	<action name="skill02">
+		<data>
+			<p type="attackType">summon</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">32</p>
+			<p type="cd">15</p>
+			<p type="combatPoint">1560</p>
+		</data>
+		<frame>
+			<f>Gaara_Skill03_01</f>
+			<e type="setSound">Audio/Gaara/Gaara_skill2.ogg</e>
+			<f>Gaara_Skill03_02</f>
+			<f>Gaara_Skill03_03</f>
+			<e type="setMon">SandHand</e>
+			<e type="setDelay">10</e>
+			<f>Gaara_Skill03_04</f>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="skill03">
+		<data>
+			<p type="attackType">Summon</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">25</p>
+			<p type="combatPoint">1980</p>
+		</data>
+		<frame>
+			<f>Gaara_Skill02_001</f>
+			<e type="setSound">Audio/Gaara/Gaara_skill3.ogg</e>
+			<e type="setMon">SandBall</e>
+			<f>Gaara_Skill02_002</f>
+			<f>Gaara_Skill02_003</f>
+			<f>Gaara_Skill02_004</f>
+			<f>Gaara_Skill02_005</f>
+			<f>Gaara_Skill02_006</f>
+		</frame>
+	</action>
+
+	<action name="skill04">
+		<data>
+			<p type="attackType">Summon</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">1</p>
+			<p type="combatPoint">3300</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<f>Gaara_Skill06_01</f>
+			<e type="setDelay">10</e>
+			<f>Gaara_Skill06_02</f>
+			<f>Gaara_Skill06_03</f>
+			<f>Gaara_Skill06_04</f>
+			<e type="setMon">Sabaku</e>
+			<f>Gaara_Skill06_05</f>
+			<e type="setSound">Audio/Gaara/Gaara_skill5.ogg</e>
+			<f>Gaara_Skill06_06</f>
+			<f>Gaara_Skill06_07</f>
+			<f>Gaara_Skill06_08</f>
+			<f>Gaara_Skill06_09</f>
+			<f>Gaara_Skill06_10</f>
+			<f>Gaara_Skill06_08</f>
+			<f>Gaara_Skill06_09</f>
+			<f>Gaara_Skill06_10</f>
+		</frame>
+	</action>
+
+	<action name="skill05">
+
+		<data>
+			<p type="attackType">cBuff</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">12</p>
+			<p type="cd">1</p>
+			<p type="combatPoint">8000</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<f>Gaara_Skill06_06</f>
+			<e type="setCommand">setInvincible</e>
+			<f>Gaara_Skill06_07</f>
+			<e type="setOugis">10</e>
+			<f>Gaara_Skill06_08</f>
+			<e type="setSkillEffect">smk</e>
+			<e type="setBuff">17</e>
+			<e type="setCommand">reInvincible</e>
+		</frame>
+
+	</action>
+	<action name="skill06">
+		<frame></frame>
+	</action>
+	<action name="skill07">
+		<frame></frame>
+	</action>
+	<action name="skill08">
+		<frame></frame>
+	</action>
+	<action name="skill09">
+		<frame></frame>
+	</action>
+	<action name="skill10">
+		<data>
+			<p type="attackType">Idle</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">10</p>
+		</data>
+
+		<frame>
+			<f>Gaara_Skill10_01</f>
+			<f>Gaara_Skill10_02</f>
+			<f>Gaara_Skill10_03</f>
+			<f>Gaara_Skill10_04</f>
+			<f>Gaara_Skill10_05</f>
+			<f>Gaara_Skill10_06</f>
+		</frame>
+	</action>
+
+	<action name="skill10">
+		<data>
+			<p type="attackType">Walk</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">10</p>
+		</data>
+		<frame>
+			<f>Gaara_Skill10_01</f>
+			<f>Gaara_Skill10_02</f>
+			<f>Gaara_Skill10_03</f>
+			<f>Gaara_Skill10_04</f>
+			<f>Gaara_Skill10_05</f>
+			<f>Gaara_Skill10_06</f>
+		</frame>
+	</action>
+
+	<action name="skill10">
+		<data>
+			<p type="attackType">Summon</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">10</p>
+		</data>
+		<frame>
+			<f>Gaara_Skill12_001</f>
+			<e type="setSound">Audio/Gaara/Gaara_skill1.ogg</e>
+			<e type="setMon">SandWave</e>
+			<f>Gaara_Skill12_002</f>
+			<e type="setDelay">10</e>
+			<f>Gaara_Skill12_003</f>
+			<e type="setDelay">10</e>
+			<f>Gaara_Skill12_004</f>
+			<f>Gaara_Skill12_005</f>
+			<e type="setDelay">10</e>
+			<f>Gaara_Skill12_006</f>
+		</frame>
+	</action>
+
+</unit>

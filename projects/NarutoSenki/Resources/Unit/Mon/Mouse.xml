@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Mouse</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">29</p>
+			<p type="attackRangeY">15</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Mouse_Walk_01</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Mouse_Walk_01</f>
+			<f>Mouse_Walk_02</f>
+			<f>Mouse_Walk_03</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">360</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>ink_boom01</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDSound">Audio/Effect/stick_damage.ogg</e>
+			<f>ink_boom02</f>
+			<e type="setDetonation">0</e>
+		</frame>
+	</action>
+
+</unit>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">SmallSlug</p>
+			<p type="attackValue">2000</p>
+			<p type="attackRangeX">126</p>
+			<p type="attackRangeY">45</p>
+			<p type="cd">112</p>
+		</data>
+		<frame>
+			<f>SmallSlug_Move_01</f>
+
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>SmallSlug_Move_01</f>
+			<e type="setDelay">10</e>
+			<f>SmallSlug_Move_02</f>
+			<e type="setDelay">10</e>
+			<f>SmallSlug_Move_03</f>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>SmallSlug_Move_01</f>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>SmallSlug_Move_01</f>
+			<e type="setDelay">10</e>
+			<f>SmallSlug_Move_02</f>
+			<e type="setDelay">10</e>
+			<f>SmallSlug_Move_03</f>
+			<e type="setAttackBox">a_hit</e>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+</unit>

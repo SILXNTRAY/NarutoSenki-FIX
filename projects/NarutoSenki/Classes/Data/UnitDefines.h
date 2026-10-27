@@ -1,0 +1,43 @@
+#pragma once
+#include "Enums/HeroEnum.h"
+
+constexpr const char *kHeroList[] = {
+	HeroEnum::Asuma,
+	HeroEnum::Chiyo,
+	HeroEnum::Choji,
+	HeroEnum::Deidara,
+	HeroEnum::Gaara,
+	HeroEnum::Hidan,
+	HeroEnum::Hinata,
+	HeroEnum::Hiruzen,
+	HeroEnum::Itachi,
+	HeroEnum::Jiraiya,
+	HeroEnum::Jugo,
+	HeroEnum::Kakashi,
+	HeroEnum::Kakuzu,
+	HeroEnum::Kankuro,
+	HeroEnum::Karin,
+	HeroEnum::Kiba,
+	HeroEnum::Kimimaro,
+	HeroEnum::Kisame,
+	HeroEnum::Konan,
+	HeroEnum::Lee,
+	HeroEnum::Minato,
+	HeroEnum::Naruto,
+	HeroEnum::Neji,
+	HeroEnum::Ino,
+	HeroEnum::Orochimaru,
+	HeroEnum::Pain,
+	HeroEnum::Sai,
+	HeroEnum::Sakura,
+	HeroEnum::Sasuke,
+	HeroEnum::Shikamaru,
+	HeroEnum::Shino,
+	HeroEnum::Suigetsu,
+	HeroEnum::Tenten,
+	HeroEnum::Tobi,
+	HeroEnum::Tobirama,
+	HeroEnum::Tsunade,
+};
+
+constexpr size_t kHeroNum =  std::size(kHeroList);

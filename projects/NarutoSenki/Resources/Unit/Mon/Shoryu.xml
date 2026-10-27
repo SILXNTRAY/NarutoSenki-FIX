@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Shoryu</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">51</p>
+			<p type="attackRangeY">11</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Shoryu_Move_001</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Shoryu_Move_001</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Shoryu_Move_001</f>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">1660</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Shoryu_Move_001</f>
+			<f>Shoryu_Move_002</f>
+			<f>Shoryu_Move_003</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>Shoryu_Move_004</f>
+			<f>Shoryu_Move_005</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>Shoryu_Move_006</f>
+			<f>Shoryu_Move_007</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>Shoryu_Move_008</f>
+			<f>Shoryu_Move_009</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDelay">10</e>
+			<e type="setDetonation">0</e>
+		</frame>
+	</action>
+
+</unit>

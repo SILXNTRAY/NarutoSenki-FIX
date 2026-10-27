@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">KotetsuFlog</p>
+			<p type="attackValue">3000</p>
+			<p type="attackRangeX">33</p>
+			<p type="attackRangeY">40</p>
+			<p type="cd">160</p>
+		</data>
+		<frame>
+			<f>KotetsuFlog_Idle_01</f>
+			<f>KotetsuFlog_Walk_01</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>KotetsuFlog_Walk_01</f>
+			<f>KotetsuFlog_Walk_02</f>
+			<e type="setDelay">10</e>
+			<f>KotetsuFlog_Walk_03</f>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+			<e type="setMove">32</e>
+			<f>KotetsuFlog_KnockDown_01</f>
+
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>KotetsuFlog_KnockDown_01</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>KotetsuFlog_KnockDown_01</f>
+			<f>KotetsuFlog_KnockDown_02</f>
+			<f>KotetsuFlog_KnockDown_03</f>
+			<e type="setDelay">10</e>
+			<f>KotetsuFlog_KnockDown_04</f>
+			<e type="setDelay">60</e>
+			<f>KotetsuFlog_Idle_01</f>
+
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>KotetsuFlog_Float_01</f>
+			<e type="setDelay">10</e>
+			<f>KotetsuFlog_KnockDown_02</f>
+			<e type="setDelay">30</e>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>KotetsuFlog_KnockDown_01</f>
+			<f>KotetsuFlog_KnockDown_02</f>
+			<f>KotetsuFlog_KnockDown_03</f>
+			<f>KotetsuFlog_KnockDown_04</f>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">20</p>
+			<p type="attackRangeX">8</p>
+			<p type="attackRangeY">8</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>KotetsuFlog_NAttack_01</f>
+			<e type="setDelay">10</e>
+			<f>KotetsuFlog_NAttack_02</f>
+			<e type="setDelay">10</e>
+			<f>KotetsuFlog_NAttack_03</f>
+			<f>KotetsuFlog_NAttack_04</f>
+			<e type="setAttackBox">n_hit</e>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+
+</unit>

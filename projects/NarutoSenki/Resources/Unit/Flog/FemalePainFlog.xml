@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">FemalePainFlog</p>
+			<p type="attackValue">3000</p>
+			<p type="attackRangeX">33</p>
+			<p type="attackRangeY">40</p>
+			<p type="cd">160</p>
+		</data>
+		<frame>
+			<f>FemalePainFlog_Idle_01</f>
+			<f>FemalePainFlog_Walk_01</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>FemalePainFlog_Walk_01</f>
+			<f>FemalePainFlog_Walk_02</f>
+			<e type="setDelay">10</e>
+			<f>FemalePainFlog_Walk_03</f>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+			<e type="setMove">32</e>
+			<f>FemalePainFlog_KnockDown_01</f>
+
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>FemalePainFlog_KnockDown_01</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>FemalePainFlog_KnockDown_01</f>
+			<f>FemalePainFlog_KnockDown_02</f>
+			<f>FemalePainFlog_KnockDown_03</f>
+			<e type="setDelay">10</e>
+			<f>FemalePainFlog_KnockDown_04</f>
+			<e type="setDelay">60</e>
+			<f>FemalePainFlog_Idle_01</f>
+
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>FemalePainFlog_Float_01</f>
+			<e type="setDelay">10</e>
+			<f>FemalePainFlog_KnockDown_02</f>
+			<e type="setDelay">30</e>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>FemalePainFlog_KnockDown_01</f>
+			<f>FemalePainFlog_KnockDown_02</f>
+			<f>FemalePainFlog_KnockDown_03</f>
+			<f>FemalePainFlog_KnockDown_04</f>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">20</p>
+			<p type="attackRangeX">8</p>
+			<p type="attackRangeY">8</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>FemalePainFlog_NAttack_01</f>
+			<e type="setDelay">10</e>
+			<f>FemalePainFlog_NAttack_02</f>
+			<e type="setDelay">10</e>
+			<f>FemalePainFlog_NAttack_03</f>
+			<f>FemalePainFlog_NAttack_04</f>
+			<e type="setAttackBox">n_hit</e>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+
+</unit>

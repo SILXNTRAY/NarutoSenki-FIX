@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">NarakaPath</p>
+			<p type="attackValue">20000</p>
+			<p type="attackRangeX">24</p>
+			<p type="attackRangeY">83</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>NarakaPath_Idle_01</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>NarakaPath_Walk_01</f>
+			<f>NarakaPath_Walk_02</f>
+			<f>NarakaPath_Walk_03</f>
+			<f>NarakaPath_Walk_04</f>
+			<f>NarakaPath_Walk_05</f>
+			<f>NarakaPath_Walk_06</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+			<f>NarakaPath_Hurt_01</f>
+			<e type="setDelay">10</e>
+			<f>NarakaPath_Hurt_02</f>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>NarakaPath_AirHurt_01</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>NarakaPath_KnockDown_01</f>
+			<e type="setDelay">10</e>
+			<f>NarakaPath_KnockDown_02</f>
+			<e type="setDelay">60</e>
+			<f>NarakaPath_KnockDown_03</f>
+			<f>NarakaPath_KnockDown_04</f>
+			<f>NarakaPath_KnockDown_05</f>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>NarakaPath_Float_01</f>
+			<e type="setDelay">10</e>
+			<f>NarakaPath_Float_02</f>
+			<e type="setDelay">10</e>
+			<f>NarakaPath_Float_03</f>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>NarakaPath_KnockDown_01</f>
+			<f>NarakaPath_KnockDown_02</f>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">260</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">16</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>NarakaPath_NAttack_01</f>
+			<f>NarakaPath_NAttack_02</f>
+			<f>NarakaPath_NAttack_03</f>
+			<e type="setSound">Audio/Effect/combo1.ogg</e>
+			<e type="setAttackBox">n_hit</e>
+			<f>NarakaPath_NAttack_04</f>
+			<f>NarakaPath_NAttack_05</f>
+			<f>NarakaPath_NAttack_06</f>
+			<f>NarakaPath_NAttack_07</f>
+			<e type="setMove">8</e>
+			<f>NarakaPath_NAttack_08</f>
+			<e type="setSound">Audio/Effect/combo2.ogg</e>
+			<e type="setAttackBox">n_hit</e>
+			<f>NarakaPath_NAttack_09</f>
+			<f>NarakaPath_NAttack_10</f>
+			<f>NarakaPath_NAttack_11</f>
+			<f>NarakaPath_NAttack_12</f>
+			<e type="setSound">Audio/Pain/NarakaPath_combo.ogg</e>
+			<e type="setMove">16</e>
+			<f>NarakaPath_NAttack_13</f>
+			<e type="setAttackBox">l_hit</e>
+			<e type="setSound">Audio/Effect/combo3.ogg</e>
+			<f>NarakaPath_NAttack_14</f>
+		</frame>
+	</action>
+
+	<action name="skill01">
+		<data>
+			<p type="attackType">sBuff</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">15</p>
+			<p type="cd">1</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Pain/NarakaPath_skill1.ogg</e>
+			<f>NarakaPath_Skill01_01</f>
+			<e type="setDelay">10</e>
+			<f>NarakaPath_Skill01_02</f>
+			<e type="setSkillEffect">Kujiyose</e>
+			<e type="setClone">0</e>
+			<e type="setDelay">50</e>
+		</frame>
+	</action>
+
+	<action name="skill02">
+		<data>
+			<p type="attackType">abAttack</p>
+			<p type="attackValue">900</p>
+			<p type="attackRangeX">192</p>
+			<p type="attackRangeY">64</p>
+			<p type="cd">1</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Pain/NarakaPath_skill2.ogg</e>
+			<f>NarakaPath_Skill01_01</f>
+			<e type="setDelay">10</e>
+			<f>NarakaPath_Skill01_02</f>
+			<e type="setSkillEffect">Kujiyose</e>
+			<!-- NOTE:
+            	Set 1 is animl path, not 1 is asura path
+            	If value >0 will destroy clone object after `value` time
+        	-->
+			<e type="setClone">-1</e>
+			<e type="setDelay">50</e>
+		</frame>
+	</action>
+
+	<action name="skill03">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">320</p>
+			<p type="attackRangeX">160</p>
+			<p type="attackRangeY">64</p>
+			<p type="cd">25</p>
+		</data>
+		<frame>
+			<f>NarakaPath_Skill01_01</f>
+		</frame>
+	</action>
+
+	<action name="skill04">
+		<data>
+			<p type="attackType">oAttack</p>
+			<p type="attackValue">250</p>
+			<p type="attackRangeX">48</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">1</p>
+		</data>
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="skill05">
+		<data>
+			<p type="attackType">oAttack</p>
+			<p type="attackValue">250</p>
+			<p type="attackRangeX">48</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">1</p>
+		</data>
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="skill06">
+		<frame></frame>
+	</action>
+	<action name="skill07">
+		<frame></frame>
+	</action>
+	<action name="skill08">
+		<frame></frame>
+	</action>
+	<action name="skill09">
+		<frame></frame>
+	</action>
+	<action name="skill10">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">260</p>
+			<p type="attackRangeX">32</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>NarakaPath_Hurt_01</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDelay">10</e>
+			<f>NarakaPath_Hurt_02</f>
+			<e type="setAttackBox">c_hit</e>
+		</frame>
+	</action>
+
+
+</unit>

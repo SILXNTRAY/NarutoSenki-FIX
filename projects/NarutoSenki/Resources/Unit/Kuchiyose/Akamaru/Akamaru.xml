@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Akamaru</p>
+			<p type="attackValue">8000</p>
+			<p type="attackRangeX">66</p>
+			<p type="attackRangeY">70</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Akamaru_Idle_001</f>
+			<f>Akamaru_Idle_002</f>
+			<f>Akamaru_Idle_003</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Akamaru_Walk_001</f>
+			<f>Akamaru_Walk_002</f>
+			<f>Akamaru_Walk_003</f>
+			<f>Akamaru_Walk_004</f>
+			<f>Akamaru_Walk_005</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+			<f>Akamaru_Idle_001</f>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>Akamaru_Idle_001</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>Akamaru_Idle_001</f>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>Akamaru_Idle_001</f>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Akamaru_Idle_001</f>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Akamaru_Move_001</f>
+			<e type="setDelay">10</e>
+			<f>Akamaru_Move_002</f>
+			<e type="setDelay">10</e>
+			<f>Akamaru_Move_003</f>
+			<e type="setAttackBox">l_hit</e>
+			<e type="setDelay">20</e>
+		</frame>
+	</action>
+
+	<action name="skill01">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">460</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">10</p>
+		</data>
+		<frame>
+			<f>Akamaru_Skill01_002</f>
+			<e type="setChargeB">96</e>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDelay">10</e>
+			<f>Akamaru_Skill01_003</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDSound">Audio/Effect/blade_damage2.ogg</e>
+			<e type="setDelay">10</e>
+			<f>Akamaru_Skill01_004</f>
+			<e type="setChargeB">96</e>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDelay">10</e>
+			<f>Akamaru_Skill01_005</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setDSound">Audio/Effect/blade_damage2.ogg</e>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="skill02">
+		<data>
+			<p type="attackType">cBuff</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">5</p>
+			<p type="cd">25</p>
+		</data>
+		<frame>
+			<e type="setSkillEffect">smk</e>
+			<e type="setBuff">18</e>
+		</frame>
+	</action>
+
+	<action name="skill03">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">300</p>
+			<p type="attackRangeX">32</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">1</p>
+		</data>
+		<frame>
+		</frame>
+	</action>
+
+	<action name="skill04">
+		<data>
+			<p type="attackType">oAttack</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">64</p>
+			<p type="attackRangeY">32</p>
+			<p type="cd">1</p>
+		</data>
+		<frame>
+		</frame>
+	</action>
+
+	<action name="skill05">
+		<data>
+			<p type="attackType">oAttack</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">64</p>
+			<p type="attackRangeY">32</p>
+			<p type="cd">1</p>
+		</data>
+		<frame>
+		</frame>
+	</action>
+
+	<action name="skill06">
+		<frame></frame>
+	</action>
+	<action name="skill07">
+		<frame></frame>
+	</action>
+	<action name="skill08">
+		<frame></frame>
+	</action>
+	<action name="skill09">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+
+		</frame>
+	</action>
+	<action name="skill10">
+		<data>
+			<p type="attackType">Idle</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">32</p>
+			<p type="cd">10</p>
+		</data>
+		<frame>
+			<f>Akamaru_Skill10_01</f>
+			<f>Akamaru_Skill10_02</f>
+			<f>Akamaru_Skill10_03</f>
+		</frame>
+	</action>
+	<action name="skill11">
+		<data>
+			<p type="attackType">Walk</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">15</p>
+		</data>
+		<frame>
+			<f>Akamaru_Skill11_01</f>
+			<f>Akamaru_Skill11_02</f>
+			<f>Akamaru_Skill11_03</f>
+		</frame>
+
+	</action>
+	<action name="skill12">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Akamaru_Skill11_01</f>
+			<f>Akamaru_Skill11_02</f>
+			<f>Akamaru_Skill11_03</f>
+			<e type="setAttackBox">n_hit</e>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+</unit>

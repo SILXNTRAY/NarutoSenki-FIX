@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Steam</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">51</p>
+			<p type="attackRangeY">11</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Steam_Move_001</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Steam_Move_001</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Steam_Move_001</f>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">860</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Steam_Move_001</f>
+			<e type="setAttackBox">ac_hit</e>
+			<f>Steam_Move_002</f>
+			<f>Steam_Move_003</f>
+			<e type="setAttackBox">ac_hit</e>
+			<f>Steam_Move_004</f>
+			<f>Steam_Move_005</f>
+			<e type="setAttackBox">ac_hit</e>
+			<f>Steam_Move_006</f>
+			<f>Steam_Move_007</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setDetonation">0</e>
+		</frame>
+	</action>
+
+</unit>

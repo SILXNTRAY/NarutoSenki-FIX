@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Kiba</p>
+			<p type="attackValue">5000</p>
+			<p type="attackRangeX">63</p>
+			<p type="attackRangeY">86</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Kiba_Idle_001</f>
+			<e type="setDelay">10</e>
+			<f>Kiba_Idle_002</f>
+			<e type="setDelay">10</e>
+			<f>Kiba_Idle_003</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Kiba_Walk_01</f>
+			<f>Kiba_Walk_02</f>
+			<f>Kiba_Walk_03</f>
+			<f>Kiba_Walk_04</f>
+			<f>Kiba_Walk_05</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+			<e type="setMove">32</e>
+			<f>Kiba_Hurt_01</f>
+			<f>Kiba_Hurt_02</f>
+			<e type="setSound">Audio/Kiba/Kiba_hurt.ogg</e>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>Kiba_AirHurt_001</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>Kiba_KnockDown_001</f>
+			<e type="setDelay">10</e>
+			<f>Kiba_KnockDown_002</f>
+			<f>Kiba_KnockDown_003</f>
+			<e type="setDelay">60</e>
+			<f>Kiba_KnockDown_004</f>
+			<f>Kiba_KnockDown_005</f>
+			<f>Kiba_KnockDown_006</f>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>Kiba_Float_001</f>
+			<e type="setDelay">10</e>
+			<f>Kiba_Float_002</f>
+			<e type="setDelay">10</e>
+			<f>Kiba_Float_003</f>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Kiba_KnockDown_001</f>
+			<f>Kiba_KnockDown_002</f>
+			<f>Kiba_KnockDown_003</f>
+			<e type="setSound">Audio/Kiba/Kiba_dead.ogg</e>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">60</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Kiba_NAttack2_001</f>
+			<e type="setMove">16</e>
+			<f>Kiba_NAttack2_002</f>
+			<f>Kiba_NAttack2_003</f>
+			<e type="setAttackBox">n_hit</e>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="skill01">
+		<data>
+			<p type="attackType">cBuff</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">10</p>
+			<p type="combatPoint">0</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Kiba/Kiba_skill1.ogg</e>
+			<e type="setSkillEffect">smk</e>
+			<e type="setClone">0</e>
+			<e type="setBuff">17</e>
+
+		</frame>
+	</action>
+	<action name="skill02">
+		<data>
+			<p type="attackType">Command</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">15</p>
+			<p type="combatPoint">1840</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Kiba/Kiba_skill2.ogg</e>
+			<e type="setMonAttack">1</e>
+
+		</frame>
+	</action>
+	<action name="skill03">
+		<data>
+			<p type="attackType">cBuff</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">5</p>
+			<p type="cd">25</p>
+			<p type="combatPoint">4600</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Kiba/Kiba_skill3.ogg</e>
+			<e type="setBuff">18</e>
+		</frame>
+	</action>
+	<action name="skill04">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">360</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">1</p>
+			<p type="combatPoint">3240</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<f>Kiba_Skill04_001</f>
+			<f>Kiba_Skill04_002</f>
+			<e type="setCommand">findTarget</e>
+			<e type="setCommand">setTransport</e>
+			<f>Kiba_Skill04_003</f>
+			<f>Kiba_Skill04_004</f>
+			<e type="setSound">Audio/Kiba/Kiba_skill4_1.ogg</e>
+			<e type="setAttackBox">c_hit</e>
+			<f>Kiba_Skill04_005</f>
+			<f>Kiba_Skill04_006</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setSound">Audio/Effect/blade_damage2.ogg</e>
+			<f>Kiba_Skill04_007</f>
+			<f>Kiba_Skill04_004</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setSound">Audio/Effect/blade_damage2.ogg</e>
+			<f>Kiba_Skill04_005</f>
+			<f>Kiba_Skill04_006</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setSound">Audio/Effect/blade_damage2.ogg</e>
+			<f>Kiba_Skill04_007</f>
+			<f>Kiba_Skill04_009</f>
+			<e type="setSound">Audio/Kiba/Kiba_skill4_2.ogg</e>
+			<e type="setJump">true</e>
+			<e type="setAttackBox">f_hit</e>
+			<f>Kiba_Skill04_010</f>
+			<f>Kiba_Skill04_011</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setSound">Audio/Effect/blade_damage2.ogg</e>
+			<f>Kiba_Skill04_012</f>
+			<f>Kiba_Skill04_013</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setSound">Audio/Effect/blade_damage2.ogg</e>
+			<f>Kiba_Skill04_010</f>
+			<f>Kiba_Skill04_011</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setSound">Audio/Effect/blade_damage2.ogg</e>
+			<f>Kiba_Skill04_012</f>
+			<f>Kiba_Skill04_013</f>
+			<e type="setAttackBox">c_hit</e>
+			<e type="setSound">Audio/Effect/blade_damage2.ogg</e>
+			<f>Kiba_Skill04_014</f>
+			<f>Kiba_Skill04_015</f>
+		</frame>
+	</action>
+	<action name="skill05">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">900</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">1</p>
+			<p type="combatPoint">8640</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<f>Kiba_Skill06_001</f>
+			<e type="setOugis">10</e>
+			<f>Kiba_Skill06_002</f>
+			<e type="setSound">Audio/Effect/poof.ogg</e>
+			<e type="setCommand">setInvincible</e>
+			<f>Kiba_Skill05_001</f>
+			<f>Kiba_Skill05_002</f>
+			<f>Kiba_Skill05_003</f>
+			<f>Kiba_Skill05_004</f>
+			<f>Kiba_Skill05_005</f>
+			<f>Kiba_Skill05_006</f>
+			<f>Kiba_Skill05_007</f>
+			<f>Kiba_Skill05_008</f>
+			<e type="setChargeB">320</e>
+			<e type="setAttackBox">o_hit</e>
+			<f>Kiba_Skill05_009</f>
+			<f>Kiba_Skill05_010</f>
+			<e type="setAttackBox">o_hit</e>
+			<f>Kiba_Skill05_011</f>
+			<e type="setSound">Audio/Kiba/Kiba_skill5.ogg</e>
+			<f>Kiba_Skill05_012</f>
+			<e type="setAttackBox">o_hit</e>
+			<e type="setSound">Audio/Effect/damage_l.ogg</e>
+			<f>Kiba_Skill05_013</f>
+			<e type="setChargeB">320</e>
+			<f>Kiba_Skill05_008</f>
+			<e type="setAttackBox">o_hit</e>
+			<e type="setSound">Audio/Effect/damage_l.ogg</e>
+			<f>Kiba_Skill05_009</f>
+			<f>Kiba_Skill05_010</f>
+			<e type="setAttackBox">o_hit</e>
+			<e type="setSound">Audio/Effect/damage_l.ogg</e>
+			<f>Kiba_Skill05_011</f>
+			<f>Kiba_Skill05_012</f>
+			<e type="setAttackBox">o_hit</e>
+			<e type="setSound">Audio/Effect/damage_l.ogg</e>
+			<f>Kiba_Skill05_013</f>
+			<e type="setChargeB">320</e>
+			<f>Kiba_Skill05_008</f>
+			<e type="setAttackBox">o_hit</e>
+			<e type="setSound">Audio/Effect/damage_l.ogg</e>
+			<f>Kiba_Skill05_009</f>
+			<f>Kiba_Skill05_010</f>
+			<e type="setAttackBox">o_hit</e>
+			<e type="setSound">Audio/Effect/damage_l.ogg</e>
+			<f>Kiba_Skill05_011</f>
+			<f>Kiba_Skill05_012</f>
+			<e type="setAttackBox">o_hit</e>
+			<f>Kiba_Skill05_013</f>
+			<e type="setCommand">reInvincible</e>
+		</frame>
+	</action>
+
+	<action name="skill06">
+		<frame></frame>
+	</action>
+	<action name="skill07">
+		<frame></frame>
+	</action>
+	<action name="skill08">
+		<frame></frame>
+	</action>
+	<action name="skill09">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Kiba_Skill11_001</f>
+			<f>Kiba_Skill11_002</f>
+			<e type="setAttackBox">n_hit</e>
+			<e type="setSound">Audio/Effect/blade.ogg</e>
+			<f>Kiba_Skill11_003</f>
+			<f>Kiba_Skill11_004</f>
+			<e type="setAttackBox">n_hit</e>
+			<f>Kiba_Skill11_005</f>
+			<e type="setSound">Audio/Kiba/Kiba_skill11.ogg</e>
+			<e type="setMove">8</e>
+			<f>Kiba_Skill11_006</f>
+			<e type="setSound">Audio/Effect/blade.ogg</e>
+			<e type="setAttackBox">n_hit</e>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+	<action name="skill10">
+		<data>
+			<p type="attackType">Idle</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">32</p>
+			<p type="cd">10</p>
+		</data>
+		<frame>
+			<f>Kiba_Skill10_001</f>
+			<f>Kiba_Skill10_002</f>
+			<f>Kiba_Skill10_003</f>
+			<f>Kiba_Skill10_004</f>
+		</frame>
+	</action>
+	<action name="skill11">
+		<data>
+			<p type="attackType">Walk</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">15</p>
+		</data>
+		<frame>
+			<f>Kiba_Run_01</f>
+			<f>Kiba_Run_02</f>
+			<f>Kiba_Run_03</f>
+			<f>Kiba_Run_04</f>
+			<f>Kiba_Run_05</f>
+			<f>Kiba_Run_06</f>
+		</frame>
+
+	</action>
+	<action name="skill12">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Kiba_NAttack_001</f>
+			<f>Kiba_NAttack_002</f>
+			<f>Kiba_NAttack_003</f>
+			<e type="setAttackBox">n_hit</e>
+			<e type="setSound">Audio/Effect/combo1.ogg</e>
+			<f>Kiba_NAttack_004</f>
+			<f>Kiba_NAttack_005</f>
+			<f>Kiba_NAttack_006</f>
+			<e type="setMove">8</e>
+			<f>Kiba_NAttack_007</f>
+			<e type="setSound">Audio/Effect/combo2.ogg</e>
+			<e type="setAttackBox">n_hit</e>
+			<e type="setDelay">10</e>
+			<f>Kiba_NAttack_008</f>
+			<e type="setSound">Audio/Kiba/Kiba_combo.ogg</e>
+			<f>Kiba_NAttack_009</f>
+			<e type="setMove">16</e>
+			<f>Kiba_NAttack_010</f>
+			<e type="setAttackBox">l_hit</e>
+			<e type="setSound">Audio/Effect/combo3.ogg</e>
+			<e type="setDelay">10</e>
+			<f>Kiba_NAttack_011</f>
+		</frame>
+	</action>
+</unit>

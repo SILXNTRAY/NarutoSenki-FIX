@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Suigetsu</p>
+			<p type="attackValue">5500</p>
+			<p type="attackRangeX">55</p>
+			<p type="attackRangeY">70</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Suigetsu_Idle_01</f>
+			<f>Suigetsu_Idle_02</f>
+			<f>Suigetsu_Idle_03</f>
+			<f>Suigetsu_Idle_04</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Suigetsu_Walk_01</f>
+			<f>Suigetsu_Walk_02</f>
+			<f>Suigetsu_Walk_03</f>
+			<f>Suigetsu_Walk_04</f>
+			<f>Suigetsu_Walk_05</f>
+			<f>Suigetsu_Walk_06</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+			<e type="setMove">32</e>
+			<f>Suigetsu_Hurt_01</f>
+			<f>Suigetsu_Hurt_02</f>
+			<f>Suigetsu_Hurt_03</f>
+			<e type="setSound">Audio/Suigetsu/suigetsu_hurt.ogg</e>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>Suigetsu_AirHurt_01</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>Suigetsu_KnockDown_01</f>
+			<e type="setDelay">10</e>
+			<f>Suigetsu_KnockDown_02</f>
+			<e type="setDelay">60</e>
+			<f>Suigetsu_KnockDown_03</f>
+			<f>Suigetsu_KnockDown_04</f>
+			<f>Suigetsu_KnockDown_05</f>
+			<f>Suigetsu_KnockDown_06</f>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>Suigetsu_Float_01</f>
+			<e type="setDelay">10</e>
+			<f>Suigetsu_Float_02</f>
+			<e type="setDelay">10</e>
+			<f>Suigetsu_Float_03</f>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Suigetsu_KnockDown_01</f>
+			<f>Suigetsu_KnockDown_02</f>
+			<e type="setSound">Audio/Suigetsu/suigetsu_dead.ogg</e>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">60</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+
+		</data>
+		<frame>
+			<f>Suigetsu_NAttack_01</f>
+			<f>Suigetsu_NAttack_02</f>
+			<f>Suigetsu_NAttack_03</f>
+			<e type="setAttackBox">n_hit</e>
+			<e type="setSound">Audio/Effect/combo1.ogg</e>
+			<f>Suigetsu_NAttack_04</f>
+			<f>Suigetsu_NAttack_05</f>
+			<f>Suigetsu_NAttack_06</f>
+			<f>Suigetsu_NAttack_07</f>
+			<f>Suigetsu_NAttack_08</f>
+			<e type="setMove">8</e>
+			<f>Suigetsu_NAttack_09</f>
+			<e type="setAttackBox">n_hit</e>
+			<e type="setSound">Audio/Effect/combo2.ogg</e>
+			<f>Suigetsu_NAttack_10</f>
+			<f>Suigetsu_NAttack_11</f>
+			<f>Suigetsu_NAttack_12</f>
+			<e type="setMove">16</e>
+			<f>Suigetsu_NAttack_13</f>
+			<e type="setAttackBox">l_hit</e>
+			<e type="setSound">Audio/Suigetsu/suigetsu_combo.ogg</e>
+			<f>Suigetsu_NAttack_14</f>
+			<f>Suigetsu_NAttack_15</f>
+		</frame>
+	</action>
+
+	<action name="skill01">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">560</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">10</p>
+			<p type="combatPoint">1120</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Suigetsu/suigetsu_skill1.ogg</e>
+			<f>Suigetsu_Skill01_01</f>
+			<f>Suigetsu_Skill01_03</f>
+			<e type="setChargeB">192</e>
+			<f>Suigetsu_Skill01_04</f>
+			<e type="setAttackBox">bl_hit</e>
+			<e type="setDSound">Audio/Effect/blade_damage2.ogg</e>
+			<e type="setDelay">10</e>
+			<f>Suigetsu_Skill01_04</f>
+			<e type="setAttackBox">bl_hit</e>
+			<e type="setDSound">Audio/Effect/blade_damage2.ogg</e>
+			<e type="setDelay">10</e>
+		</frame>
+	</action>
+
+	<action name="skill02">
+		<data>
+			<p type="attackType">Summon</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">15</p>
+			<p type="combatPoint">1560</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Suigetsu/suigetsu_skill2.ogg</e>
+			<f>Suigetsu_Skill02_002</f>
+			<f>Suigetsu_Skill02_003</f>
+			<f>Suigetsu_Skill02_004</f>
+			<f>Suigetsu_Skill02_005</f>
+			<e type="setMon">Kubi</e>
+			<f>Suigetsu_Skill02_006</f>
+			<e type="setDelay">160</e>
+			<f>Suigetsu_Skill02_009</f>
+		</frame>
+	</action>
+
+	<action name="skill03">
+		<data>
+			<p type="attackType">cBuff</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">25</p>
+			<p type="combatPoint">1960</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Suigetsu/suigetsu_skill3_1.ogg</e>
+			<f>Suigetsu_Skill03_01</f>
+			<f>Suigetsu_Skill03_02</f>
+			<f>Suigetsu_Skill03_03</f>
+			<f>Suigetsu_Skill03_04</f>
+			<e type="setBuff">17</e>
+		</frame>
+	</action>
+
+	<action name="skill04">
+		<data>
+			<p type="attackType">Bullet</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">1</p>
+			<p type="combatPoint">3000</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<e type="setSound">Audio/Suigetsu/suigetsu_skill4.ogg</e>
+			<f>Suigetsu_Skill04_01</f>
+			<f>Suigetsu_Skill04_02</f>
+			<f>Suigetsu_Skill04_03</f>
+			<f>Suigetsu_Skill04_04</f>
+			<e type="setMon">WaterBullet</e>
+			<f>Suigetsu_Skill04_02</f>
+			<f>Suigetsu_Skill04_03</f>
+			<f>Suigetsu_Skill04_04</f>
+			<e type="setMon">WaterBullet</e>
+			<f>Suigetsu_Skill04_02</f>
+			<e type="setDelay">30</e>
+			<f>Suigetsu_Skill04_05</f>
+			<e type="setMon">WaterBom</e>
+			<e type="setDelay">20</e>
+		</frame>
+	</action>
+
+	<action name="skill05">
+
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">1060</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">1</p>
+			<p type="combatPoint">8480</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/ougis.ogg</e>
+			<f>Suigetsu_Skill05_02</f>
+			<f>Suigetsu_Skill05_03</f>
+			<e type="setOugis">10</e>
+			<f>Suigetsu_Skill05_07</f>
+			<e type="setCommand">setInvincible</e>
+			<f>Suigetsu_Skill05_08</f>
+			<e type="setMove">32</e>
+			<f>Suigetsu_Skill05_10</f>
+			<e type="setSound">Audio/Suigetsu/suigetsu_skill5_4.ogg</e>
+			<f>Suigetsu_Skill05_11</f>
+			<e type="setAttackBox">o2_hit</e>
+			<f>Suigetsu_Skill05_12</f>
+			<e type="setDSound">Audio/Effect/blade_damage.ogg</e>
+			<f>Suigetsu_Skill05_13</f>
+			<f>Suigetsu_Skill05_16</f>
+			<e type="setChargeB">128</e>
+			<f>Suigetsu_Skill05_17</f>
+			<e type="setShadow">10</e>
+			<e type="setDelay">10</e>
+			<f>Suigetsu_Skill05_18</f>
+			<e type="setSound">Audio/Suigetsu/suigetsu_skill5_3.ogg</e>
+			<e type="setAttackBox">o_hit</e>
+			<e type="setDSound">Audio/Effect/blade_damage.ogg</e>
+			<f>Suigetsu_Skill05_20</f>
+			<f>Suigetsu_Skill05_22</f>
+			<e type="setShadow">10</e>
+			<e type="setChargeB">128</e>
+			<f>Suigetsu_Skill05_23</f>
+			<e type="setShadow">10</e>
+			<f>Suigetsu_Skill05_24</f>
+			<e type="setShadow">10</e>
+			<e type="setAttackBox">bf_hit</e>
+			<e type="setDSound">Audio/Effect/blade_damage.ogg</e>
+			<f>Suigetsu_Skill05_25</f>
+			<e type="setShadow">10</e>
+			<e type="setAttackBox">bf_hit</e>
+			<f>Suigetsu_Skill05_26</f>
+			<e type="setShadow">10</e>
+			<e type="setAttackBox">ac_hit</e>
+			<f>Suigetsu_Skill05_27</f>
+			<f>Suigetsu_Skill05_28</f>
+			<e type="setChargeB">48</e>
+			<f>Suigetsu_Skill05_30</f>
+			<e type="setShadow">10</e>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setDSound">Audio/Effect/blade_damage.ogg</e>
+			<f>Suigetsu_Skill05_32</f>
+			<f>Suigetsu_Skill05_33</f>
+			<e type="setShadow">10</e>
+			<f>Suigetsu_Skill05_34</f>
+			<f>Suigetsu_Skill05_35</f>
+			<e type="setShadow">10</e>
+			<e type="setChargeB">48</e>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setDSound">Audio/Effect/blade_damage.ogg</e>
+			<f>Suigetsu_Skill05_37</f>
+			<f>Suigetsu_Skill05_38</f>
+			<f>Suigetsu_Skill05_50</f>
+			<e type="setJump">true</e>
+			<f>Suigetsu_Skill05_51</f>
+			<e type="setShadow">10</e>
+			<f>Suigetsu_Skill05_52</f>
+			<e type="setShadow">10</e>
+			<f>Suigetsu_Skill05_53</f>
+			<e type="setShadow">10</e>
+			<f>Suigetsu_Skill05_54</f>
+			<e type="setShadow">10</e>
+			<f>Suigetsu_Skill05_55</f>
+			<e type="setShadow">10</e>
+			<e type="setDelay">10</e>
+			<f>Suigetsu_Skill05_56</f>
+			<f>Suigetsu_Skill05_57</f>
+			<f>Suigetsu_Skill05_58</f>
+			<e type="setSound">Audio/Suigetsu/suigetsu_skill5_5.ogg</e>
+			<e type="setAttackBox">f_hit</e>
+			<f>Suigetsu_Skill05_59</f>
+			<f>Suigetsu_Skill05_60</f>
+			<e type="setCommand">reInvincible</e>
+		</frame>
+
+	</action>
+
+	<action name="skill06">
+		<frame></frame>
+	</action>
+	<action name="skill07">
+		<frame></frame>
+	</action>
+	<action name="skill08">
+		<frame></frame>
+	</action>
+	<action name="skill09">
+		<frame></frame>
+	</action>
+	<action name="skill10">
+		<data>
+			<p type="attackType">idle</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Suigetsu_Skill03_06</f>
+		</frame>
+	</action>
+	<action name="skill11">
+		<data>
+			<p type="attackType">walk</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Suigetsu_Skill03_06</f>
+			<f>Suigetsu_Skill03_05</f>
+			<f>Suigetsu_Skill03_04</f>
+			<f>Suigetsu_Skill03_05</f>
+			<f>Suigetsu_Skill03_06</f>
+		</frame>
+	</action>
+	<action name="skill12">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Suigetsu_Skill03_08</f>
+			<e type="setAttackBox">f_hit</e>
+			<e type="setActionResume">20</e>
+			<e type="setSound">Audio/Suigetsu/suigetsu_skill3_2.ogg</e>
+			<f>Suigetsu_Skill03_09</f>
+			<e type="setJump">true</e>
+			<f>Suigetsu_Skill03_10</f>
+			<e type="setDelay">10</e>
+			<f>Suigetsu_Skill03_11</f>
+			<e type="setDelay">20</e>
+			<f>Suigetsu_Skill03_12</f>
+			<e type="setDelay">10</e>
+			<f>Suigetsu_Skill03_13</f>
+		</frame>
+	</action>
+
+</unit>

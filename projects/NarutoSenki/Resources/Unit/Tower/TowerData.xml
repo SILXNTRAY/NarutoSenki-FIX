@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<date>
+			<p type="attackType">Tower</p>
+			<p type="attackValue">40000</p>
+			<p type="attackRangeX">102</p>
+			<p type="attackRangeY">100</p>
+			<p type="coldDown">0</p>
+		</date>
+		<frame>
+			<f>tower</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame></frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame></frame>
+	</action>
+
+	<action name="Float">
+		<frame></frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>tower</f>
+		</frame>
+	</action>
+
+</unit>

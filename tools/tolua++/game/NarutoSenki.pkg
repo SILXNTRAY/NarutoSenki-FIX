@@ -1,0 +1,131 @@
+$#include "Defines.h"
+
+$#include "Core/Provider.hpp"
+
+$#include "GameScene.h"
+
+$#include "BGLayer.h"
+$#include "CreditsLayer.h"
+$#include "GameLayer.h"
+$#include "GearLayer.h"
+$#include "GameOver.h"
+$#include "HudLayer.h"
+$#include "JoyStick.h"
+$#include "LoadLayer.h"
+$#include "PauseLayer.h"
+$#include "SelectLayer.h"
+$#include "StartMenu.h"
+
+$pfile "game/CharacterBase.pkg"
+
+/* ------- UI Layer ------- */
+
+/* GameScene.h */
+class GameScene : public CCScene {
+public:
+    static GameScene* create();
+	static const char *getPlatform();
+};
+
+/* StartMenu.h */
+class StartMenu : public CCLayer {
+public:
+	static StartMenu* create();
+
+	void setCheats(int cheats);
+};
+
+/* LoadLayer.h */
+class LoadLayer : public CCLayer {
+public:
+	static LoadLayer* create();
+
+//	CCArray* tempHeros;
+//	int loadNum;
+
+	bool init();
+	GameLayer* getGameLayer();
+	void setGameLayer(GameLayer* var);
+	BGLayer* getBGLayer();
+	void setBGLayer(BGLayer* var);
+	HudLayer* getHudLayer();
+	void setHudLayer(HudLayer* var);
+
+	void preloadAudio();
+	void preloadIMG();
+	void playBGM(float dt);
+	void onLoadFinish(float dt);
+};
+
+/* SelectLayer.h */
+class SelectLayer : public CCLayer {
+public:
+	~SelectLayer();
+
+	static SelectLayer *create();
+
+	void setSelectHero(const char *var);
+	void setCom1Select(const char *var);
+	void setCom2Select(const char *var);
+	void setCom3Select(const char *var);
+
+	void setSelectList(CCArray *var);
+
+	void onGameStart();
+};
+
+/* KTools.h */
+class KTools {
+public:
+	static void initTableInDB();
+	static void initColumeInDB();
+
+	static sqlite3 *prepareTableInDB();
+
+	static bool saveToSQLite(const char *table = "GameRecord", const char *column = NULL, const char *value = NULL, bool isBuy = false);
+	static string readFromSQLite(const char *table = "GameRecord", const char *column = NULL, const char *value = NULL);
+
+	static void encode(string &str, int randomKey);
+	static void decode(string &str);
+
+	static string readSQLite(const char *table, const char *column, const char *value, const char *targetColumn);
+	static void saveSQLite(const char *table, const char *relatedColumn, const char *value, const char *targetColumn, const string &targetValue, bool isPlus);
+
+	static int readWinNumFromSQL(const char *heroName);
+	static int readCoinFromSQL();
+	static const char *readRecordTimeFromSQL(const char *heroName);
+
+	static string encodeData(string data);
+};
+
+/* CCTips.h */
+class CCTips : public CCSprite {
+public:
+	static CCTips *create(const char *tips);
+};
+
+/** CCClippingNode.h */
+class CCClippingNode : public CCNode
+{
+public:
+    static CCClippingNode* create();
+    static CCClippingNode* create(CCNode *pStencil);
+
+    bool init();
+    bool init(CCNode *pStencil);
+    void onEnter();
+    void onEnterTransitionDidFinish();
+    void onExitTransitionDidStart();
+
+    void onExit();
+    void visit();
+
+    CCNode* getStencil() const;
+    void setStencil(CCNode *pStencil);
+
+    GLfloat getAlphaThreshold() const;
+    void setAlphaThreshold(GLfloat fAlphaThreshold);
+
+    bool isInverted() const;
+    void setInverted(bool bInverted);
+};
