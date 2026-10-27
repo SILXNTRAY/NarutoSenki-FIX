@@ -2950,7 +2950,11 @@ void CharacterBase::setClone(int cloneTime)
 	getGameLayer()->addChild(clone, -clone->getPositionY());
 	clone->doAI();
 
-	if (cloneTime > 0)
+	// For Kankuro, cloneTime is a puppet index (0 Karasu, 1 Sanshouuo, 2 Saso), not a lifetime.
+	// Treating it as seconds made Sanshouuo despawn after 1s and Saso after 2s.
+	const bool isPuppetIndex = getName() == HeroEnum::Kankuro;
+
+	if (cloneTime > 0 && !isPuppetIndex)
 	{
 		clone->scheduleOnce(schedule_selector(Hero::removeClone), cloneTime);
 	}
