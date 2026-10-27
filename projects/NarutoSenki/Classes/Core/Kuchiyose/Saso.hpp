@@ -102,7 +102,7 @@ class Saso : public Hero
 
 	void dealloc() override
 	{
-		_master->unlockSkill4Button();
+		_master->unlockSkill5Button();
 
 		Hero::dealloc();
 	}
