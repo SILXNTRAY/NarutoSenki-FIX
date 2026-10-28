@@ -128,3 +128,8 @@ project.properties
 *.iml
 
 # End of https://www.toptal.com/developers/gitignore/api/cocos2dx
+
+# Signing keys and credentials (never commit these)
+*.jks
+*.keystore
+keystore.properties
