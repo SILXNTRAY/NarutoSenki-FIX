@@ -10,7 +10,7 @@
   - [Know Issues](#know-issues)
   - [TODO](#todo)
   - [How to build?](#how-to-build)
-    - [Adnroid](#adnroid)
+    - [Android](#android)
     - [Linux](#linux)
     - [Windows](#windows)
   - [Structure](#structure)
@@ -66,8 +66,8 @@ Get the latest developments👇
   - Updated the project to cocos2d-x 2.2.6 & Visual Studio 2022 preview
   - Most dependent libraries have been upgraded to the latest version
   - Updated glfw2 to glfw3
-  - [Adnroid] Support android 12.0 and rounded icons
-  - [Adnroid] Support android arm64-v8a
+  - [Android] Support android 12.0 and rounded icons
+  - [Android] Support android arm64-v8a
   - [Linux] Use OpenAL instead of FMod
   - [Windows] Use OpenAL instead of native music player
   - [Assets] Use `ogg` format instead of `mp3` (Only support ogg)
@@ -122,9 +122,21 @@ Get the latest developments👇
 
 ## How to build?
 
-### Adnroid
+### Android
 
-Open `project/NarutoSenki/proj.android` with Android Studio
+**Required:** [Android Studio Hedgehog | 2023.1.1](https://developer.android.com/studio/archive) (use this exact release line; the project is configured for Android Gradle Plugin 8.2.0 / Gradle 8.2, which Hedgehog supports out of the box).
+
+- JDK 17 is bundled with Hedgehog (JetBrains Runtime), so no separate JDK install is needed.
+- If a newer Android Studio offers to run the *AGP Upgrade Assistant*, decline it. The project is set up for AGP 8.2.0 and the NDK build config has not been migrated to newer plugin versions.
+
+Open `projects/NarutoSenki/proj.android-studio` with Android Studio.
+
+One-time setup, all inside Android Studio (no manual NDK download, no `ndk.dir`, no `NDK_ROOT`):
+
+1. `Settings > Languages & Frameworks > Android SDK > SDK Platforms`: install **Android 14.0 (API 34)**.
+2. `Settings > Languages & Frameworks > Android SDK > SDK Tools`: tick **Show Package Details**, then under **NDK (Side by side)** tick **21.4.7075529** (r21e) and click Apply.
+   (If you skip this, Gradle will download it automatically on first build once the SDK licenses are accepted.)
+3. `File > Sync Project with Gradle Files`
 
 Press `Ctrl + F9` to make project
 
@@ -154,11 +166,27 @@ make # DEBUG=1 # -j12
 
 ### Windows
 
-- Open `cocos2d-win32.sln` with Visual Studio 2022
+**Required:** Visual Studio 2022 (v143 toolset). Older versions (2019 and below) will not work.
 
-or
+In the Visual Studio Installer, install the **Desktop development with C++** workload, and make sure these components are ticked:
 
-- Run `build.bat`
+- **MSVC v143 - VS 2022 C++ x64/x86 build tools** (Latest). Keep VS 2022 updated, because the game code is built with `/std:c++latest`.
+- **Windows 10 SDK** or **Windows 11 SDK** (any recent version; the projects target "10.0", i.e. the newest SDK installed)
+
+Notes:
+- The solution only has a **Win32 (x86)** platform, so build **Debug|Win32** or **Release|Win32** (not x64).
+- No extra libraries need to be installed. FreeType, libpng, OpenAL Soft, GLFW, etc. are already included in the repository.
+
+Build option 1 (recommended):
+
+- Open `cocos2d-win32.sln` with Visual Studio 2022, select `Win32`, and build the `NarutoSenki` project.
+
+Build option 2 (command line):
+
+- Run `build.bat`. This also needs:
+  - The `VS143COMNTOOLS` environment variable, which the script reads to find the Visual Studio tools. If it is not defined on your machine, use option 1 instead.
+  - `msbuild.exe` at `C:\Program Files\Microsoft Visual Studio\2022\Preview\Msbuild\Current\Bin\`, because `build-win32.bat` hardcodes the **Preview** edition path. If you installed the regular VS 2022 (Community/Professional/Enterprise), edit the `MSBUILD=` line in `build-win32.bat` (and `build-win32-debug.bat`) to your install path first, or use option 1.
+  - A Unix `rm` command on your `PATH` (the scripts call `rm -rf`). Installing [Git for Windows](https://git-scm.com/download/win) and adding its `usr\bin` folder to `PATH` provides it.
 
 ### macOS
 
@@ -269,7 +297,7 @@ root: projects/NarutoSenki
   - [Tiled](https://www.mapeditor.org/)
     - Can create maps (Get more rules open `xxx.tmx` in `projects/NarutoSenki/Resources/Tiles/` with tiled)
 
-## What is NarutoSenki: Re?
+## What is NarutoSenki: RE?
 
 > Made with Unity3D and still in development naruto video game.
 >
@@ -279,4 +307,7 @@ You can get all the notices at the above `telegram` or `discord`.
 
 ---
 
-**<font color=#D32F2F>M</font><font color=#FF5722>a</font><font color=#FFEB3B>d</font><font color=#8BC34A>e</font> <font color=#00BCD4>b</font><font color=#448AFF>y</font> <font color=#673AB7>R</font><font color=#FF4081>e</font>**
+**<font color=#D32F2F>M</font><font color=#FF5722>a</font><font color=#FFEB3B>d</font><font color=#8BC34A>e</font> <font color=#00BCD4>b</font><font color=#448AFF>y</font> <font color=#673AB7>R</font><font color=#FF4081>E</font>**
+
+
+**<font color=#D32F2F>F</font><font color=#FF5722>i</font><font color=#FFEB3B>x</font><font color=#8BC34A>e</font><font color=#00BCD4>d</font> <font color=#448AFF>b</font><font color=#673AB7>y</font> <font color=#FF4081>S</font><font color=#D32F2F>i</font><font color=#FF5722>l</font><font color=#FFEB3B>x</font><font color=#8BC34A>n</font><font color=#00BCD4>t</font><font color=#448AFF>H</font><font color=#673AB7>i</font><font color=#FF4081>k</font><font color=#D32F2F>a</font><font color=#FF5722>r</font><font color=#FFEB3B>u</font>**
