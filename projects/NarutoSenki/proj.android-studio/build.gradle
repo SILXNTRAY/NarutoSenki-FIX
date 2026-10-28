@@ -1,4 +1,107 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {
-id 'com.android.application' version '8.2.0' apply false
+    id 'com.android.application'
 }
+
+// CORRECTED: Climbs up exactly 4 levels to match your real directory structure
+def masterRoot = file("../../../../").absolutePath
+
+// Release signing: credentials live in proj.android-studio/keystore.properties
+// (gitignored, never committed). Without that file the release build is signed
+// with the debug key, so the project still builds for anyone who clones it.
+def keystoreFile = rootProject.file("keystore.properties")
+def keystoreProps = new Properties()
+if (keystoreFile.exists()) {
+    keystoreFile.withInputStream { keystoreProps.load(it) }
+}
+
+android {
+    namespace 'com.proj.narsen'
+    compileSdk 34
+    // NDK r21e, installed via Android Studio > SDK Manager > SDK Tools > NDK (Side by side).
+    // Gradle locates it at <sdk>/ndk/21.4.7075529 and auto-installs it if missing,
+    // so no `ndk.dir` in local.properties and no NDK_ROOT environment variable is needed.
+    ndkVersion "21.4.7075529"
+    defaultConfig {
+        applicationId "com.proj.narsen"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        externalNativeBuild {
+            ndkBuild {
+                targets 'cocos2dcpp'
+                arguments '-j' + Runtime.runtime.availableProcessors()
+                
+                // Using double quotes here allows Gradle to read the masterRoot variable
+                arguments "NDK_MODULE_PATH=${masterRoot};${masterRoot}/cocos2dx/platform/third_party/android/prebuilt;${masterRoot}/external"
+            }
+        }
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a'
+        }
+    }
+    sourceSets.main {
+        java.srcDirs = [
+            "src/main/java",
+            "${masterRoot}/cocos2dx/platform/android/java/src"
+        ]
+        res.srcDir "src/main/res"
+        jniLibs.srcDir "src/main/jniLibs"
+        manifest.srcFile "src/main/AndroidManifest.xml"
+        assets.srcDir "src/main/assets"
+    }
+    externalNativeBuild {
+        ndkBuild {
+            path "jni/Android.mk"
+        }
+    }
+    signingConfigs {
+        release {
+            if (keystoreFile.exists()) {
+                storeFile file(keystoreProps['storeFile'])
+                storePassword keystoreProps['storePassword']
+                keyAlias keystoreProps['keyAlias']
+                keyPassword keystoreProps['keyPassword']
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig keystoreFile.exists() ? signingConfigs.release : signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            jniDebuggable true
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation fileTree(dir: 'src/main/jniLibs', include: ['*.jar'])
+}
+
+// Copy tasks for assets
+task cleanAssets(type: Delete) {
+    delete 'src/main/assets'
+}
+
+task copyLuaFiles(type: Copy) {
+    from "${masterRoot}/projects/NarutoSenki/lua"
+    into 'src/main/assets/lua'
+}
+
+task copyAssets(type: Copy, dependsOn: copyLuaFiles) {
+    from "${masterRoot}/projects/NarutoSenki/Resources"
+    into 'src/main/assets'
+}
+
+clean.dependsOn cleanAssets
+preBuild.dependsOn copyAssets
